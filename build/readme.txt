@@ -3,13 +3,20 @@
                          A text adventure, by Davide Bucci
 
 
-Your name is Emilia Vittorini, You're the daughter of Augusto Vittorini, who founded the Industria Torinese Automobili (ITA) with his brother Tullio. Your father is abroad trying to raise funds, but something went wrong and you heard your uncle coming back slamming the door. Your mission is to find what happened and how you can help your family. I will be your ears and eyes. Good luck.
+Your name is Emilia Vittorini, You're the daughter of Augusto Vittorini, who
+founded the Industria Torinese Automobili (ITA) with his brother Tullio. Your
+father is abroad trying to raise funds, but something went wrong and you heard
+your uncle coming back slamming the door. Your mission is to find what happened
+and how you can help your family. I will be your ears and eyes.
 
-Here is a link to the webpage dedicated to Two days to the race:
+Good luck.
+
+
+Here is a link to the Two days to the race webpage on my blog:
 
 http://davbucci.chez-alice.fr/index.php?argument=varie/two_days/two_days.inc
 
-Alternatively, check them on Itch.io:
+Alternatively, check it on Itch.io:
 
 https://darwinne.itch.io/two-days-to-the-race
 
@@ -50,6 +57,8 @@ load the game from disks.
 
 
 If you complete the game and you would like to appear on the Hall of fame,
-write me an email to davbucci@tiscali.it and write the final password. Do not
-put attachments on the message, or it will be discarded automatically by the
-antispam system.
+write me an email to davbucci@tiscali.it and write the final password:
+
+davbucciNOSPAM@tiscali.it
+
+(email containing attachments will be automatically removed by my provider)
