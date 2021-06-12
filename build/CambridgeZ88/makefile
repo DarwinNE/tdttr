@@ -15,14 +15,14 @@ two_days_no_UTF8_34.c: ../../aws_sources/part34/Two_days_to_the_race_3_4.aws
 z88: part1 part2 part34
 
 part1: two_days_no_UTF8_1.c inout.c loadsave.c
-	zcc $(zcc_options) -DCONFIG_FILENAME="\"\\\"config1.h"\"\\\" two_days_no_UTF8_1.c inout.c loadsave.c -o tdttr1.bin
+	zcc $(zcc_options) -DAPP_NAME="\"\\\"TwoDays 1"\"\\\" -DCONFIG_FILENAME="\"\\\"config1.h"\"\\\" two_days_no_UTF8_1.c inout.c loadsave.c -o tdttr1.bin z88.c -subtype=app -pragma-define:CRT_ORG_CODE=32768 -clib=ansi -m
 
 part2: two_days_no_UTF8_2.c inout.c loadsave.c
-	zcc $(zcc_options) -DCONFIG_FILENAME="\"\\\"config2.h"\"\\\" two_days_no_UTF8_2.c inout.c loadsave.c -o tdttr2.bin
+	zcc $(zcc_options) -DAPP_NAME="\"\\\"TwoDays 2"\"\\\" -DCONFIG_FILENAME="\"\\\"config2.h"\"\\\" two_days_no_UTF8_2.c inout.c loadsave.c -o tdttr2.bin z88.c -subtype=app -pragma-define:CRT_ORG_CODE=32768 -clib=ansi -m
 
 part34: two_days_no_UTF8_34.c inout.c loadsave.c
-	zcc $(zcc_options) -DCONFIG_FILENAME="\"\\\"config34.h"\"\\\" two_days_no_UTF8_34.c inout.c loadsave.c -o tdttr34.bin
+	zcc $(zcc_options) -DAPP_NAME="\"\\\"TwoDays 3"\"\\\" -DCONFIG_FILENAME="\"\\\"config34.h"\"\\\" two_days_no_UTF8_34.c inout.c loadsave.c -o tdttr34.bin z88.c -subtype=app -pragma-define:CRT_ORG_CODE=32768 -clib=ansi -m
 
 
 clean:
-	rm *.o  config1.h config34.h two_days_no_UTF8_1.c config2.h two_days_no_UTF8_34.c two_days_no_UTF8_2.c *.bin *.BAS
+	rm *.o  *.map *.epr *.62 *.63 config1.h config34.h two_days_no_UTF8_1.c config2.h two_days_no_UTF8_34.c two_days_no_UTF8_2.c *.bin *.BAS
