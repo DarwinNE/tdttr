@@ -1,0 +1,18 @@
+ADDITIONAL NOTES FOR THE ATARI ST VERSION OF TWO DAYS TO THE RACE
+
+    Davide Bucci
+
+I prepared two executables for the Atari ST (tested with TOS 1.62):
+- tdttr40.tos can be used on a low resolution display, exploiting more colours.
+- tdttr80.tos is more fit to the medium resolution, with text on 80 columns and
+  less colours.
+
+The ST version of Two Days to the Race would not be existing without the work
+of George Nakos, who also converted the splash image to the Atari ST.
+
+
+If you have comments or remarks, feel free to write me at:
+
+davbucciNOSPAM@tiscali.it
+
+(email containing attachments will be automatically removed by my provider)

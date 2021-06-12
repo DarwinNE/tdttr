@@ -1,0 +1,1960 @@
+AWS
+VERSIONE
+3.0
+0
+7
+7
+0
+Two days to the race, parts 3 and 4
+Davide Bucci
+2018-2020
+A story of high (steam) pressure, v 2.0
+1
+Bookman Old Style
+14
+0
+100
+FALSE
+100
+100
+CONDIZIONIHI
+IF AT 49 AND RES? 28 THEN mess 115 ENDIF Indicates a shut door in the tunnel
+IF AT 56 THEN SET 38 ENDIF Prepare aggression if visited the secret lab
+IF AT 54 AND SET? 38 THEN mess 139  set 122 presskey mess 140 sendallroom 0 mess 285 goto 57 ENDIF Aggression from behind
+IF carr 58 AND set? 23 THEN set 122 ENDIF Acetylene lamp, switched on
+IF carr 58 AND res? 23 THEN rese 122 ENDIF Acetylene lamp, switched off
+IF res? 121 and res? 122 THEN mess 138 ENDIF Can not move in the dark
+IF at 64 and set? 57 then mess 167 goto 60 ENDIF Can't go to the carpentry, as Riccobene and Belisario are there
+CONDIZIONILOW
+if verb 70 and noun 409 then mess 518 wait endif
+if verb 73 then quit endif
+if verb 74 or verb 0 and noun 72 then inve wait endif
+if verb 987 then restart endif
+if verb 110 then look wait endif
+IF verb 100 OR vbnoeq 0 AND noun 80 THEN nord WAIT ENDIF  VAI  NORD
+IF verb 100 OR vbnoeq 0 AND noun 81 THEN sud WAIT ENDIF  VAI  SUD
+IF verb 100 OR vbnoeq 0 AND noun 82 THEN est WAIT ENDIF  VAI  EST
+IF verb 100 OR vbnoeq 0 AND noun 83 THEN ovest WAIT ENDIF  VAI OVEST
+IF verb 100 OR vbnoeq 0 AND noun 84 THEN alto WAIT ENDIF  VAI ALTO
+IF verb 100 OR vbnoeq 0 AND noun 85 THEN basso WAIT ENDIF  VAI BASSO
+IF verb 50 and noun 9 and avai 11 then get 11 OKAY ENDIF Take the small key
+IF verb 50 THEN get no1 OKAY ENDIF  Take an object
+IF verb 211 THEN mess 502 WAIT ENDIF Eat/Drink -> No!
+IF verb 400 THEN mess 504 WAIT ENDIF Curse
+IF verb 407 and roomgt 56 THEN MESS 512 WAIT ENDIF Help/hint 3
+IF verb 407 and roomgt 32 THEN MESS 511 WAIT ENDIF Help/hint 2
+IF verb 70 and noun 25 and avai 10 THEN mess 268 WAIT ENDIF Examine goggles
+IF verb 70 and noun 25 and notavai 10 THEN mess 523 WAIT ENDIF Examine goggles, they're not available
+IF verb 70 and noun 9 and ADJE 408 and avai 11 THEN mess 225 WAIT ENDIF Examine small key
+IF verb 70 and noun 9 and ADJE 408 and notavai 11 THEN mess 523 WAIT ENDIF Examine small key
+IF verb 70 and noun 9 and avai 9 THEN mess 228 WAIT ENDIF Examine ITA key
+IF verb 70 and noun 9 and avai 159 THEN mess 226 WAIT ENDIF Examine wagon key
+IF verb 70 and noun 217 and avai 217 THEN mess 227 WAIT ENDIF Examine money
+IF verb 70 and noun 106 and avai 106 THEN mess 224 WAIT ENDIF Examine pencil
+IF verb 70 and noun 107 and avai 108 THEN mess 222 WAIT ENDIF Examine sheet of paper, written
+IF verb 70 and noun 234 and avai 234 THEN mess 297  WAIT ENDIF 
+IF verb 120 and noun 25 THEN wear 10 OKAY ENDIF Wear goggles
+IF verb 121 and noun 25 THEN unwear 10 OKAY ENDIF Unwear goggles
+IF verb 78 THEN mess 269 WAIT ENDIF Break, destroy...
+IF verb 70 and noun 58 and avai 58 and set? 23 THEN mess 99 WAIT ENDIF Examine acetylene lamp, on
+IF verb 70 and noun 58 and avai 58 and res? 23 THEN mess 289 WAIT ENDIF Examine acetylene lamp, off
+IF verb 70 and noun 130 and avai 130 THEN mess 111 WAIT ENDIF Examine matches
+IF verb 70 and noun 138 and avai 138 and RES? 29 then mess 118 brin 11 set 29 WAIT ENDIF Examine coat, find the key
+IF verb 70 and noun 138 and avai 138 and set? 29 then mess 119 WAIT ENDIF Examine coat, key already found
+IF verb 70 AND noun 87 THEN mess 502 WAIT ENDIF Examine museum keeper
+IF verb 70 and noun 137 THEN mess 522 WAIT ENDIF Examine shovel
+IF verb 70 THEN mess 91 WAIT ENDIF Examine with unknown object ****
+IF verb 213 AND noun 58 and avai 130 and adve 214 and avai 58 and res? 23 THEN mess 97 set 23 WAIT ENDIF Switch on the lamp
+IF verb 213 AND noun 58 and avai 58 and adve 214 and res? 23 THEN mess 100 WAIT ENDIF Switch on the lamp, no matches
+IF verb 213 AND noun 58 and avai 58 and adve 215 and set? 23 THEN mess 98 rese 23 WAIT ENDIF Switch off the lamp
+IF verb 210 THEN mess 231 WAIT ENDIF Pray
+IF verb 55 and noun 9 then drop 9 WAIT endif Drop key
+IF verb 55 and noun 25 then drop 10 WAIT endif Drop goggles
+IF verb 55 and noun 9 and carr 11 then drop 11 WAIT endif Drop small key
+IF verb 55 then drop no1 mess 520 WAIT endif Drop an object
+IF verb 1000 then mess 515 WAIT Endif XYZZY
+IF AT 1 OR AT 2 OR AT 3 OR AT 6 OR AT 9 OR AT 20 OR AT 28 OR AT 29 AND VERB 12 AND NOUN 10 THEN mess 406 WAIT ENDIF
+IF verb 66 THEN mess 502 WAIT ENDIF Give -> No!
+IF verb 230 and noun 232 THEN RESE 57 RESE 59 RESE 58 RESE 28 RESE 27 RESE 92 RESE 90 RESE 73 RESE 57 RESE 23 RESE 38 RESE 25  SET 2 SET 16  set 122 sendallroom 0 BRIN 9 GET 9 BRIN 10 GET 10 BRIN 217 GET 217 BRIN 108 GET 108 GOTO 33  ENDIF Go to part 3
+IF verb 230 and noun 233 THEN RESE 57 RESE 59 RESE 58 RESE 28 RESE 27 RESE 92 RESE 90 RESE 73 RESE 57 RESE 23 RESE 38 RESE 25  SET 2 SET 16  set 122 sendallroom 0 GOTO 57  ENDIF Go to part 4
+IF VERB 988 THEN LOAD WAIT ENDIF Load
+IF VERB 989 THEN SAVE WAIT ENDIF Save
+IF VERB 76 THEN MESS 524 WAIT ENDIF Exit/Quit -> use "bye"
+CONDIZIONILOCALI
+33
+IF NOUN 81 THEN MESS 55 WAIT ENDIF Go south, but it's outside the game
+33
+IF NOUN 80 THEN MESS 55 WAIT ENDIF Go north, but it's outside the game
+33
+IF VERB 70 AND NOUN 147 THEN MESS 150 WAIT ENDIF Examine department
+37
+IF VERB 70 AND NOUN 20 THEN MESS 270 WAIT ENDIF Examine benches
+37
+IF VERB 70 AND NOUN 218 THEN MESS 271 WAIT ENDIF Examine chalks/eraser
+37
+IF VERB 70 AND NOUN 148 THEN mess 272 WAIT ENDIF Examine blackboard
+37
+IF VERB 55 AND NOUN 234 AND NO2EQ 13 OR NO2EQ 96 THEN MESS 294 BRIN 138 SET 31 WAIT ENDIF Pour acid on the cabinet
+37
+IF VERB 70 AND NOUN 13 AND RES? 31 THEN MESS 293 WAIT ENDIF Examine cabinet.
+37
+IF VERB 70 AND NOUN 13 OR NOUN 96 THEN MESS 296 WAIT ENDIF Examine cabinet.
+38
+IF VERB 70 AND NOUN 140 OR NOUN 125 THEN mess 146 WAIT ENDIF Examine distillation column
+40
+IF VERB 70 AND NOUN 20 AND RES? 78 THEN mess 106 brin 130 set 78 WAIT ENDIF Examine the bench
+40
+IF VERB 70 AND NOUN 20 THEN mess 300 WAIT ENDIF Examine the bench, matches already taken
+40
+IF VERB 70 AND NOUN 131 THEN mess 107 WAIT ENDIF Examine the extractor/tubes/glassware
+40
+IF VERB 70 AND NOUN 132 THEN mess 108 WAIT ENDIF Examine the Bunsen burner
+40
+IF NOUN 130 AND NO2EQ 132 THEN mess 109 WAIT ENDIF Matches and Bunsen in the same phrase...
+40
+IF NOUN 132 AND NO2EQ 130 THEN mess 109 WAIT ENDIF Matches and Bunsen in the same phrase...
+40
+IF VERB 213 AND NOUN 130 THEN mess 109 WAIT ENDIF Switch Bunsen burner.
+40
+IF VERB 70 AND NOUN 133 AND SET? 30 THEN MESS 295 BRIN 234 WAIT ENDIF Examine test tubes, recognize ferric chloride
+40
+IF VERB 70 AND NOUN 133 THEN mess 110 WAIT ENDIF Examine test tubes.
+41
+IF VERB 70 AND NOUN 148 THEN mess 151 SET 30 WAIT ENDIF Examine blackboard
+43
+IF RES? 27 AND VERB 70 AND NOUN 134 THEN mess 112 WAIT ENDIF Examine coal.
+43
+IF VERB 70 AND NOUN 135 OR NOUN 136 AND RES? 27 THEN mess 291 WAIT ENDIF Examine manhole/cover.
+43
+IF VERB 70 AND NOUN 135 OR NOUN 136 THEN mess 292 WAIT ENDIF Examine manhole/cover.
+43
+IF VERB 12 AND NOUN 135 OR NOUN 136 AND avai 137 AND RES? 27 THEN mess 114 drop 137 set 27 setconn 43 6 44 WAIT ENDIF Open manhole cover.
+43
+IF VERB 12 AND NOUN 135 OR NOUN 136 AND SET? 27 THEN MESS 290 WAIT ENDIF Try to open manhole a second time
+43
+IF VERB 12 AND NOUN 135 OR NOUN 136 THEN mess 113 WAIT ENDIF Open manhole cover, no shovel.
+43
+IF NOUN 85 and set? 27 THEN RESE 121 ENDIF Go in a dark area
+44
+IF NOUN 84 THEN SET 121 ENDIF Go in a bright area
+49
+IF VERB 70 AND NOUN 92 THEN mess 521 WAIT ENDIF
+49
+IF VERB 12 AND NOUN 92 AND RES? 28 AND avai 11 THEN setconn 49 2 53 mess 116 set 28 WAIT ENDIF Open the door, own the small key
+49
+IF VERB 12 AND NOUN 92 AND SET? 28 THEN mess 290 WAIT ENDIF Open the door a second time.
+49
+IF VERB 12 AND NOUN 92 THEN mess 117 WAIT ENDIF Open the door, without the key
+55
+IF VERB 70 AND NOUN 133 or NOUN 139 OR NOUN 140 THEN MESS 144 WAIT ENDIF Examine glassware
+56
+IF VERB 70 AND NOUN 131 OR NOUN 20 THEN MESS 141 WAIT ENDIF Examine the glassware/bench
+56
+IF VERB 70 AND NOUN 139 THEN MESS 142 WAIT ENDIF Examine bottles
+56
+IF VERB 70 AND NOUN 132 THEN mess 143 WAIT ENDIF Examine the Bunsen burner, lit
+56
+IF NOUN 130 AND NO2EQ 132 THEN mess 109 WAIT ENDIF Matches and Bunsen in the same phrase...
+56
+IF NOUN 132 AND NO2EQ 130 THEN mess 109 WAIT ENDIF Matches and Bunsen in the same phrase...
+56
+IF VERB 213 AND NOUN 130 THEN mess 109 WAIT ENDIF Switch Bunsen burner.
+56
+IF NOUN 141 AND VERB 70 OR VERB 15 OR VERB 50 OR VERB 211 THEN mess 145 WAIT ENDIF Examine morphine/opium
+57
+IF VERB 70 THEN MESS 513 WAIT ENDIF Examine does not work in the wagon, it's too dark
+57
+IF VERB 406 AND NOUN 159 AND CONNEQ 57 6 58 THEN mess 298 WAIT ENDIF Touch floor after having lifted the board
+57
+IF VERB 406 AND NOUN 159 THEN mess 155 WAIT ENDIF Touch floor of the wagon
+57
+IF VERB 406 AND NOUN 92 THEN mess 514 WAIT ENDIF Touch doors
+57
+IF VERB 50 OR VERB 12 OR VERB 160 AND NOUN 161 AND CONNEQ 57 6 0 THEN mess 156 setconn 57 6 58 WAIT ENDIF Open/Take board
+57
+IF VERB 406 AND NOUN 145 THEN mess 157 WAIT ENDIF Touch walls
+58
+IF noun 81 and res? 57 and res? 58 THEN mess 153 set 58 WAIT ENDIF Can not get inside office, Riccobene and Belisario present. Overhear conversation.
+58
+IF noun 81 and res? 57 and set? 58 THEN mess 154 WAIT ENDIF Can not get inside office, Riccobene and Belisario present.
+58
+IF VERB 70 and noun 162 THEN mess 158 WAIT ENDIF Examine wagons
+58
+IF verb 70 and noun 132 THEN mess 159 WAIT ENDIF Examine gas burners
+59
+If verb 70 and noun 20 and res? 59 then mess 160 brin 157 set 59 WAIT ENDIF Examine bench
+59
+If verb 70 and noun 20 then mess 162 WAIT ENDIF Examine bench, already found objects
+59
+IF verb 70 and noun 163 then mess 161 WAIT ENDIF Examine pit
+61
+IF verb 50 and noun 9 and avai 159 then get 159 OKay ENDIF Take the large key
+61
+IF verb 70 and noun 20 and res? 99 then mess 168 brin 159 set 99 WAIT ENDIF Examine desk, find the key
+61
+IF verb 70 and noun 20 then mess 404 WAIT ENDIF Examine desk, key already found
+61
+IF verb 70 and noun 166 THEN mess 169 WAIT ENDIF Examine notepad
+61
+IF verb 50 and noun 166 THEN mess 508 WAIT ENDIF Take notepad-> No!
+62
+IF verb 70 and noun 162 then mess 164 wait endif Examine wagon
+62
+IF verb 12 and noun 162 or noun 92 or noun 96 and avai 159 then mess 166 setconn 62 3 63 look WAIT ENDIF Open the wagon, with key
+62
+IF verb 12 and noun 162 or noun 92 or noun 96 then mess 165 WAIT ENDIF Open the wagon, without key
+62
+IF verb 70 and noun 96 then mess 117 WAIT ENDIF Examine lock
+63
+IF VERB 160 AND NOUN 167 THEN mess 152  exit endif Lift tarpaulin End of the game!
+63
+IF verb 70 and noun 167 or noun 156 then mess 170 WAIT ENDIF Examine tarpaulin
+64
+IF verb 70 and noun 165 then mess 299 WAIT ENDIF Examine sawdust
+64
+IF avai 157 and VERB 55 AND NOUN 164 AND NO2EQ 165 then mess 163 set 57 goto 60 WAIT ENDIF Put fire to the sawdust
+64
+IF avai 157 and VERB 15 AND NOUN 157 AND NO2EQ 165 then mess 163 set 57 goto 60 WAIT ENDIF Use lighter with sawdust
+64
+IF avai 157 and VERB 235 AND NOUN 165 then mess 163 set 57 goto 60 WAIT ENDIF Ignite sawdust
+64
+IF avai 157 and VERB 0 AND NOUN 31 AND NO2EQ 165 then mess 163 set 57 goto 60 WAIT ENDIF Light sawdust
+DIZIONARIO
+KEY
+9
+NOME
+WINDOW
+10
+NOME
+CHEST
+11
+NOME
+DRAWER
+11
+NOME
+DRAWERS
+11
+NOME
+OPEN
+12
+VERBO
+CLOSET
+13
+NOME
+CABINET
+13
+NOME
+PORTRAIT
+14
+NOME
+PORTRAITS
+14
+NOME
+USE
+15
+VERBO
+UMBRELLA
+16
+NOME
+UMBRELLAS
+16
+NOME
+FRAME
+17
+NOME
+BED
+18
+NOME
+LANDSCAPE
+19
+NOME
+PAINTING
+19
+NOME
+PAINTINGS
+19
+NOME
+DESK
+20
+NOME
+BENCH
+20
+NOME
+BENCHES
+20
+NOME
+READ
+21
+VERBO
+LETTER
+22
+NOME
+TULLIO
+23
+NOME
+UNCLE
+23
+NOME
+BOX
+24
+NOME
+GOGGLES
+25
+NOME
+BOWL
+26
+NOME
+BOWLS
+26
+NOME
+ANCHOVY
+27
+NOME
+ANCHOVIES
+27
+NOME
+PANTRY
+28
+NOME
+PICTURES
+29
+NOME
+PHOTO
+29
+NOME
+PICTURE
+29
+NOME
+PHOTOS
+29
+NOME
+PHOTOGRAPHS
+29
+NOME
+BLUEPRINT
+30
+NOME
+BLUEPRINTS
+30
+NOME
+LANDSCAPE
+31
+NOME
+SUNSET
+31
+NOME
+LIGHT
+31
+NOME
+CITY
+31
+NOME
+TAKE
+50
+VERBO
+GET
+50
+VERBO
+GRAB
+50
+VERBO
+51
+51
+NOME
+THROW
+55
+VERBO
+DROP
+55
+VERBO
+TOSS
+55
+VERBO
+LEAVE
+55
+VERBO
+PUT
+55
+VERBO
+SET
+55
+VERBO
+POUR
+55
+VERBO
+DRIVE
+56
+VERBO
+ENTER
+56
+VERBO
+BOOK
+57
+NOME
+BOOKS
+57
+NOME
+CHANDELIER
+58
+NOME
+LAMP
+58
+NOME
+LAMPS
+58
+NOME
+LAMPS
+58
+NOME
+GAS
+58
+NOME
+WASHBOWL
+59
+NOME
+GARDEN
+60
+NOME
+BARN
+61
+NOME
+GARAGE
+61
+NOME
+ROSE
+62
+NOME
+ROSES
+62
+NOME
+FLOWER
+62
+NOME
+FLOWERS
+62
+NOME
+PAN
+63
+NOME
+PANS
+63
+NOME
+STOVE
+64
+NOME
+PUTAGE
+64
+NOME
+PUTAGE'
+64
+NOME
+SINK
+65
+NOME
+GIVE
+66
+VERBO
+GRANDPARENTS
+67
+NOME
+GRANDPARENT
+67
+NOME
+GRANDMOTHER
+67
+NOME
+GRANDFATHER
+67
+NOME
+PIANO
+68
+NOME
+EXAMINE
+70
+VERBO
+EX
+70
+VERBO
+X
+70
+VERBO
+INV
+72
+NOME
+INVE
+72
+NOME
+INVENTORY
+72
+NOME
+I
+72
+NOME
+BYE
+73
+VERBO
+SHOW
+74
+VERBO
+TALK
+75
+VERBO
+SPEAK
+75
+VERBO
+CHAT
+75
+VERBO
+EXIT
+76
+VERBO
+PLAY
+77
+VERBO
+BREAK
+78
+VERBO
+DESTROY
+78
+VERBO
+N
+80
+NOME
+NORTH
+80
+NOME
+S
+81
+NOME
+SOUTH
+81
+NOME
+E
+82
+NOME
+EAST
+82
+NOME
+W
+83
+NOME
+WEST
+83
+NOME
+UP
+84
+NOME
+ABOVE
+84
+NOME
+UPSTAIRS
+84
+NOME
+U
+84
+NOME
+DOWN
+85
+NOME
+D
+85
+NOME
+BELOW
+85
+NOME
+DOWNSTAIRS
+85
+VERBO
+UNDER
+85
+NOME
+KEEPER
+87
+NOME
+BUY
+88
+VERBO
+NEWSPAPER
+89
+NOME
+JOURNAL
+89
+NOME
+STAMPA
+89
+NOME
+PANEL
+90
+NOME
+PLAQUE
+90
+NOME
+HIEROGLYPHICS
+91
+NOME
+HIEROGLYPH
+91
+NOME
+HIEROGLYPHS
+91
+NOME
+HIEROGLYPHIC
+91
+NOME
+PAPYRUS
+91
+NOME
+PAPYRI
+91
+NOME
+DOOR
+92
+NOME
+EROTIC
+93
+AGGETTIVO
+KING
+94
+NOME
+LIST
+94
+NOME
+PICK
+95
+VERBO
+LOCK
+96
+NOME
+MECHANISM
+96
+NOME
+SHRINE
+97
+NOME
+SHRINES
+97
+NOME
+ARTEFACT
+97
+NOME
+ARTEFACTS
+97
+NOME
+OBJECTS
+97
+NOME
+DRAWING
+98
+NOME
+DRAWINGS
+98
+NOME
+ENGRAVING
+98
+NOME
+ENGRAVINGS
+98
+NOME
+SPHINX
+99
+NOME
+WALK
+100
+VERBO
+RUN
+100
+VERBO
+GO
+100
+VERBO
+101
+101
+NOME
+CAT
+105
+NOME
+DEMOCRITO
+105
+NOME
+PUSS
+105
+NOME
+KITTY
+105
+NOME
+PENCIL
+106
+NOME
+SHEET
+107
+NOME
+PAPER
+107
+NOME
+CHAIR
+108
+NOME
+CHAIRS
+108
+NOME
+THEATER
+109
+NOME
+THEATRE
+109
+NOME
+L
+110
+VERBO
+LOOK
+110
+VERBO
+WEAR
+120
+VERBO
+DRESS
+120
+VERBO
+UNDRESS
+121
+VERBO
+UNWEAR
+121
+VERBO
+PALACE
+122
+NOME
+PALAZZO
+122
+NOME
+CARIGNANO
+123
+NOME
+KIOSK
+124
+NOME
+COLUMN
+125
+NOME
+COLUMNS
+125
+NOME
+ENTRANCE
+126
+NOME
+JUDICIAL
+127
+AGGETTIVO
+MUMMY
+128
+NOME
+MUMMIES
+128
+NOME
+TUTHMOSIS
+129
+NOME
+MATCH
+130
+NOME
+MATCHES
+130
+NOME
+SOXHLET
+131
+NOME
+EXTRACTOR
+131
+NOME
+BUNSEN
+132
+NOME
+BURNER
+132
+NOME
+TEST
+133
+NOME
+GLASSWARE
+133
+NOME
+REAGENTS
+133
+NOME
+TUBE
+133
+NOME
+TUBES
+133
+NOME
+COAL
+134
+NOME
+MANHOLE
+135
+NOME
+COVER
+136
+NOME
+SHOVEL
+137
+NOME
+COAT
+138
+NOME
+BOTTLE
+139
+NOME
+BOTTLES
+139
+NOME
+SHELF
+140
+NOME
+MORPHINE
+141
+NOME
+DRUG
+141
+NOME
+OPIUM
+141
+NOME
+SHELVES
+140
+NOME
+DISTILLATION
+141
+NOME
+ENVELOPE
+142
+NOME
+SMELL
+143
+VERBO
+FURNITURE
+144
+NOME
+WALL
+145
+NOME
+WALLS
+145
+NOME
+DECORATION
+145
+NOME
+RESTAURANT
+146
+NOME
+DEPARTMENT
+147
+NOME
+BLACKBOARD
+148
+NOME
+BLACKBOARDS
+148
+NOME
+TO
+150
+AVVERBIO
+STRIKE
+151
+AGGETTIVO
+STATUE
+152
+NOME
+STATUES
+152
+NOME
+AMENHOTEP
+153
+NOME
+RAM
+154
+NOME
+COPY
+155
+VERBO
+OBJECT
+156
+NOME
+LIGHTER
+157
+NOME
+FLOOR
+159
+NOME
+GROUND
+159
+NOME
+LIFT
+160
+VERBO
+MOVE
+160
+VERBO
+PUSH
+160
+VERBO
+BOARD
+161
+NOME
+FLOORBOARD
+161
+NOME
+PLANK
+161
+NOME
+WAGON
+162
+NOME
+WAGONS
+162
+NOME
+PIT
+163
+NOME
+FIRE
+164
+NOME
+SAWDUST
+165
+NOME
+NOTEPAD
+166
+NOME
+TARPAULIN
+167
+NOME
+LIBRARY
+200
+NOME
+SLEEP
+201
+VERBO
+SIT
+201
+VERBO
+CLOTHES
+202
+NOME
+CLOSE
+203
+VERBO
+CAR
+204
+NOME
+CARS
+204
+NOME
+RACK
+205
+NOME
+TOOL
+206
+NOME
+TOOLS
+206
+NOME
+PRAY
+210
+VERBO
+SWALLOW
+211
+VERBO
+EAT
+211
+VERBO
+DRINK
+211
+VERBO
+SWITCH
+213
+VERBO
+TURN
+213
+VERBO
+ON
+214
+AVVERBIO
+OFF
+215
+AVVERBIO
+POMEGRANATE
+216
+NOME
+POMEGRANATES
+216
+NOME
+THEMES
+216
+NOME
+MONEY
+217
+NOME
+CHALK
+218
+NOME
+CHALKS
+218
+NOME
+ERASER
+218
+NOME
+MIRROR
+219
+NOME
+MUSEUM
+220
+NOME
+EGYPTIAN
+220
+NOME
+MARBLE
+221
+NOME
+PEDESTAL
+221
+NOME
+PEDESTALS
+221
+NOME
+OFFICE
+222
+NOME
+COURT
+223
+NOME
+SARCOPHAGUS
+224
+NOME
+SARCOPHAGI
+224
+NOME
+TWINE
+226
+NOME
+STEP
+227
+NOME
+STEPS
+227
+NOME
+STAIRCASE
+227
+NOME
+CARPET
+228
+NOME
+HANDRAIL
+229
+NOME
+SHIBBOLETH
+230
+VERBO
+RAMASSIN
+231
+NOME
+BOGIANEN
+232
+NOME
+BOJAFAUS
+233
+NOME
+ACID
+234
+NOME
+SALT
+234
+NOME
+FERRIC
+234
+NOME
+CHLORIDE
+234
+NOME
+IGNITE
+235
+VERBO
+CURSE
+400
+VERBO
+FUCK
+400
+VERBO
+PISS
+400
+VERBO
+TOUCH
+406
+VERBO
+CARESS
+406
+VERBO
+PET
+406
+VERBO
+ABOUT
+407
+VERBO
+INFO
+407
+VERBO
+HELP
+407
+VERBO
+SMALL
+408
+AGGETTIVO
+ME
+409
+NOME
+MYSELF
+409
+NOME
+EMILIA
+409
+NOME
+RESTART
+987
+VERBO
+LOAD
+988
+VERBO
+SAVE
+989
+VERBO
+XYZZY
+1000
+VERBO
+THEN
+9999
+SEPARATORE
+LOCAZIONI
+33
+You're close to the Chemistry Department of the university, to the east.
+
+Via Pietro Giuria
+-1
+-1
+34
+0
+0
+0
+0
+0
+0
+0
+34
+Entrance hall of the Chemistry Department.
+
+Entrance
+35
+38
+41
+33
+0
+0
+0
+0
+0
+0
+35
+Nobody is here, but there's still a smell of cigarette smoke mixed with organic solvents and volatile compounds.
+
+Hallway
+0
+34
+36
+0
+0
+0
+0
+0
+0
+0
+36
+You're at the end of a hallway.
+
+Hallway
+0
+41
+37
+35
+0
+0
+0
+0
+0
+0
+37
+It's an ordinary classroom, like the ones you find in all universities. There are seats and benches for students and a large blackboard with chalk and an eraser. There's a metallic cabinet in a corner of the classroom.
+
+Classroom
+0
+0
+0
+36
+0
+0
+0
+0
+0
+0
+38
+An old distillation column has been hung on the wall to decorate the place.
+
+Staircase
+34
+0
+39
+0
+0
+42
+0
+0
+0
+0
+39
+Hallway
+
+Hallway
+41
+0
+40
+38
+0
+0
+0
+0
+0
+0
+40
+You're in the laboratory of organic chemistry. You see a large bench, full of glassware and test tubes. On the north wall, a closet contains various bottles of reagents. A slight aromatic smell permeates everything here, reminding you that this is a place where chemistry is taught, discussed and performed.
+
+Laboratory
+0
+0
+0
+39
+0
+0
+0
+0
+0
+0
+41
+This is the large lecture hall of the department. It must contain at least two hundred seats and there are three large blackboards on a sliding mechanism.
+
+Lecture hall
+36
+39
+0
+34
+0
+0
+0
+0
+0
+0
+42
+Stairs
+
+Stairs
+0
+52
+43
+0
+38
+0
+0
+0
+0
+0
+43
+You're in a small room with the heating system. It's a complicated boiler that provides hot water to warm the place in the winter, as well as steam for mechanisms in the building. You see the coal that is used for the boiler.
+
+Boiler room
+0
+0
+0
+42
+0
+0
+0
+0
+0
+0
+44
+You're in a chamber that was probably used as a cellar to store coal.
+
+Cellar
+0
+47
+45
+0
+43
+0
+0
+0
+0
+0
+45
+You're in a chamber that was probably used as a cellar to store coal.
+
+Cellar
+0
+47
+46
+44
+0
+0
+0
+0
+0
+0
+46
+Turin is well known for underground tunnels, called infernotti. You're in one of them. It's cold and damp and not particularly welcoming.
+
+Infernotto
+0
+48
+0
+45
+0
+0
+0
+0
+0
+0
+47
+You're in a chamber that was probably used as a cellar to store coal.
+
+Cellar
+45
+0
+0
+44
+0
+0
+0
+0
+0
+0
+48
+You're in a tunnel.
+
+Infernotto
+46
+0
+0
+49
+0
+0
+0
+0
+0
+0
+49
+You're in a tunnel.
+
+Infernotto
+0
+0
+48
+50
+0
+0
+0
+0
+0
+0
+50
+You're in a tunnel.
+
+Infernotto
+0
+0
+49
+51
+0
+0
+0
+0
+0
+0
+51
+You're in a small underground chamber.
+
+Infernotto
+0
+0
+50
+0
+0
+0
+0
+0
+0
+0
+52
+You are in the technical room of the department.
+
+Technical room
+42
+0
+0
+0
+0
+0
+0
+0
+0
+0
+53
+You're in a tunnel.
+
+Infernotto
+49
+0
+0
+54
+0
+0
+0
+0
+0
+0
+54
+You're in a tunnel.
+
+Infernotto
+0
+0
+53
+55
+0
+0
+0
+0
+0
+0
+55
+You're in a clean place, prepared for keeping shelves full of glassware, bottles and test tubes.
+
+Storage room
+0
+0
+54
+56
+0
+0
+0
+0
+0
+0
+56
+You're in a small chemistry laboratory, hidden underground. You see a Soxhlet extractor working on a Bunsen burner, lit. Small bottles are empty, clean and ready to be filled, close to a steam centrifuge. A small wooden cabinet has a window and you can see hundreds of those little bottles, full of a clear liquid. Their tags and the small brown bricks don't leave any doubt: in this place, someone secretly produces morphine!
+
+Laboratory
+0
+0
+55
+0
+0
+0
+0
+0
+0
+0
+57
+It's dark here: you can barely see.
+
+Wagon
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+58
+This place is large and there are rail tracks where a few wagons are present. A small office is found in a divided off area at the south of the hall. The place is lit by large gas burners.
+
+Storage hall
+0
+61
+59
+57
+0
+0
+0
+0
+0
+0
+59
+You're in a welding shop. A rail track passes by and there's a pit for repairing wagons and locomotives. A bench contains some equipment.
+
+Welding shop
+0
+0
+60
+58
+0
+0
+0
+0
+0
+0
+60
+You're outside, in a place full of mud and weeds. There's a gate to the east, where train tracks run in and out.
+
+Courtyard
+64
+62
+0
+59
+0
+0
+0
+0
+0
+0
+61
+You're in a small office. There's a desk and two chairs. Riccobene and Belisario were talking here, but now they're trying to stop the sawdust fire you started.
+
+Office
+58
+0
+0
+0
+0
+0
+0
+0
+0
+0
+62
+You're in a repair hall. You see a freight wagon on the east side of the hall.
+
+Repair hall
+60
+0
+0
+0
+0
+0
+0
+0
+0
+0
+63
+You're in a freight wagon.
+
+Wagon
+0
+0
+0
+62
+0
+0
+0
+0
+0
+0
+64
+You're in a large carpentry shop. There are woodworking machines everywhere. In a corner, protected by a concrete wall to prevent the spread of fire, there are a few containers, full of sawdust.
+
+Carpentry shop
+0
+60
+0
+0
+0
+0
+0
+0
+0
+0
+100
+Enter password.
+
+Introduction
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+MESSAGGI
+55
+You're no tourist. There is no reason to get there.
+91
+It would not be very interesting.
+97
+You open the small valve that allows the water to drip on the small block of carbide. The acetylene generated exits the burner with an acrid smell. You light it with a match and a bright white flame is produced by the lamp.
+98
+You close the small valve and the water stops dripping. After a few seconds, the acetylene stops flowing and burning. The lamp is now off.
+99
+It's a nice acetylene lamp. Water on a small block of carbide generates acetylene. It's burning with a nice white flame.
+100
+You can't turn on the lamp without something to ignite the flame.
+106
+It's a classic laboratory bench that you find in chemistry laboratories. On top of it, you see a Soxhlet extractor on a Bunsen burner, off. It's probably used for a demonstration for students. There're some matches, to light the Bunsen burner.
+107
+It's a Soxhlet extractor. There's a glass pot full with ether, used as a solvent for the extraction. On the top of the extractor two rubber pipes bring the cold water during the extraction. The extractor is not working, now.
+108
+It's a Bunsen burner, placed under the extractor. It's off.
+109
+You're not here to play with chemistry! Leave that off.
+110
+They contain reagents. I wonder what I could do with them.
+111
+They're ordinary matches. They start fire if you strike them...
+112
+There's a certain amount of coal, close to the boiler. That's normal. It seems to be stored on a metallic manhole cover. That's less normal.
+113
+You'd need something to move all the coal.
+114
+You quickly remove all the coal from the manhole cover with the shovel. There's a hole that allows to remove the cover with the handle. You leave the shovel on the floor: it's not practical to carry it around. You look inside the manhole. You see a ladder, but it's dark there.
+115
+On the south wall, there's a door, shut.
+116
+You put the key in the lock: it's old and it does not open immediately. After a while, you succeed and you open the door.
+117
+There's an old yet robust lock. You can not open it without the right key.
+118
+It's a laboratory coat, used by the professor who last lectured here to avoid getting chalk all over his clothes. There's a tag with a name: "L. Riccobene" and there's a pocket that contains a key.
+119
+It's a laboratory coat, used by the professor who last lectured here to avoid getting chalk all over his clothes. There's a tag with a name: "L. Riccobene".
+138
+I can't move in the dark!
+139
+As you're walking, you feel someone grabbing you from behind. A rag covers your mouth and nose: you try to scream but you can't and you sense the characteristic smell of ether. After a few moments your vision becomes dazzled and you feel as you are falling into darkness. You lose conciousness.
+140
+You wake up in a tiny room, with wooden floor and metallic walls. It's the inside of a freight wagon. You have a feeling of nausea, but you are not harmed.^M
+141
+It's very similar to the equipment you saw in the lab upstairs. The difference is that here it's extracting morphine and it's working right now!
+142
+Some of the bottles are empty and some are full of a clear, viscous liquid. Tag says it's morphine.
+143
+It's a Bunsen burner, placed under the extractor. It's on.
+144
+There's a set of test bottles, a pair of condensers, rubber pipes and clay, useful to assemble and seal glass equipment.
+145
+You knew someone once that developed a dependance on drugs. It's not a nice story. Don't touch that and leave morphine to physicians.
+146
+It's an old distillation column, a piece of glass of an impressive size. Probably it wasn't very efficient and they put it here, to impress students.
+150
+This building hosts the chemistry department of the University of Turin. It has been in use for two years, right now.
+151
+There are chemical formulas written on it. Apparently, they are reactions of ferric chloride etching copper and other metals.
+152
+There's a large object under the tarpaulin: it's a car. You have a look at it and your heart jumps: you've found the Autosigma prototype! You don't have much time and you hardly lose any: you run through the courtyard and get outside through a large gap in the gate. You recognise the stadium in front of you. It's not very far from the Crocetta, where you live. You run to your family's villa, where you find your uncle Tullio, in the middle of the night, much preoccupied about your absence.^MYou call the police and Riccobene and  Belisario are arrested while they are still trying to master the fire. The prototype is returned to the ITA factory and it's kept under guard.^M^MNow, you can rest. But not too much. The day after tomorrow you're going to pilot the car in the race and you need a good night's sleep. This is your last thought as your head sinks into your pillow. ^MFinal code word: COUNTACH!^M^MThank you to have played to this game.
+153
+As you approach, you overhear a conversation between two people. They must be Riccobene, the assistant of professor Luzzi and Belisario, the former employee of ITA, fired for having stolen tools:^M^M"-You're crazy, crazy! I hope that we'll be well paid for the car. The girl discovered us and we need to leave Turin now!^M-Shut up! What would you do, kill her? That would just make things worse. I said that we're going to be well paid and in two days we'll be in Geneva sipping champagne. Your boss, Luzzi, was already suspicious of the lab and it's a good time to leave! The girl'll wake up with a headache and she'll be found tomorrow after we've left this place. I hate this city and I can't wait to leave."^MThey continue chatting about wines they'll buying in Geneva.
+154
+You can not get inside: Riccobene and Belisario are there, and you don't want to be discovered. You should lure them outside.
+155
+You explore carefully the wooden floor with your hands. One of the boards moves if you put your weight on it.
+156
+With a certain difficulty, you can lift the floorboard. It's heavy, but you're very lucky! You can get outside of the wagon, now.
+157
+You look carefully at the walls, made by wooden boards bolted on a metallic frame.
+158
+Those are pretty ordinary freight wagons. They're used to move goods on railways. They're here because they need some repairs and you just escaped from one of them.
+159
+They're the gas burners that light this place. They're a simple, practical and undecorated model, perfect for an industrial environment.
+160
+There's a lot of stuff on this bench, mostly welding equipment. You notice in particular a lighter.
+161
+It stinks!
+162
+There's a lot of stuff on this bench, mostly welding equipment.
+163
+You set fire to sawdust with the lighter found in the welding shop. Maybe this is not the best thing you could possibly do, but the place seems to be well protected against a sawdust fire and it should not damage too much. After a few minutes, the fire is large, noisy and rather scary-looking. You hide yourself in a corner. Belisario and Riccobene come in. Belisario screams: "-What the hell? I knew it was a bad idea to keep so much sawdust in a single place!" They both try to control the fire and will be busy with buckets and water for a while. While they're occupied, you sneak outside, unnoticed.
+164
+It's a freight wagon. It seems ready to leave and there's a large lock on the door.
+165
+You try to open the wagon door, but it's locked. There's no wooden board in the floor that can be moved in this case, unfortunately!
+166
+You try to open the lock with the key found in the office and, sure enough, it opens!
+167
+Riccobene and Belisario are still in the carpentry shop, trying to master the fire. Better avoid them!
+168
+There's a mess on the desk. Among other things, there are tiny bottles of morphine and two syringes. You won't touch that. You see a large key, though, almost hidden under a small notepad.
+169
+You take the notepad on the desk. It's full of recipes, chemistry formulae and the description of the effects of the morphine. Probably Riccobene tested different recipes, observing the results on himself. Better leave that here!
+170
+Usually a tarpaulin's used to cover something. You may lift it to find what the object is...
+222
+It's a sheet of paper, from a notepad. You copied some hieroglyphs on it.
+224
+It's a grease pencil. It's has been used a lot and it's short, but it's sharp.
+225
+It's a small key, but it seems rather old.
+226
+It's a key, rather large and rusty, it probably opens an old lock.
+227
+You can not buy much with that.
+228
+It's a pretty ordinary key. The ITA symbol is composed by the three letters, with a rose and a laurel wreath on top of it. Your mother drew it.
+231
+It's not the best way to solve your problems.
+232
+You caress Democrito, your cat. He seems very happy to see you!
+268
+Those're pilot goggles. And, technically speaking, you're a pilot.
+269
+Why you'd do something so silly?
+270
+On a bench, there's something written: "RICCOBENE TESTA DI C*** MOSCIO", that translates approximatively as "Riccobene flaccid d***head". On another bench, "RICCOBENE CREPA MALE" that means something like "Riccobene drop dead badly"... I think Riccobene is definitely not beloved by his students.
+271
+As in every place where you're supposed to use a blackboard as a blackboard, i.e. to write things on it, there's all that's needed to write, i.e. chalk, and to erase, i.e. the eraser. What were you expecting? An angry professor may throw chalk to a student and a really angry one may throw the eraser, but those are not the ordinary way those things are supposed to be used...
+272
+The blackboard has been erased, but it has been used for a lecture today. It's covered with chalk dust and some chemical formulas can still be recognised.
+285
+^MUse 'SHIBBOLETH BOJAFAUS' to jump to this point of the adventure.^M
+287
+It's a messy desk.
+288
+The door is already open.
+289
+It's a nice acetylene lamp. Water on a small block of carbide generates acetylene. It's off.
+290
+It's already open.
+291
+It's a metallic manhole cover, barely visible under a thick pile of coal.
+292
+It's a manhole, open.
+293
+It's a metallic closet, with a robust brass lock.
+294
+You pour the saline solution in the lock hole. After a while, you hear a small sound and you're able to open it. Inside there's only a lab coat.
+295
+They contain reagents. Interestingly enough, one is labeled as ferric chloride.
+296
+It's a metallic closet, open.
+297
+It's a solution of ferric chloride, it's brown and dense.
+298
+There's an aperture in the floor.
+299
+It's a pile of sawdust, separate from everything else to avoid damages if it catches fire.
+300
+It's a classic laboratory bench that you find in chemistry laboratories. On top of it, you see a Soxhlet extractor on a Bunsen gas burner, off. It's probably used for a demonstration for students.
+404
+There's a mess on the desk. Among other things, there are tiny bottles of morphine and two syringes.
+406
+It's not too hot, here.
+502
+No.
+503
+The cat softly meows...
+504
+That will not help you. Try to calm down and we can continue playing together.
+505
+What cat?
+506
+The cat follows you.
+507
+No. It's better to see what there's inside.
+508
+No. I don't want that with me.
+511
+Explore.
+512
+Listen, I tried to help you as much as I could to get you there. Now, you're on your own!
+513
+It's too dark here to see things clearly.
+514
+Doors are locked from outside
+515
+You close your eyes and you feel flying high over the city. You see clouds of steam. Then you open again your eyes: nothing changed.
+518
+You'll examine yourself much better with a mirror.
+520
+I dropped it.
+521
+It's an old door. Probably, those tunnels are much older than the building that hosts the Chemistry Department.
+522
+It's a simple and robust shovel.
+523
+I don't have that with me.
+524
+Use 'bye' if you want to stop playing.
+1000
+Okay.
+1001
+Done.
+1002
+Done.
+1003
+I am already carrying too much!
+1004
+It's too big to be handled!
+1005
+I can't take that!
+1006
+I can't do that!
+1007
+I don't have that with me!
+1008
+I can't go that way!
+1009
+I beg your pardon?
+1010
+I can't.
+1011
+I already have that with me!
+1012
+What shall I do? 
+1013
+It's dark, I can't see anything.
+1018
+I wear 
+1019
+I already wear it.
+1020
+I can go towards: 
+1021
+north
+1022
+south
+1023
+east
+1024
+west
+1025
+up
+1026
+down
+1027
+
+1028
+
+1029
+
+1030
+
+1031
+I notice: 
+1032
+I have with me: 
+1033
+I don't have anything with me.
+OGGETTI
+9
+
+A square key with the ITA symbol on it
+0
+0
+0
+FALSE
+FALSE
+10
+
+Pilot goggles
+0
+0
+0
+FALSE
+TRUE
+11
+
+A small key
+0
+0
+0
+FALSE
+FALSE
+58
+
+An acetylene lamp
+0
+0
+52
+FALSE
+FALSE
+108
+
+A sheet of paper with hieroglyphs written on it
+0
+0
+0
+FALSE
+FALSE
+130
+
+Matches
+0
+0
+0
+FALSE
+FALSE
+137
+
+Shovel
+0
+0
+52
+FALSE
+FALSE
+138
+
+A lab coat
+0
+0
+0
+FALSE
+FALSE
+156
+
+A large object, covered by a tarpaulin
+0
+0
+63
+TRUE
+FALSE
+157
+
+A lighter
+0
+0
+0
+FALSE
+FALSE
+159
+
+A large key
+0
+0
+0
+FALSE
+FALSE
+217
+
+A small amount of money
+0
+0
+9
+FALSE
+FALSE
+234
+
+Ferric chloride
+0
+0
+0
+FALSE
+FALSE
+FINEDATI

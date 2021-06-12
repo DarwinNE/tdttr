@@ -1,0 +1,1776 @@
+AWS
+VERSIONE
+3.0
+0
+7
+7
+0
+Two days to the race, part 2
+Davide Bucci
+2018-2020
+A story of high (steam) pressure, v 2.0
+1
+Bookman Old Style
+14
+0
+100
+FALSE
+100
+100
+CONDIZIONIHI
+IF AT 19 OR AT 21 AND RES? 73 THEN MESS 56 GOTO 18 WAIT ENDIF The keeper sees you and brings you ouside
+IF AT 32 THEN MESS 85 PRESSKEY MESS 284 EXIT WAIT ENDIF Meet Schiaparelli
+CONDIZIONILOW
+if verb 70 and noun 409 then mess 518 wait endif
+if verb 73 then quit endif
+if verb 74 or verb 0 and noun 72 then inve wait endif
+if verb 987 then restart endif
+if verb 110 then look wait endif
+IF verb 100 OR vbnoeq 0 AND noun 80 THEN nord WAIT ENDIF  VAI  NORD
+IF verb 100 OR vbnoeq 0 AND noun 81 THEN sud WAIT ENDIF  VAI  SUD
+IF verb 100 OR vbnoeq 0 AND noun 82 THEN est WAIT ENDIF  VAI  EST
+IF verb 100 OR vbnoeq 0 AND noun 83 THEN ovest WAIT ENDIF  VAI OVEST
+IF verb 100 OR vbnoeq 0 AND noun 84 THEN alto WAIT ENDIF  VAI ALTO
+IF verb 100 OR vbnoeq 0 AND noun 85 THEN basso WAIT ENDIF  VAI BASSO
+IF verb 50 and noun 106 and here 106 THEN get 106 OKAY ENDIF Take the pen
+IF verb 50 and noun 107 and here 107 THEN get 107 OKAY ENDIF Take the paper
+IF verb 50 AND noun 105 THEN mess 505 WAIT ENDIF Take the cat, but there's no cat
+IF verb 50 and noun 9 and avai 11 then get 11 OKAY ENDIF Take the small key
+IF verb 50 THEN get no1 OKAY ENDIF  Take an object
+IF verb 211 THEN mess 502 WAIT ENDIF Eat/Drink -> No!
+IF verb 400 THEN mess 504 WAIT ENDIF Curse
+IF verb 407 and roomgt 16 THEN MESS 510 WAIT ENDIF Help/hint 1
+IF verb 70 and noun 25 and avai 10 THEN mess 268 WAIT ENDIF Examine goggles
+IF verb 70 and noun 25 and notavai 10 THEN mess 523 WAIT ENDIF Examine goggles, they're not available
+IF verb 70 and noun 9 and ADJE 408 and avai 11 THEN mess 225 WAIT ENDIF Examine small key
+IF verb 70 and noun 9 and avai 9 THEN mess 228 WAIT ENDIF Examine ITA key
+IF verb 70 and noun 9 and avai 159 THEN mess 226 WAIT ENDIF Examine wagon key
+IF verb 70 and noun 217 and avai 217 THEN mess 227 WAIT ENDIF Examine money
+IF verb 70 and noun 106 and avai 106 THEN mess 224 WAIT ENDIF Examine pencil
+IF verb 70 and noun 107 and avai 107 THEN mess 223 WAIT ENDIF Examine sheet of paper, blank
+IF verb 70 and noun 107 and avai 108 THEN mess 222 WAIT ENDIF Examine sheet of paper, written
+IF verb 120 and noun 25 THEN wear 10 OKAY ENDIF Wear goggles
+IF verb 121 and noun 25 THEN unwear 10 OKAY ENDIF Unwear goggles
+IF verb 78 THEN mess 269 WAIT ENDIF Break, destroy...
+IF verb 75 AND noun 87 AND avai 24 THEN mess 57 WAIT ENDIF Talk with the museum keeper
+IF verb 70 OR verb 21 AND noun 89 AND avai 89 THEN mess 59 WAIT ENDIF Examine newspaper
+IF verb 70 OR verb 21 AND noun 107 AND avai 89 THEN mess 59 WAIT ENDIF Examine newspaper (paper)
+IF verb 70 AND noun 87 and avai 24 THEN mess 92 WAIT ENDIF Examine museum keeper
+IF verb 70 AND noun 87 and notavai 24 THEN mess 502 WAIT ENDIF Examine museum keeper
+IF verb 66 AND noun 89 AND avai 89 AND no2eq 87 AND avai 24 THEN mess 60 set 73 to 24 0 to 89 0 WAIT ENDIF Give the newspaper to the keeper
+IF verb 66 AND noun 107 AND avai 89 AND no2eq 87 AND avai 24 THEN mess 60 set 73 to 24 0 to 89 0 WAIT ENDIF Give the newspaper to the keeper (paper)
+IF verb 70 THEN mess 91 WAIT ENDIF Examine with unknown object ****
+IF verb 210 THEN mess 231 WAIT ENDIF Pray
+IF verb 55 and noun 9 then drop 9 WAIT endif Drop key
+IF verb 55 and noun 25 then drop 10 WAIT endif Drop goggles
+IF verb 55 and noun 9 and carr 11 then drop 11 WAIT endif Drop small key
+IF verb 55 then drop no1 mess 520 WAIT endif Drop an object
+IF verb 1000 then mess 515 WAIT Endif XYZZY
+IF AT 1 OR AT 2 OR AT 3 OR AT 6 OR AT 9 OR AT 20 OR AT 28 OR AT 29 AND VERB 12 AND NOUN 10 THEN mess 406 WAIT ENDIF
+IF verb 236 THEN mess 502 WAIT ENDIF Knock -> No!
+IF verb 66 THEN mess 502 WAIT ENDIF Give -> No!
+IF verb 230 and noun 231 THEN RESE 57 RESE 59 RESE 58 RESE 28 RESE 27 RESE 92 RESE 90 RESE 73 RESE 57 RESE 23 RESE 38 RESE 25  SET 2 SET 16  set 122 sendallroom 0 BRIN 9 GET 9 BRIN 10 GET 10 BRIN 217 GET 217 GOTO 17  ENDIF Go to part 2
+IF VERB 988 THEN LOAD WAIT ENDIF Load
+IF VERB 989 THEN SAVE WAIT ENDIF Save
+IF VERB 76 THEN MESS 524 WAIT ENDIF Exit/Quit -> use "bye"
+CONDIZIONILOCALI
+17
+IF VERB 70 AND NOUN 51 OR NOUN 204 THEN MESS 51 WAIT ENDIF Examine 51/car
+17
+IF NOUN 80 OR NOUN 82 OR NOUN 83 THEN MESS 55 WAIT ENDIF Go in a direction outside the game
+17
+IF VERB 88 OR VERB 50 AND NOUN 89 AND RES? 77 THEN MESS 58 BRIN 89 GET 89 SET 77 WAIT ENDIF Buy newspaper
+17
+IF VERB 88 OR VERB 50 AND NOUN 89 THEN MESS 502 WAIT ENDIF Buy newspaper, already got one
+17
+IF VERB 88 OR VERB 50 AND NOUN 107 AND RES? 77 THEN MESS 58 BRIN 89 GET 89 SET 77 WAIT ENDIF Buy newspaper (paper)
+17
+IF VERB 88 OR VERB 50 AND NOUN 107 THEN MESS 502 WAIT ENDIF Buy newspaper, already got one (paper)
+17
+IF VERB 100 OR VERB 70 AND NOUN 109 THEN MESS 87 WAIT ENDIF Go to/examine theatre
+17
+IF VERB 70 AND NOUN 122 OR NOUN 122 THEN MESS 88 WAIT ENDIF Examine Palazzo Carignano
+17
+IF VERB 70 AND NOUN 124 THEN MESS 89 WAIT ENDIF Examine kiosk
+17
+IF VERB 100 OR VERB 70  AND NOUN 146 THEN MESS 149 WAIT ENDIF Go to/examine the restaurant
+18
+IF VERB 70 AND NOUN 220 THEN MESS 273 WAIT ENDIF Examine museum
+18
+IF NOUN 81 THEN MESS 55 WAIT ENDIF Go south, but it's outside the game
+18
+IF NOUN 92 OR NOUN 125 OR NOUN 126 OR NOUN 145 OR NOUN 221 and VERB 70 THEN MESS 90 WAIT ENDIF Examine entrance/door/columns
+19
+IF NOUN 227 OR NOUN 228 OR NOUN 229 AND VERB 70 THEN MESS 281 WAIT ENDIF Examine steps/staircase/carpet/handrail
+19
+IF VERB 70 AND NOUN 10 THEN MESS 282 WAIT ENDIF Examine window
+20
+IF VERB 70 AND NOUN 90 AND RES? 90 THEN MESS 77 WAIT ENDIF Examine the panel
+20
+IF VERB 70 AND NOUN 90 AND SET? 90 THEN MESS 77 MESS 78 SET 91 WAIT ENDIF Examine the panel after having examined the lock
+20
+IF NOUN 90 OR NOUN 91 AND VERB 155 AND avai 106 AND avai 107 THEN MESS 80 SET 92 BRIN 108 GET 108 TO 107 0 WAIT ENDIF Copy the panel and owns pencil and paper
+20
+IF VERB 155 AND NOUN 90 AND avai 108 THEN MESS 84 WAIT ENDIF Message already copied
+20
+IF VERB 155 AND NOUN 90 THEN mess 81 WAIT ENDIF Copy the panel but without paper and pencil
+20
+IF VERB 70 AND NOUN 222 THEN mess 274 WAIT ENDIF Examine office
+20
+IF NOUN 223 OR NOUN 10 OR NOUN 31 AND VERB 70 THEN mess 275 WAIT ENDIF Examine inner court
+21
+IF VERB 70 OR VERB 21 AND NOUN 90 THEN MESS 61 WAIT ENDIF Examine plaque
+21
+IF VERB 70 AND NOUN 19 THEN MESS 276 WAIT ENDIF Examine paintings
+22
+IF VERB 70 AND NOUN 91 THEN MESS 62 WAIT ENDIF Examine Iunnuh's papyri
+23
+IF VERB 70 AND NOUN 97 THEN MESS 280 WAIT ENDIF Examine objects/artefacts
+24
+IF VERB 70 AND NOUN 128 THEN MESS 94 WAIT ENDIF Examine mummies
+24
+IF VERB 78 AND NOUN 97 THEN MESS 96 WAIT ENDIF Break shrines
+24
+IF VERB 70 AND NOUN 224 THEN MESS 278 WAIT ENDIF Examine sarcophagi
+25
+IF VERB 70 AND NOUN 20 and RES? 17 THEN MESS 82 BRIN 107 BRIN 29 BRIN 57 SET 17 WAIT ENDIF Examine desk, find the paper, books and photographs
+25
+IF VERB 70 AND NOUN 20 THEN MESS 287 WAIT ENDIF Examine desk for a second time
+25
+IF NOUN 140 OR NOUN 97 AND VERB 70 THEN MESS 33 WAIT ENDIF Examine shelves
+25
+IF NOUN 226 OR NOUN 57 OR NOUN 29 AND VERB 50 THEN MESS 502 WAIT ENDIF Take twine/photographs/books
+25
+IF VERB 21 AND NOUN 57 THEN MESS 253 WAIT ENDIF Read books
+25
+IF VERB 70 AND NOUN 226 THEN MESS 279 WAIT ENDIF Examine twine
+26
+IF VERB 70 AND NO1EQ 153 OR NO2EQ 153 THEN MESS 74 WAIT ENDIF Examine Amenhotep II https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=104822&viewType=detailView
+26
+IF VERB 70 AND NO1EQ 154 OR NO2EQ 154 THEN MESS 75 WAIT ENDIF Examine the ram statue https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=104836&viewType=detailView
+26
+IF VERB 70 AND NO1EQ 129 OR NO2EQ 129 THEN MESS 76 WAIT ENDIF Examine the Tuthmosis III statue https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=104856&viewType=detailView
+26
+IF VERB 70 AND NOUN 152 THEN MESS 73 WAIT ENDIF Examine statues
+27
+IF VERB 70 AND NOUN 99 THEN MESS 95 WAIT ENDIF Examine sphinx https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=104843&viewType=detailView
+27
+IF VERB 70 AND NOUN 152 THEN MESS 277 WAIT ENDIF Examine statue
+28
+IF VERB 70 AND NOUN 98 THEN MESS 71 WAIT ENDIF Examine drawings
+28
+IF VERB 70 AND NOUN 10 THEN MESS 282 WAIT ENDIF Examine window
+29
+IF VERB 70 AND NOUN 97 OR NOUN 152 THEN MESS 70 WAIT ENDIF Examine artefacts https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=103632&viewType=detailView
+30
+IF VERB 12 AND NOUN 96 OR NOUN 92 AND SET? 92 AND RES? 75 THEN MESS 83 SETCONN 30 4 31 SET 75 WAIT ENDIF Open the door with the right combination.
+30
+IF VERB 12 AND NOUN 96 OR NOUN 92 AND SET? 92 THEN MESS 288 WAIT ENDIF Door already open
+30
+IF VERB 15 AND NOUN 96 OR NOUN 92 AND SET? 91 THEN mess 79 WAIT ENDIF Use lock, can not remember the combination
+30
+IF VERB 12 AND NOUN 92 AND RES? 74 THEN MESS 63 WAIT ENDIF
+30
+IF VERB 70 AND NOUN 92 OR NOUN 96 AND RES? 74 THEN MESS 64 SET 90 WAIT ENDIF Examine door/lock
+30
+IF VERB 70 AND NOUN 94 THEN MESS 68 WAIT ENDIF Examine Kings List papyrus https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=99492&viewType=detailView
+30
+IF VERB 70 AND NOUN 91 AND ADJE 127 THEN MESS 93 WAIT ENDIF Examine Judicial Papyrus 
+30
+IF VERB 70 AND NOUN 91 AND ADJE 93 THEN MESS 67 WAIT ENDIF Examine erotic papyrus https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=103561&viewType=detailView
+30
+IF VERB 70 AND NOUN 91 AND ADJE 151 THEN MESS 72 WAIT ENDIF Examine strike papyrus https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=103571&viewType=detailView
+30
+IF VERB 70 AND NOUN 91 THEN MESS 65 WAIT ENDIF Examine papyri
+30
+IF VERB 21 AND NOUN 91 THEN MESS 66 WAIT ENDIF Read papyri
+30
+IF VERB 95 AND NOUN 96 OR NOUN 92 THEN MESS 69 WAIT ENDIF Pick lock
+30
+IF VERB 236 AND NOUN 92 THEN MESS 519 WAIT ENDIF Knock the door
+31
+IF VERB 70 AND NOUN 108 THEN MESS 86 WAIT ENDIF Examine chairs
+DIZIONARIO
+KEY
+9
+NOME
+WINDOW
+10
+NOME
+CHEST
+11
+NOME
+DRAWER
+11
+NOME
+DRAWERS
+11
+NOME
+OPEN
+12
+VERBO
+CLOSET
+13
+NOME
+CABINET
+13
+NOME
+PORTRAIT
+14
+NOME
+PORTRAITS
+14
+NOME
+USE
+15
+VERBO
+UMBRELLA
+16
+NOME
+UMBRELLAS
+16
+NOME
+FRAME
+17
+NOME
+BED
+18
+NOME
+LANDSCAPE
+19
+NOME
+PAINTING
+19
+NOME
+PAINTINGS
+19
+NOME
+DESK
+20
+NOME
+BENCH
+20
+NOME
+BENCHES
+20
+NOME
+READ
+21
+VERBO
+LETTER
+22
+NOME
+TULLIO
+23
+NOME
+UNCLE
+23
+NOME
+BOX
+24
+NOME
+GOGGLES
+25
+NOME
+BOWL
+26
+NOME
+BOWLS
+26
+NOME
+ANCHOVY
+27
+NOME
+ANCHOVIES
+27
+NOME
+PANTRY
+28
+NOME
+PICTURES
+29
+NOME
+PHOTO
+29
+NOME
+PICTURE
+29
+NOME
+PHOTOS
+29
+NOME
+PHOTOGRAPHS
+29
+NOME
+BLUEPRINT
+30
+NOME
+BLUEPRINTS
+30
+NOME
+LANDSCAPE
+31
+NOME
+SUNSET
+31
+NOME
+LIGHT
+31
+NOME
+CITY
+31
+NOME
+TAKE
+50
+VERBO
+GET
+50
+VERBO
+GRAB
+50
+VERBO
+51
+51
+NOME
+THROW
+55
+VERBO
+DROP
+55
+VERBO
+TOSS
+55
+VERBO
+LEAVE
+55
+VERBO
+PUT
+55
+VERBO
+SET
+55
+VERBO
+POUR
+55
+VERBO
+DRIVE
+56
+VERBO
+ENTER
+56
+VERBO
+BOOK
+57
+NOME
+BOOKS
+57
+NOME
+CHANDELIER
+58
+NOME
+LAMP
+58
+NOME
+LAMPS
+58
+NOME
+LAMPS
+58
+NOME
+GAS
+58
+NOME
+WASHBOWL
+59
+NOME
+GARDEN
+60
+NOME
+BARN
+61
+NOME
+GARAGE
+61
+NOME
+ROSE
+62
+NOME
+ROSES
+62
+NOME
+FLOWER
+62
+NOME
+FLOWERS
+62
+NOME
+PAN
+63
+NOME
+PANS
+63
+NOME
+STOVE
+64
+NOME
+PUTAGE
+64
+NOME
+PUTAGE'
+64
+NOME
+SINK
+65
+NOME
+GIVE
+66
+VERBO
+GRANDPARENTS
+67
+NOME
+GRANDPARENT
+67
+NOME
+GRANDMOTHER
+67
+NOME
+GRANDFATHER
+67
+NOME
+PIANO
+68
+NOME
+EXAMINE
+70
+VERBO
+EX
+70
+VERBO
+X
+70
+VERBO
+INV
+72
+NOME
+INVE
+72
+NOME
+INVENTORY
+72
+NOME
+I
+72
+NOME
+BYE
+73
+VERBO
+SHOW
+74
+VERBO
+TALK
+75
+VERBO
+SPEAK
+75
+VERBO
+CHAT
+75
+VERBO
+EXIT
+76
+VERBO
+PLAY
+77
+VERBO
+BREAK
+78
+VERBO
+DESTROY
+78
+VERBO
+N
+80
+NOME
+NORTH
+80
+NOME
+S
+81
+NOME
+SOUTH
+81
+NOME
+E
+82
+NOME
+EAST
+82
+NOME
+W
+83
+NOME
+WEST
+83
+NOME
+UP
+84
+NOME
+ABOVE
+84
+NOME
+UPSTAIRS
+84
+NOME
+U
+84
+NOME
+DOWN
+85
+NOME
+D
+85
+NOME
+BELOW
+85
+NOME
+DOWNSTAIRS
+85
+VERBO
+UNDER
+85
+NOME
+KEEPER
+87
+NOME
+BUY
+88
+VERBO
+NEWSPAPER
+89
+NOME
+JOURNAL
+89
+NOME
+STAMPA
+89
+NOME
+PANEL
+90
+NOME
+PLAQUE
+90
+NOME
+HIEROGLYPHICS
+91
+NOME
+HIEROGLYPH
+91
+NOME
+HIEROGLYPHS
+91
+NOME
+HIEROGLYPHIC
+91
+NOME
+PAPYRUS
+91
+NOME
+PAPYRI
+91
+NOME
+DOOR
+92
+NOME
+EROTIC
+93
+AGGETTIVO
+KING
+94
+NOME
+LIST
+94
+NOME
+PICK
+95
+VERBO
+LOCK
+96
+NOME
+MECHANISM
+96
+NOME
+SHRINE
+97
+NOME
+SHRINES
+97
+NOME
+ARTEFACT
+97
+NOME
+ARTEFACTS
+97
+NOME
+OBJECTS
+97
+NOME
+DRAWING
+98
+NOME
+DRAWINGS
+98
+NOME
+ENGRAVING
+98
+NOME
+ENGRAVINGS
+98
+NOME
+SPHINX
+99
+NOME
+WALK
+100
+VERBO
+RUN
+100
+VERBO
+GO
+100
+VERBO
+101
+101
+NOME
+CAT
+105
+NOME
+DEMOCRITO
+105
+NOME
+PUSS
+105
+NOME
+KITTY
+105
+NOME
+PENCIL
+106
+NOME
+SHEET
+107
+NOME
+PAPER
+107
+NOME
+CHAIR
+108
+NOME
+CHAIRS
+108
+NOME
+THEATER
+109
+NOME
+THEATRE
+109
+NOME
+L
+110
+VERBO
+LOOK
+110
+VERBO
+WEAR
+120
+VERBO
+DRESS
+120
+VERBO
+UNDRESS
+121
+VERBO
+UNWEAR
+121
+VERBO
+PALACE
+122
+NOME
+PALAZZO
+122
+NOME
+CARIGNANO
+123
+NOME
+KIOSK
+124
+NOME
+COLUMN
+125
+NOME
+COLUMNS
+125
+NOME
+ENTRANCE
+126
+NOME
+JUDICIAL
+127
+AGGETTIVO
+MUMMY
+128
+NOME
+MUMMIES
+128
+NOME
+TUTHMOSIS
+129
+NOME
+MATCH
+130
+NOME
+MATCHES
+130
+NOME
+SOXHLET
+131
+NOME
+EXTRACTOR
+131
+NOME
+BUNSEN
+132
+NOME
+BURNER
+132
+NOME
+TEST
+133
+NOME
+GLASSWARE
+133
+NOME
+TUBE
+133
+NOME
+TUBES
+133
+NOME
+COAL
+134
+NOME
+MANHOLE
+135
+NOME
+COVER
+136
+NOME
+SHOVEL
+137
+NOME
+COAT
+138
+NOME
+BOTTLE
+139
+NOME
+BOTTLES
+139
+NOME
+SHELF
+140
+NOME
+MORPHINE
+141
+NOME
+DRUG
+141
+NOME
+OPIUM
+141
+NOME
+SHELVES
+140
+NOME
+DISTILLATION
+141
+NOME
+ENVELOPE
+142
+NOME
+SMELL
+143
+VERBO
+FURNITURE
+144
+NOME
+WALL
+145
+NOME
+WALLS
+145
+NOME
+DECORATION
+145
+NOME
+RESTAURANT
+146
+NOME
+DEPARTMENT
+147
+NOME
+BLACKBOARD
+148
+NOME
+BLACKBOARDS
+148
+NOME
+TO
+150
+AVVERBIO
+STRIKE
+151
+AGGETTIVO
+STATUE
+152
+NOME
+STATUES
+152
+NOME
+AMENHOTEP
+153
+NOME
+RAM
+154
+NOME
+COPY
+155
+VERBO
+WRITE
+155
+VERBO
+OBJECT
+156
+NOME
+LIGHTER
+157
+NOME
+FLOOR
+159
+NOME
+GROUND
+159
+NOME
+LIFT
+160
+VERBO
+MOVE
+160
+VERBO
+PUSH
+160
+VERBO
+BOARD
+161
+NOME
+PLANK
+161
+NOME
+WAGON
+162
+NOME
+WAGONS
+162
+NOME
+PIT
+163
+NOME
+FIRE
+164
+NOME
+SAWDUST
+165
+NOME
+NOTEPAD
+166
+NOME
+TARPAULIN
+167
+NOME
+LIBRARY
+200
+NOME
+SLEEP
+201
+VERBO
+SIT
+201
+VERBO
+CLOTHES
+202
+NOME
+CLOSE
+203
+VERBO
+CAR
+204
+NOME
+CARS
+204
+NOME
+RACK
+205
+NOME
+TOOL
+206
+NOME
+TOOLS
+206
+NOME
+PRAY
+210
+VERBO
+SWALLOW
+211
+VERBO
+EAT
+211
+VERBO
+DRINK
+211
+VERBO
+SWITCH
+213
+VERBO
+TURN
+213
+VERBO
+ON
+214
+AVVERBIO
+OFF
+215
+AVVERBIO
+POMEGRANATE
+216
+NOME
+POMEGRANATES
+216
+NOME
+THEMES
+216
+NOME
+MONEY
+217
+NOME
+CHALK
+218
+NOME
+CHALKS
+218
+NOME
+ERASER
+218
+NOME
+MIRROR
+219
+NOME
+MUSEUM
+220
+NOME
+EGYPTIAN
+220
+NOME
+MARBLE
+221
+NOME
+PEDESTAL
+221
+NOME
+PEDESTALS
+221
+NOME
+OFFICE
+222
+NOME
+COURT
+223
+NOME
+SARCOPHAGUS
+224
+NOME
+SARCOPHAGI
+224
+NOME
+TWINE
+226
+NOME
+STEP
+227
+NOME
+STEPS
+227
+NOME
+STAIRCASE
+227
+NOME
+CARPET
+228
+NOME
+HANDRAIL
+229
+NOME
+SHIBBOLETH
+230
+VERBO
+RAMASSIN
+231
+NOME
+BOGIANEN
+232
+NOME
+BOJAFAUS
+233
+NOME
+ACID
+234
+NOME
+SALT
+234
+NOME
+FERRIC
+234
+NOME
+CHLORIDE
+234
+NOME
+KNOCK
+236
+VERBO
+CURSE
+400
+VERBO
+FUCK
+400
+VERBO
+PISS
+400
+VERBO
+TOUCH
+406
+VERBO
+CARESS
+406
+VERBO
+PET
+406
+VERBO
+ABOUT
+407
+VERBO
+INFO
+407
+VERBO
+HELP
+407
+VERBO
+SMALL
+408
+AGGETTIVO
+ME
+409
+NOME
+MYSELF
+409
+NOME
+EMILIA
+409
+NOME
+RESTART
+987
+VERBO
+LOAD
+988
+VERBO
+SAVE
+989
+VERBO
+XYZZY
+1000
+VERBO
+THEN
+9999
+SEPARATORE
+LOCAZIONI
+17
+You're close to your parked car. You can see the entrance of a theatre, the Palazzo Carignano, a newspaper kiosk, and a traditional restaurant.
+
+Piazza Carignano
+-1
+18
+-1
+-1
+0
+0
+0
+0
+0
+0
+18
+You're just in front of the Egyptian Museum. The large entrance door is surrounded by a marble decoration with four columns standing on high pedestals.
+
+Via Accademia delle Scienze
+17
+-1
+0
+20
+0
+0
+0
+0
+0
+0
+19
+It's large, there's a burgundy carpet on the steps and the handrail is made in wrought iron and polished brass. There are three gas burners hung on the walls, but they are off as the museum is closed now.
+
+Museum's staircase
+0
+20
+0
+0
+28
+0
+0
+0
+0
+0
+20
+You see the ticket office but the museum has just closed and you can not buy your ticket anymore to get inside. Above the ticket office, there's a large panel. The light of sunset comes from a large window to the west, where you can see the inner court of the museum.
+
+Museum's entrance
+19
+21
+18
+0
+0
+0
+0
+0
+0
+0
+21
+You see a marble plaque on the east wall. Paintings about historical discoveries in Egypt are hung on the walls.
+
+Large hall
+20
+22
+0
+24
+0
+0
+0
+0
+0
+0
+22
+Iunnuh was regarded as one of the most powerful pharaohs of ancient Egypt. However, his pyramid was hidden in the desert and never found. The room is dedicated to many papyri where the deeds of the pharaoh are narrated: how he was victorious in war and wise in peace and how his reign was rich.
+
+Iunnuh's room
+21
+0
+0
+0
+0
+0
+0
+0
+0
+0
+23
+This is the place where the classification and study of the museum's artefacts is done. You see a large table, full of objects.
+
+Classification office
+0
+0
+0
+25
+0
+0
+0
+0
+0
+0
+24
+Exposed in glass shrines, you see four mummies. The room also contains several sarcophagi.
+
+Mummies' room
+0
+0
+21
+27
+0
+0
+0
+0
+0
+0
+25
+This is a storage area, clearly not open to the public. You see some shelves, where a great number of artefacts are stored, wrapped in paper secured with twine. You also see a desk.
+
+Storage
+0
+26
+23
+0
+0
+0
+0
+0
+0
+0
+26
+Here, the colossal statues seem to observe you with eyes from 3000 years ago. You see a door on the north with a panel that says "personnel only".
+
+Colossal statues' room
+25
+27
+0
+0
+0
+0
+0
+0
+0
+0
+27
+Several statues are present in this room, but the most impressive one is the sphinx in the centre.
+
+Sphinx's room
+26
+0
+24
+0
+0
+0
+0
+0
+0
+0
+28
+You're on a large staircase, lit by a window to the east. On the opposite wall, opportunely disposed to follow the staircase, several engravings are hung.
+
+Staircase
+0
+29
+0
+0
+0
+19
+0
+0
+0
+0
+29
+This room contains four shrines with small statues and artefacts. There's a large window.
+
+Small statues
+28
+30
+0
+0
+0
+0
+0
+0
+0
+0
+30
+Many papyri are displayed here and almost completely cover every wall. There's a personnel entry door in the west wall.
+
+Papyrus room
+29
+0
+0
+0
+0
+0
+0
+0
+0
+0
+31
+This is the director's waiting room. You see several chairs: Schiaparelli devotes time to receive people during his long working hours.
+
+Waiting room
+0
+0
+30
+32
+0
+0
+0
+0
+0
+0
+32
+The place is lit by a large chandelier with six brass gas burners in the shape of a lotus flower.
+
+Director's office
+0
+0
+31
+0
+0
+0
+0
+0
+0
+0
+100
+Enter password.
+
+Introduction
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+MESSAGGI
+33
+There are plenty of interesting objects on the shelves: if you're an Egyptologist, this place's heaven.
+51
+It's a relatively small car, beautifully crafted and very light. It's a steam car, of course, with a steam generator and a two-cylinder engine moving the back wheels. It's a recent model and can be turned on in less than one minute. It can reach 120 km/h in the hands of a good pilot. By the way, as a daughter worth of your father's name, you're a good pilot and, of course, you know how to drive it. Naturally, it's red and has a rose painted on it.
+55
+You're no tourist. There's no reason to go there.
+56
+The museum keeper appears, barking "The museum's closed, closed! What are you doing here?! Go away!" and pushes you outside.
+57
+The museum keeper says: "The museum's closed now," in a very bored tone. He would clearly like to be elsewhere...
+58
+You take one copy of "La Stampa", the local newspaper and you give 5 cents to the newspaper boy inside the kiosk.
+59
+You're not here to read newspapers. However on the first page there's a column about the government's plan to combat unemployment, some lines about the retirement of General Luigi Pelloux, gossips about the Duchess of Orléans in Paris and, more enthralling, a column about Madame Butterfly, a new opera from Puccini.
+60
+The museum keeper takes the newspaper with a light in his eyes: he seems to be very intrigued about Puccini's new opera. He barely thanks you and enter his cabinet behind the ticket office. That will keep him occupied for a while.
+61
+The panel contains a list of all the directors of the museum. Schiaparelli is the last one, still in charge. He's a friend of your father and knows something about the stolen car. You're here to meet him!
+62
+You know well the legend of Iunnuh. Schiaparelli himself liked to tell it to you when you were a child. Iunnuh was the greatest pharaoh and his deeds were both wonderful and terrible. Many think that he's just a legend, Iunnuh's pyramid will never be found and the treasures it contains will never see the light again. Others (such as Schiaparelli) think Iunnuh's secrets will be revealed one day.
+63
+The door's locked. You should examine the strange mechanism and find a way to operate it to open the door.
+64
+The mechanism locking the door is one of your father's inventions. You recognise the style and there are his initials A.V. It's a combination lock he built for Schiaparelli. There are seven disks that must be aligned in the right way. Of course, the symbols on them are hieroglyphs! You will not activate the mechanism without the right combination. By the way, the room is full of papyri: you hope the combination is not to be found here, as you would need a week to try out everything.
+65
+The room is full of papyri. You notice the fragments of the King List describing pharaohs before Ramses II. You see also the Judicial Papyrus. There's the Strike Papyrus on the north side and you also notice, hidden in a corner, the Erotic Papyrus, with grotesque couples copulating in a variety of manners.
+66
+You've a variety of skills, but you can not decipher hieroglyphs. You may ask to Schiaparelli if you can meet him!
+67
+The famous Erotic Papyrus is grotesque and quite funny, even if only some fragments are conserved. It's also funny how they've put it in a corner, almost hidden.
+68
+It's the King List of Turin, composed of many fragments. It's an important source for the chronology of ancient pharaohs.
+69
+It' a lock built by your father. You know it's well made: you'll need too much time and appropriate tools to pick it. What's more, Schiaparelli would not be happy at all about it!
+70
+You examine the exposed objects in the shrines. You notice a small piece of limestone (an ostrakon), where a female dancer is beautifully drawn, the pale colour of her skin gently touched by the light of the sunset. She is almost naked, arcing her back acrobatically and her thin silhouette is drawn with grace and elegance. Her curly hair is long and flowing and touches the ground. She wears golden earrings. You stand stunned for a few seconds, absorbed in admiration, almost as if you'd expect the little figure to become once again alive now, more than 3000 years after the death of the woman who inspired the artist, to complete her acrobatic jump in front of your eyes: it's a small portrait, but it's a mind-blowing masterpiece.
+71
+You read that those are reproductions of engravings from the book "Description de l'Egypte, ou recueil des observations et des recherches qui ont été faites en Egypte pendant l'expédition de l'armée française, publié par les ordres de Sa Majesté l'Empereur Napoléon le Grand". They are beautifully framed and depict, among other things, scenes of everyday life during the era of pharaohs.
+72
+It's the description of the first known strike, done by workers in Deir el-Medina. They wanted to improve their conditions while working to the fabrication and the decoration of tombs in the Valley of the Kings.
+73
+The room contains several magnificent and colossal statues. You stand in front of a large statue of Tuthmosis III. You also notice the impressive statue of Amenhotep II and a ram, on the other side of the room.
+74
+It's a statue of the pharaoh Amenhotep II, kneeling, holding two globular vases in his hands. He was hailed as a great warrior and a great athlete and the muscles in the arms of the statue are vibrant and seem ready for battle.
+75
+It's a representation of a ram, of a considerable size, protecting a figure of pharaoh Amenhotep III.
+76
+It's a colossal statue representing pharaoh Tuthmosis III.
+77
+You see a panel with a sign "Welcome" and then some hieroglyphs. It's elegant!
+78
+Wait a second... if you had to choose, you'd probably use something like that as a combination for the door lock!
+79
+Well... let's see: the panel sign contained a flowering reed with legs, then walking legs... no, wait, it was the reed that was walking... no, it does not work! The second symbol was a head, maybe? Uh, you can't remember the combination! You should copy it down somewhere...
+80
+You copy with care the message on the panel: a flowering reed with legs, a reed, walking legs, the owl, an offering tablet, a half circle and a small square. It must be a welcome message written with hieroglyphs. Quite plausible as a door combination! Definitely worth a try.
+81
+To copy the panel, I need something to write and a piece of paper...
+82
+The desk is quite messy. You notice many books, a pack of photographs representing the displayed objects and a blank sheet of paper.
+83
+You rotate the wheels until the combination matches the greeting written on the panel: the hieroglyphs that you copied on the sheet of paper. It works! The lock emits a sharp note and the door is now open, with a small puff of steam escaping from the lock.
+84
+You already have the message copied on paper!
+85
+^MWhen you knock and open the door, you see Schiaparelli at his desk. He looks perplexed, but then happy to see you: "Emilia? How did you convince Temistocle to let you in? ... You're like your father! I know that nothing can stop either of you when you have something in mind... I tried to contact him: my friend Giacomo Antonio Luzzi, the chemistry professor, saw a former employee of ITA, Attilio Belisario at the university, speaking with one of his assistants, Riccobene. He overheard him saying '... that prototype is valuable and interests someone I know...' He knew that Belisario was fired four months ago for stealing at the factory. Luzzi also suspects Riccobene's doing something strange at the chemistry department, but he doesn't know what. This is all I know."^MYou thank him politely. You like this man: he is like your uncle, a very refined man with great culture.^MYou decide to go immediately to the Chemistry Department of the university, hoping to find something about the car.^MAs you're leaving the office, Schiaparelli says "Emilia... I'm going to Egypt next year: I suspect some sites hide true archaeological treasures. We need people like you: why don't you join my expedition?" You thank him again saying you'll think about it.
+86
+There are some chairs for people to wait to meet the director. You're in a hurry and nobody is here. You're not going to sit down and wait right now...
+87
+You like that theatre: you have watched some memorable plays there. People are going inside, as it's open tonight. What a pity that you can't go there now!
+88
+That palace has a nice brick facade.
+89
+It's a newspaper kiosk selling La Stampa, the local daily newspaper. It's still open.
+90
+It's an impressive entrance. Quite appropriate for a museum.
+91
+It would not be very interesting.
+92
+He's a middle-aged man with bloodshot eyes and yellow teeth. He does not seem to have a very friendly attitude, but at least he's whistling some operatic aria.
+93
+It describes the trial against conspirators who killed Ramesse III in the so called Harem conspiracy.
+94
+The four mummies are well conserved and on one of them the bandages have been partially removed. You can see the expression of the dry face of the corpse, somewhat peaceful after a sleep of more than three thousand years. It must be very impressive for the small kids that visit the museum!
+95
+An Egyptian sphinx is a lion with a male human head. Thought to possess legendary strength, it was placed to guard the entrance to temples and tombs.
+96
+I know that on other interactive fiction games it's common to break shrines, but trust me: you will not need a mummy to keep you company while you're trying to understand what happened to a car prototype.
+101
+The model 101 is a large car: a black torpedo with the driver's seat separated from the passengers' compartment, very comfortable and lined with red velvet. Your family does not have a chauffeur, though, as you, your father and your uncle like to drive personally. The steam generator feeds an three cylinder engine that develops more than 60 HP, almost in complete silence and with a generous torque and adequate accelerations.
+102
+No, the 101 is not the right car for small trips.
+149
+You are not here as a tourist, to visit the Egyptian Museum and to eat in a nice Italian restaurant. Your fritto misto alla piemontese has to wait for a while.
+222
+It's a sheet of paper, from a notepad. You copied some hieroglyphs on it.
+223
+It's a sheet of paper, from a notepad. It's blank.
+224
+It's a grease pencil. It has been used a lot and it's short, but it's sharp.
+225
+It's a small key, but it seems rather old.
+226
+It's a key rather large and rusted, it must probably open an old lock.
+227
+You can not buy much with that.
+228
+It's a pretty ordinary key. The ITA symbol is composed of the three letters, with a rose and a laurel wreath on top. Your mother drew it.
+229
+You should take some change with you before leaving.
+231
+It's not the best way to solve your problems.
+253
+It's not the right time to read books.
+268
+Those're pilot goggles. And, technically speaking, you're a pilot.
+269
+Why would you do something so silly?
+273
+It's the Egyptian Museum, directed by your friend Schiaparelli. You're here to see him as he apparently knows something about the stolen racecar.
+274
+Usually people buy tickets there.
+275
+You see a large space surrounded by columns. You see the sky above it and a cloud that glows purple and orange in the sunset light.
+276
+Those are framed paintings depicting archeological digs and discoveries. They're nice, but people seems overacting, sometimes.
+277
+Even if you noticed immediately the sphinx, the other statues are impressive nonetheless.
+278
+Aligned close to the walls, you see several wooden sarcophagi (called nebankhs) from the New Kingdom period, covered by gold leaf and decorated with images from the Book of the Dead and effigies of the god Osiris.
+279
+It keeps things together.
+280
+There are many small statues, currently being studied.
+281
+It's a very nicely decorated staircase, indeed.
+282
+It's almost night, outside.
+284
+^MYou can load the third part of the game. Use 'SHIBBOLETH BOGIANEN' to access it.^M
+287
+It's a messy desk.
+288
+The door is already open.
+290
+It's already open.
+406
+It's not too hot, here.
+502
+No.
+503
+The cat softly meows...
+504
+That will not help you. Try to calm down and we can continue playing together.
+505
+What cat?
+506
+The cat follows you.
+507
+No. It's better to see what there's inside.
+508
+No. I don't want that with me.
+510
+You should try to find Schiaparelli, the director of the Egyptian Museum. He's probably in his office.
+511
+Explore.
+512
+Listen, I tried to help you as much as I could to get you there. Now, you're on your own!
+513
+It's too dark here to see things clearly.
+514
+Doors are locked from outside
+515
+You close your eyes and you feel flying high over the city. You see clouds of steam. Then you open again your eyes: nothing changed.
+516
+It's an anchovy. Smelly.
+517
+It smells fishy.
+518
+You'll examine yourself much better with a mirror.
+519
+You knock the door, gently at first, then more loudly. Nobody comes to open it.
+520
+I dropped it.
+523
+I don't have that with me.
+524
+Use 'bye' if you want to stop playing.
+1000
+Okay.
+1001
+Done.
+1002
+Done.
+1003
+x
+1004
+x
+1005
+I can't take that!
+1006
+I can't do that!
+1007
+I don't have that with me!
+1008
+I can't go that way!
+1009
+I beg your pardon?
+1010
+I can't.
+1011
+I already have that with me!
+1012
+What shall I do? 
+1013
+It's dark, I can't see anything.
+1018
+I wear 
+1019
+I already wear it.
+1020
+I can go towards: 
+1021
+north
+1022
+south
+1023
+east
+1024
+west
+1025
+up
+1026
+down
+1027
+
+1028
+
+1029
+
+1030
+
+1031
+I notice: 
+1032
+I have with me: 
+1033
+I don't have anything with me.
+OGGETTI
+6
+
+A little desalted anchovy
+0
+0
+0
+FALSE
+FALSE
+9
+
+A square key with the ITA symbol on it
+0
+0
+0
+FALSE
+FALSE
+10
+
+Pilot goggles
+0
+0
+0
+FALSE
+TRUE
+11
+
+A small key
+0
+0
+0
+FALSE
+FALSE
+22
+
+A letter for your father
+0
+0
+0
+FALSE
+FALSE
+23
+
+Your uncle Tullio
+0
+0
+6
+TRUE
+FALSE
+24
+
+The museum keeper
+0
+0
+20
+TRUE
+FALSE
+57
+
+Many books
+0
+0
+0
+FALSE
+FALSE
+29
+
+A set of photographs
+0
+0
+0
+FALSE
+FALSE
+58
+
+An acetylene lamp
+0
+0
+52
+FALSE
+FALSE
+89
+
+The La Stampa newspaper
+0
+0
+0
+FALSE
+FALSE
+105
+
+Democrito, a siamese cat
+0
+0
+1
+FALSE
+FALSE
+106
+
+A small pencil
+0
+0
+23
+FALSE
+FALSE
+107
+
+A sheet of paper
+0
+0
+0
+FALSE
+FALSE
+108
+
+A sheet of paper with hieroglyphs written on it
+0
+0
+0
+FALSE
+FALSE
+130
+
+Matches
+0
+0
+0
+FALSE
+FALSE
+137
+
+Shovel
+0
+0
+52
+FALSE
+FALSE
+138
+
+A lab coat
+0
+0
+0
+FALSE
+FALSE
+142
+
+An envelope, open
+0
+0
+0
+FALSE
+FALSE
+156
+
+A large object, covered by a tarpaulin
+0
+0
+63
+TRUE
+FALSE
+157
+
+A lighter
+0
+0
+0
+FALSE
+FALSE
+159
+
+A large key
+0
+0
+0
+FALSE
+FALSE
+217
+
+A small amount of money
+0
+0
+9
+FALSE
+FALSE
+FINEDATI

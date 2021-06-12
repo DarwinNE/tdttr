@@ -1,0 +1,3092 @@
+AWS
+VERSIONE
+3.0
+0
+7
+7
+0
+Tra Due Giorni la Gara
+Davide Bucci
+2018
+Una Storia ad alta pressione (di vapore), v 1.6 final (Trad. Alessio Colopardi)
+1
+Bookman Old Style
+14
+0
+100
+FALSE
+100
+100
+CONDIZIONIHI
+IF at 100 THEN PRESSKEY GOTO 9 ENDIF Print the introduction and wait a key.
+IF HERE 105 AND prob 35 THEN mess 503 ENDIF  CAT
+IF set? 25 THEN brin 105 mess 506 ENDIF Bring here the cat as he's following.
+IF SET? 15 AND SET? 14 THEN brin 22 RESE 14 ENDIF Bring the letter
+IF AT 19 OR AT 21 AND RES? 73 THEN MESS 56 GOTO 18 WAIT ENDIF The keeper sees you and brings you ouside
+IF AT 32 THEN MESS 85 PRESSKEY MESS 284 GOTO 33 WAIT ENDIF Meet Schiaparelli
+IF AT 49 AND RES? 28 THEN mess 115 ENDIF Indicates a shut door in the tunnel
+IF AT 56 THEN SET 38 ENDIF Prepare aggression if visited the secret lab
+IF AT 54 AND SET? 38 THEN mess 139 set 122 presskey mess 140 sendallroom 0 mess 285 goto 57 ENDIF Aggression from behind
+IF carr 58 AND set? 23 THEN set 122 ENDIF Acetylene lamp, switched on
+IF carr 58 AND res? 23 THEN rese 122 ENDIF Acetylene lamp, switched off
+IF res? 121 and res? 122 THEN mess 138 ENDIF Can not move in the dark
+IF at 64 and set? 57 then mess 167 goto 60 ENDIF Can't go to the carpentry, as Riccobene and Belisario are there
+CONDIZIONILOW
+if verb 70 and noun 409 then mess 518 wait endif
+if verb 73 then quit endif
+if verb 74 or verb 0 and noun 72 then inve wait endif
+if verb 987 then restart endif
+if verb 110 then look wait endif
+IF verb 100 OR vbnoeq 0 AND noun 80 THEN nord WAIT ENDIF  VAI  NORD
+IF verb 100 OR vbnoeq 0 AND noun 81 THEN sud WAIT ENDIF  VAI  SUD
+IF verb 100 OR vbnoeq 0 AND noun 82 THEN est WAIT ENDIF  VAI  EST
+IF verb 100 OR vbnoeq 0 AND noun 83 THEN ovest WAIT ENDIF  VAI OVEST
+IF verb 100 OR vbnoeq 0 AND noun 84 THEN alto WAIT ENDIF  VAI ALTO
+IF verb 100 OR vbnoeq 0 AND noun 85 THEN basso WAIT ENDIF  VAI BASSO
+IF verb 406 OR verb 77 AND noun 105 AND avai 105 THEN mess 232 WAIT ENDIF  Caress the cat and he is here
+IF verb 406 AND noun 105 THEN mess 505 WAIT ENDIF Caress the cat, but he's not here
+IF verb 70 and noun 105 AND here 105 THEN mess 233 WAIT ENDIF Examine the cat
+IF verb 21 and noun 22 AND avai 22 then mess 234 SET 16 WAIT ENDIF Read the letter
+IF verb 70 and noun 22 AND avai 22 then mess 235 WAIT ENDIF Examine the letter
+IF verb 75 and noun 23 AND avai 23 then mess 236 TO 23 0 set 2 WAIT ENDIF Talk with Tullio. Tullio goes away.
+IF verb 70 and noun 23 and avai 23 then mess 237 WAIT ENDIF Examine Tullio and Tullio is here.
+IF verb 70 and noun 23 and nothere 23 then mess 238 WAIT ENDIF Examine Tullio and Tullio is here.
+IF verb 75 and noun 105 and avai 105 THEN mess 105 WAIT ENDIF Talk with the cat
+IF verb 50 AND noun 105 AND avai 105 THEN mess 251 WAIT ENDIF Take the cat and he's here
+IF verb 50 and noun 106 and here 106 THEN get 106 OKAY ENDIF Take the pen
+IF verb 50 and noun 107 and here 107 THEN get 107 OKAY ENDIF Take the paper
+IF verb 50 AND noun 105 THEN mess 505 WAIT ENDIF Take the cat, but there's no cat
+IF verb 50 and noun 9 and avai 11 then get 11 OKAY ENDIF Take the small key
+IF verb 50 and noun 27 and avai 6 then get 6 OKAY ENDIF Take the anchovy
+IF verb 70 and noun 27 and avai 6 then mess 516 WAIT ENDIF Examine anchovy
+IF verb 143 and noun 27 and avai 6 then mess 517 WAIT ENDIF Smell anchovy
+IF verb 50 THEN get no1 OKAY ENDIF  Take an object
+IF verb 211 AND noun 27 AND AVAI 6 THEN mess 252 WAIT ENDIF Eat anchovy.
+IF verb 66 and noun 27 and avai 6 and here 105 THEN mess 265 WAIT ENDIF Give the anchovy to the cat.
+IF verb 211 THEN mess 502 WAIT ENDIF Eat/Drink -> No!
+IF verb 400 THEN mess 504 WAIT ENDIF Curse
+IF verb 407 and roomgt 56 THEN MESS 512 WAIT ENDIF Help/hint 3
+IF verb 407 and roomgt 32 THEN MESS 511 WAIT ENDIF Help/hint 2
+IF verb 407 and roomgt 16 THEN MESS 510 WAIT ENDIF Help/hint 1
+IF verb 407 THEN mess 509 WAIT ENDIF Help/hint 0
+IF verb 70 and noun 25 and avai 10 THEN mess 268 WAIT ENDIF Examine goggles
+IF verb 70 and noun 9 and ADJE 408 and avai 11 THEN mess 225 WAIT ENDIF Examine small key
+IF verb 70 and noun 9 and avai 9 THEN mess 228 WAIT ENDIF Examine ITA key
+IF verb 70 and noun 9 and avai 159 THEN mess 226 WAIT ENDIF Examine wagon key
+IF verb 70 and noun 217 and avai 217 THEN mess 227 WAIT ENDIF Examine money
+IF verb 70 and noun 106 and avai 106 THEN mess 224 WAIT ENDIF Examine pencil
+IF verb 70 and noun 107 and avai 107 THEN mess 223 WAIT ENDIF Examine sheet of paper, blank
+IF verb 70 and noun 107 and avai 108 THEN mess 222 WAIT ENDIF Examine sheet of paper, written
+IF verb 70 and noun 234 and avai 234 THEN mess 297  WAIT ENDIF 
+IF verb 120 and noun 25 THEN wear 10 OKAY ENDIF Wear goggles
+IF verb 121 and noun 25 THEN unwear 10 OKAY ENDIF Unwear goggles
+IF verb 78 THEN mess 269 WAIT ENDIF Break, destroy...
+IF verb 75 AND noun 87 AND avai 24 THEN mess 57 WAIT ENDIF Talk with the museum keeper
+IF verb 70 OR verb 21 AND noun 89 AND avai 89 THEN mess 59 WAIT ENDIF Examine newspaper
+IF verb 70 AND noun 87 and avai 24 THEN mess 92 WAIT ENDIF Examine museum keeper
+IF verb 70 and noun 58 and avai 58 and set? 23 THEN mess 99 WAIT ENDIF Examine acetylene lamp, on
+IF verb 70 and noun 58 and avai 58 and res? 23 THEN mess 289 WAIT ENDIF Examine acetylene lamp, off
+IF verb 66 AND noun 89 AND avai 89 AND no2eq 87 AND avai 24 THEN mess 60 set 73 to 24 0 to 89 0 WAIT ENDIF Give the newspaper to the keeper
+IF verb 70 and noun 130 and avai 130 THEN mess 111 WAIT ENDIF Examine matches
+IF verb 70 and noun 138 and avai 138 and RES? 29 then mess 118 brin 11 set 29 WAIT ENDIF Examine coat, find the key
+IF verb 70 and noun 138 and avai 138 and set? 29 then mess 119 WAIT ENDIF Examine coat, key already found
+IF verb 70 and noun 142 and avai 142 THEN mess 8 WAIT ENDIF Examine envelope
+IF verb 70 THEN mess 91 WAIT ENDIF Examine with unknown object ****
+IF verb 213 AND noun 58 and avai 130 and avai 58 and res? 23 THEN mess 97 set 23 WAIT ENDIF Switch on the lamp
+IF verb 213 AND noun 58 and avai 58 and res? 23 THEN mess 100 WAIT ENDIF Switch on the lamp, no matches
+IF verb 214 AND noun 58 and avai 58 and set? 23 THEN mess 98 rese 23 WAIT ENDIF Switch off the lamp
+IF verb 210 THEN mess 231 WAIT ENDIF Pray
+IF verb 55 and noun 26 then drop 6 WAIT endif Drop anchovy^M
+IF verb 55 and noun 9 then drop 9 WAIT endif Drop key^M
+IF verb 55 and noun 25 then drop 10 WAIT endif Drop goggles^M
+IF verb 55 and noun 9 and carr 11 then drop 11 WAIT endif Drop small key^M
+IF verb 55 then drop no1 WAIT endif Drop an object^M
+IF verb 1000 then mess 515 WAIT Endif XYZZY
+IF AT 1 OR AT 2 OR AT 3 OR AT 6 OR AT 9 OR AT 20 OR AT 28 OR AT 29 AND VERB 12 AND NOUN 10 THEN mess 406 WAIT ENDIF
+IF verb 66 THEN mess 502 WAIT ENDIF Give -> No!
+IF verb 230 and noun 231 THEN RESE 57 RESE 59 RESE 58 RESE 28 RESE 27 RESE 92 RESE 90 RESE 73 RESE 57 RESE 23 RESE 38 RESE 25 RESE 77 RESE 78 SET 2 SET 16 set 122 sendallroom 0 BRIN 9 GET 9 BRIN 10 GET 10 BRIN 217 GET 217 GOTO 17  ENDIF Go to part 2
+IF verb 230 and noun 232 THEN RESE 57 RESE 59 RESE 58 RESE 28 RESE 27 RESE 92 RESE 90 RESE 73 RESE 57 RESE 23 RESE 38 RESE 25 RESE 77 RESE 78 SET 2 SET 16 set 122 sendallroom 0 BRIN 9 GET 9 BRIN 10 GET 10 BRIN 217 GET 217 BRIN 108 GET 108 GOTO 33  ENDIF Go to part 3
+IF verb 230 and noun 233 THEN RESE 57 RESE 59 RESE 58 RESE 28 RESE 27 RESE 92 RESE 90 RESE 73 RESE 57 RESE 23 RESE 38 RESE 25 SET 77 SET 78 SET 2 SET 16 set 122 sendallroom 0 GOTO 57  ENDIF Go to part 4
+CONDIZIONILOCALI
+1
+IF VERB 70 AND NOUN 10 THEN MESS 4 WAIT ENDIF Examine window
+1
+IF VERB 70 AND NOUN 14 OR NOUN 67 THEN MESS 5 WAIT ENDIF Examine portrait
+1
+IF VERB 70 AND NOUN 26 THEN MESS 25 WAIT ENDIF Examine bowls
+1
+IF VERB 55 AND NO1EQ 27 AND NO2EQ 26 and RES? 25 THEN MESS 26 TO 6 0 SET 25 WAIT ENDIF Feed the cat
+1
+IF VERB 55 AND NOUN 27 and RES? 25 THEN MESS 26 TO 6 0 SET 25 WAIT ENDIF Feed the cat
+1
+if verb 70 and noun 58 then mess 259 wait endif Examine lamps
+2
+IF VERB 70 AND NOUN 29 THEN MESS 28 WAIT ENDIF Look at the pictures
+2
+IF VERB 70 AND NOUN 30 THEN MESS 29 WAIT ENDIF Look at the blueprints
+3
+IF VERB 70 OR VERB 12 AND NOUN 28 AND RES? 26 THEN MESS 27 BRIN 6 SET 26 WAIT ENDIF Examine pantry, find anchovy
+3
+IF VERB 70 AND NOUN 28 AND SET? 26 THEN MESS 31 WAIT ENDIF Examine pantry
+3
+if verb 70 and noun 58 then mess 259 wait endif Examine lamps
+3
+if verb 70 and noun 63 then mess 261 wait endif Examine pans
+3
+IF verb 50 and noun 63 THEN mess 508 WAIT ENDIF Take pans
+3
+if verb 70 and noun 64 then mess 262 wait endif Examine stove
+3
+if verb 70 and noun 65 then mess 263 wait endif Examine sink
+3
+if verb 70 and noun 10 then mess 264 wait endif Examine window
+4
+IF VERB 70 AND NOUN 20 THEN MESS 1 WAIT ENDIF Examine desk
+5
+if verb 70 and noun 58 then mess 259 wait endif Examine lamps
+5
+if verb 70 and noun 216 then mess 400 wait endif Examine pomegranates
+5
+If verb 70 and noun 68 then mess 266 wait endif Examine piano
+5
+If verb 70 and noun 144 then mess 7 wait endif Examine furniture
+5
+If verb 77 or vbnoeq 406 and noun 68 then mess 267 wait endif Play piano
+6
+IF VERB 70 AND NOUN 10 THEN MESS 3 WAIT ENDIF Examine window
+6
+IF VERB 70 AND NOUN 20 THEN MESS 2 WAIT ENDIF Examine desk
+7
+IF VERB 70 OR VERB 12 AND NOUN 13 and res? 9 THEN MESS 32 BRIN 9 set 9 WAIT ENDIF Examine/open cabinet. Find the key
+7
+IF VERB 70 OR VERB 12 AND NOUN 13 THEN MESS 405 WAIT ENDIF Examine/open cabinet. Key already found
+7
+IF VERB 70 AND NOUN 16 THEN MESS 19 WAIT ENDIF Examine umbrella
+7
+IF VERB 70 AND NOUN 205 THEN MESS 19 WAIT ENDIF Examine rack
+8
+IF VERB 70 AND NOUN 19 THEN MESS 20 WAIT ENDIF Examine landscape
+8
+IF VERB 70 AND NOUN 17 THEN MESS 21 WAIT ENDIF Examine frame
+9
+IF VERB 21 OR VERB 70 AND NOUN 57 OR NOUN 200 THEN mess 253 WAIT ENDIF Read books
+9
+IF VERB 70 AND NOUN 20 THEN MESS 230 WAIT ENDIF Examine desk
+9
+IF VERB 70 AND NOUN 10 THEN MESS 10 WAIT ENDIF Examine window
+9
+IF VERB 70 AND NOUN 11 THEN MESS 11 WAIT ENDIF Examine drawers
+9
+IF VERB 12 AND NOUN 11 THEN MESS 12 WAIT ENDIF Open drawers
+9
+IF VERB 12 AND NOUN 13 AND RES? 13 THEN MESS 1000 SET 13 WAIT ENDIF Open the closet
+9
+IF VERB 12 AND NOUN 13 AND SET? 13 THEN MESS 14 WAIT ENDIF Open the closet
+9
+IF VERB 70 AND NOUN 13 AND SET? 13 THEN MESS 15 WAIT ENDIF Examine the closet, open
+9
+IF VERB 70 AND NOUN 13 AND RES? 13 THEN MESS 16 WAIT ENDIF Examine the closet, closed
+9
+If verb 70 and noun 144 or noun 145 then mess 7 wait endif Examine furniture/decoration
+9
+IF VERB 70 AND NOUN 58 THEN MESS 254 WAIT ENDIF Examine the chandelier/lamps
+9
+IF VERB 15 AND NOUN 18 THEN MESS 18 WAIT ENDIF Use the bed
+9
+IF VERB 201 THEN MESS 18 WAIT ENDIF Sleep
+9
+IF VERB 70 AND NOUN 59 THEN MESS 221 WAIT ENDIF Examine washbowl
+9
+IF VERB 50 AND NOUN 57 THEN MESS 508 WAIT ENDIF Take books
+9
+IF VERB 70 AND NOUN 18 THEN MESS 220 WAIT ENDIF Examine the bed
+9
+IF VERB 12 OR VERB 70 AND NOUN 24 AND SET? 13 and RES? 12 THEN MESS 239 BRIN 10 SET 12 WAIT ENDIF Open/examine box, find goggles in the box
+9
+IF VERB 15 AND NOUN 59 THEN MESS 255 WAIT ENDIF Use washbowl
+9
+IF VERB 50 AND NOUN 25 AND SET? 12 THEN GET 10 OKAY ENDIF Take the goggles if they have been found.
+9
+IF VERB 50 AND NOUN 24 AND SET? 13 THEN MESS 507 WAIT ENDIF Take the box
+9
+IF VERB 70 AND NOUN 219 THEN MESS 403 WAIT ENDIF Examine mirror
+9
+IF VERB 50 OR VERB 70 AND NOUN 202 AND SET? 13 THEN MESS 12 WAIT ENDIF Take/examine clothes
+9
+IF VERB 203 AND NOUN 13 AND SET? 13 THEN RESE 13 OKAY ENDIF Close closet
+10
+IF VERB 70 OR VERB 12 AND NOUN 13 THEN MESS 258 WAIT ENDIF Examine closet
+10
+IF VERB 70 AND NOUN 20 AND HERE 105 AND RES? 14 AND RES? 15 THEN MESS 22 SET 14 WAIT ENDIF Examine the desk, with the cat
+10
+IF VERB 70 AND NOUN 20 AND RES? 110 THEN MESS 23 BRIN 142 SET 110 WAIT ENDIF Examine the desk, without the cat
+10
+IF VERB 70 AND NOUN 20 AND SET? 110 THEN MESS 9 WAIT ENDIF Examine the desk, without the cat, letter already found
+10
+IF VERB 70 AND NOUN 18 AND SET? 14 THEN MESS 24 SET 15 BRIN 22 WAIT ENDIF Examine the bed after the cat found the letter
+10
+IF VERB 70 AND NOUN 18 THEN MESS 13 WAIT ENDIF Examine the bed before the cat found the letter
+10
+IF VERB 50 AND NOUN 57 THEN MESS 508 WAIT ENDIF Take books
+11
+IF VERB 70 AND NOUN 60 THEN MESS 256 WAIT ENDIF Examine garden
+11
+IF VERB 70 AND NOUN 61 THEN MESS 257 WAIT ENDIF Examine barn
+11
+IF VERB 70 AND NOUN 62 THEN MESS 260 WAIT ENDIF Examine roses
+11
+IF VERB 143 AND NOUN 62 THEN MESS 147 WAIT ENDIF Smell roses
+12
+IF VERB 143 AND NOUN 62 THEN MESS 147 WAIT ENDIF Smell roses
+12
+IF VERB 70 AND NOUN 62 THEN MESS 260 WAIT ENDIF Examine roses
+12
+IF VERB 70 AND NOUN 60 THEN MESS 256 WAIT ENDIF Examine garden
+12
+IF VERB 70 AND NOUN 31 THEN MESS 30 WAIT ENDIF Examine the city
+12
+IF VERB 70 AND NOUN 145 THEN MESS 6 WAIT ENDIF Examine wall
+13
+IF VERB 143 AND NOUN 62 THEN MESS 148 WAIT ENDIF Smell roses
+13
+IF VERB 70 AND NOUN 62 THEN MESS 260 WAIT ENDIF Examine roses
+13
+IF VERB 70 AND NOUN 60 THEN MESS 256 WAIT ENDIF Examine garden
+15
+IF VERB 143 AND NOUN 62 THEN MESS 148 WAIT ENDIF Smell roses
+15
+IF VERB 70 AND NOUN 62 THEN MESS 260 WAIT ENDIF Examine roses
+15
+IF VERB 70 AND NOUN 61 THEN MESS 257 WAIT ENDIF Examine barn
+16
+IF VERB 70 AND NOUN 51 THEN MESS 51 WAIT ENDIF Examine the model 51
+16
+IF VERB 70 AND NOUN 101 THEN MESS 101 WAIT ENDIF Examine the model 101
+16
+IF VERB 56 or VERB 15 AND NOUN 101 THEN MESS 102 WAIT ENDIF Drive the 101, bad idea
+16
+IF VERB 56 or VERB 15 AND NOUN 51 AND NOTAVAI 9 THEN MESS 52 WAIT ENDIF Drive the 51, no key
+16
+IF VERB 56 or VERB 15 AND NOUN 51 AND NOTAVAI 217 THEN MESS 229 WAIT ENDIF Drive the 51, no money
+16
+IF VERB 56 or VERB 15 AND NOUN 51 AND ISNOTWEARING 10 THEN MESS 53 WAIT ENDIF Drive the 51, no goggles
+16
+IF VERB 56 OR VERB 15 AND NOUN 204 THEN MESS 7 WAIT ENDIF Drive a car, without specifying which one
+16
+IF VERB 70 AND NOUN 204 THEN MESS 7 WAIT ENDIF Examine a car, without specifying which one
+16
+IF NOUN 51 AND AVAI 9 AND ISWEARING 10 AND SET? 2 AND SET? 16 and VERB 56 or VERB 15 THEN MESS 54 RESE 25 UNWEAR 10 PRESSKEY MESS 283 GOTO 17 WAIT ENDIF Drive the 51
+16
+IF VERB 56 or VERB 15 AND NOUN 51 AND AVAI 9 AND ISWEARING 10 AND RES? 2 THEN MESS 210 WAIT ENDIF Drive the 51, without having spoken with Tullio
+16
+IF VERB 56 or VERB 15 or VERB 213 and NOUN 51 AND AVAI 9 AND ISWEARING 10 AND SET? 2 AND RES? 16 THEN MESS 286 ENDIF Drive the 51, without having read the letter
+16
+IF VERB 70 AND NOUN 206 THEN MESS 401 WAIT ENDIF Examine tools
+16
+IF VERB 50 AND NOUN 206 OR NOUN 134 THEN MESS 508 WAIT ENDIF Take tools/coal
+16
+IF VERB 70 AND NOUN 134 THEN MESS 402 WAIT ENDIF Examine coal
+17
+IF VERB 70 AND NOUN 51 OR NOUN 204 THEN MESS 51 WAIT ENDIF Examine 51/car
+17
+IF NOUN 80 OR NOUN 82 OR NOUN 83 THEN MESS 55 WAIT ENDIF Go in a direction outside the game
+17
+IF VERB 88 OR VERB 50 AND NOUN 89 AND RES? 77 THEN MESS 58 BRIN 89 GET 89 SET 77 WAIT ENDIF Buy newspaper
+17
+IF VERB 88 OR VERB 50 AND NOUN 89 THEN MESS 502 WAIT ENDIF Buy newspaper, already got one
+17
+IF VERB 100 OR VERB 70 AND NOUN 109 THEN MESS 87 WAIT ENDIF Go to/examine theatre
+17
+IF VERB 70 AND NOUN 122 OR NOUN 122 THEN MESS 88 WAIT ENDIF Examine Palazzo Carignano
+17
+IF VERB 70 AND NOUN 124 THEN MESS 89 WAIT ENDIF Examine kiosk
+17
+IF VERB 100 OR VERB 70  AND NOUN 146 THEN MESS 149 WAIT ENDIF Go to/examine the restaurant
+18
+IF VERB 70 AND NOUN 220 THEN MESS 273 WAIT ENDIF Examine museum
+18
+IF NOUN 81 THEN MESS 55 WAIT ENDIF Go south, but it's outside the game
+18
+IF NOUN 92 OR NOUN 125 OR NOUN 126 OR NOUN 145 OR NOUN 221 and VERB 70 THEN MESS 90 WAIT ENDIF Examine entrance/door/columns
+19
+IF NOUN 227 OR NOUN 228 OR NOUN 229 AND VERB 70 THEN MESS 281 WAIT ENDIF Examine steps/staircase/carpet/handrail
+19
+IF VERB 70 AND NOUN 10 THEN MESS 282 WAIT ENDIF Examine window
+20
+IF VERB 70 AND NOUN 90 AND RES? 90 THEN MESS 77 WAIT ENDIF Examine the panel
+20
+IF VERB 70 AND NOUN 90 AND SET? 90 THEN MESS 77 MESS 78 SET 91 WAIT ENDIF Examine the panel after having examined the lock
+20
+IF NOUN 90 OR NOUN 91 AND VERB 155 AND avai 106 AND avai 107 THEN MESS 80 SET 92 BRIN 108 GET 108 TO 107 0 WAIT ENDIF Copy the panel and owns pencil and paper
+20
+IF VERB 155 AND NOUN 90 AND avai 108 THEN MESS 84 WAIT ENDIF Message already copied
+20
+IF VERB 155 AND NOUN 90 THEN mess 81 WAIT ENDIF Copy the panel but without paper and pencil
+20
+IF VERB 70 AND NOUN 222 THEN mess 274 WAIT ENDIF Examine office
+20
+IF NOUN 223 OR NOUN 10 OR NOUN 31 AND VERB 70 THEN mess 275 WAIT ENDIF Examine inner court
+21
+IF VERB 70 OR VERB 21 AND NOUN 90 THEN MESS 61 WAIT ENDIF Examine plaque
+21
+IF VERB 70 AND NOUN 19 THEN MESS 276 WAIT ENDIF Examine paintings
+22
+IF VERB 70 AND NOUN 91 THEN MESS 62 WAIT ENDIF Examine Iunnuh's papyri
+23
+IF VERB 70 AND NOUN 97 THEN MESS 280 WAIT ENDIF Examine objects/artefacts
+24
+IF VERB 70 AND NOUN 128 THEN MESS 94 WAIT ENDIF Examine mummies
+24
+IF VERB 78 AND NOUN 97 THEN MESS 96 WAIT ENDIF Break shrines
+24
+IF VERB 70 AND NOUN 224 THEN MESS 278 WAIT ENDIF Examine sarcophagi
+25
+IF VERB 70 AND NOUN 20 and RES? 17 THEN MESS 82 BRIN 107 BRIN 29 BRIN 57 SET 17 WAIT ENDIF Examine desk, find the paper, books and photographs
+25
+IF VERB 70 AND NOUN 20 THEN MESS 287 WAIT ENDIF Examine desk for a second time
+25
+IF NOUN 140 OR NOUN 97 AND VERB 70 THEN MESS 33 WAIT ENDIF Examine shelves
+25
+IF NOUN 226 OR NOUN 57 OR NOUN 29 AND VERB 50 THEN MESS 502 WAIT ENDIF Take twine/photographs/books
+25
+IF VERB 21 AND NOUN 57 THEN MESS 253 WAIT ENDIF Read books
+25
+IF VERB 70 AND NOUN 226 THEN MESS 279 WAIT ENDIF Examine twine
+26
+IF VERB 70 AND NO1EQ 153 OR NO2EQ 153 THEN MESS 74 WAIT ENDIF Examine Amenhotep II https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=104822&viewType=detailView
+26
+IF VERB 70 AND NO1EQ 154 OR NO2EQ 154 THEN MESS 75 WAIT ENDIF Examine the ram statue https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=104836&viewType=detailView
+26
+IF VERB 70 AND NO1EQ 129 OR NO2EQ 129 THEN MESS 76 WAIT ENDIF Examine the Tuthmosis III statue https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=104856&viewType=detailView
+26
+IF VERB 70 AND NOUN 152 THEN MESS 73 WAIT ENDIF Examine statues
+27
+IF VERB 70 AND NOUN 99 THEN MESS 95 WAIT ENDIF Examine sphinx https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=104843&viewType=detailView
+27
+IF VERB 70 AND NOUN 152 THEN MESS 277 WAIT ENDIF Examine statue
+28
+IF VERB 70 AND NOUN 98 THEN MESS 71 WAIT ENDIF Examine drawings
+28
+IF VERB 70 AND NOUN 10 THEN MESS 282 WAIT ENDIF Examine window
+29
+IF VERB 70 AND NOUN 97 OR NOUN 152 THEN MESS 70 WAIT ENDIF Examine artefacts https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=103632&viewType=detailView
+30
+IF VERB 12 AND NOUN 96 OR NOUN 92 AND SET? 92 AND RES? 75 THEN MESS 83 SETCONN 30 4 31 SET 75 WAIT ENDIF Open the door with the right combination.
+30
+IF VERB 12 AND NOUN 96 OR NOUN 92 AND SET? 92 THEN MESS 288 WAIT ENDIF Door already open
+30
+IF VERB 15 AND NOUN 96 OR NOUN 92 AND SET? 91 THEN mess 79 WAIT ENDIF Use lock, can not remember the combination
+30
+IF VERB 12 AND NOUN 92 AND RES? 74 THEN MESS 63 WAIT ENDIF
+30
+IF VERB 70 AND NOUN 92 OR NOUN 96 AND RES? 74 THEN MESS 64 SET 90 WAIT ENDIF Examine door/lock
+30
+IF VERB 70 AND NOUN 94 THEN MESS 68 WAIT ENDIF Examine Kings List papyrus https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=99492&viewType=detailView
+30
+IF VERB 70 AND NOUN 91 AND ADJE 127 THEN MESS 93 WAIT ENDIF Examine Judicial Papyrus 
+30
+IF VERB 70 AND NOUN 91 AND ADJE 93 THEN MESS 67 WAIT ENDIF Examine erotic papyrus https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=103561&viewType=detailView
+30
+IF VERB 70 AND NOUN 91 AND ADJE 151 THEN MESS 72 WAIT ENDIF Examine strike papyrus https://collezioni.museoegizio.it:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=103571&viewType=detailView
+30
+IF VERB 70 AND NOUN 91 THEN MESS 65 WAIT ENDIF Examine papyri
+30
+IF VERB 21 AND NOUN 91 THEN MESS 66 WAIT ENDIF Read papyri
+30
+IF VERB 95 AND NOUN 96 OR NOUN 92 THEN MESS 69 WAIT ENDIF Pick lock
+31
+IF VERB 70 AND NOUN 108 THEN MESS 86 WAIT ENDIF Examine chairs
+33
+IF NOUN 81 THEN MESS 55 WAIT ENDIF Go south, but it's outside the game
+33
+IF NOUN 80 THEN MESS 55 WAIT ENDIF Go north, but it's outside the game
+33
+IF VERB 70 AND NOUN 147 THEN MESS 150 WAIT ENDIF Examine department
+37
+IF VERB 70 AND NOUN 20 THEN MESS 270 WAIT ENDIF Examine benches
+37
+IF VERB 70 AND NOUN 218 THEN MESS 271 WAIT ENDIF Examine chalks/eraser
+37
+IF VERB 70 AND NOUN 148 THEN mess 272 WAIT ENDIF Examine blackboard
+37
+IF VERB 55 AND NOUN 234 AND NO2EQ 13 OR NO2EQ 96 THEN MESS 294 BRIN 138 SET 31 WAIT ENDIF Pour acid on the cabinet
+37
+IF VERB 70 AND NOUN 13 AND RES? 31 THEN MESS 293 WAIT ENDIF Examine cabinet.
+37
+IF VERB 70 AND NOUN 13 OR NOUN 96 THEN MESS 296 WAIT ENDIF Examine cabinet.
+38
+IF VERB 70 AND NOUN 140 OR NOUN 125 THEN mess 146 WAIT ENDIF Examine distillation column
+40
+IF VERB 70 AND NOUN 20 AND RES? 78 THEN mess 106 brin 130 set 78 WAIT ENDIF Examine the bench
+40
+IF VERB 70 AND NOUN 20 THEN mess 300 WAIT ENDIF Examine the bench, matches already taken
+40
+IF VERB 70 AND NOUN 131 THEN mess 107 WAIT ENDIF Examine the extractor/tubes/glassware
+40
+IF VERB 70 AND NOUN 132 THEN mess 108 WAIT ENDIF Examine the Bunsen burner
+40
+IF NOUN 130 AND NO2EQ 132 THEN mess 109 WAIT ENDIF Matches and Bunsen in the same phrase...
+40
+IF NOUN 132 AND NO2EQ 130 THEN mess 109 WAIT ENDIF Matches and Bunsen in the same phrase...
+40
+IF VERB 213 AND NOUN 130 THEN mess 109 WAIT ENDIF Switch Bunsen burner.
+40
+IF VERB 70 AND NOUN 133 AND SET? 30 THEN MESS 295 BRIN 234 WAIT ENDIF Examine test tubes, recognize ferric chloride
+40
+IF VERB 70 AND NOUN 133 THEN mess 110 WAIT ENDIF Examine test tubes.
+41
+IF VERB 70 AND NOUN 148 THEN mess 151 SET 30 WAIT ENDIF Examine blackboard
+43
+IF RES? 27 AND VERB 70 AND NOUN 134 THEN mess 112 WAIT ENDIF Examine coal.
+43
+IF VERB 70 AND NOUN 135 OR NOUN 136 AND RES? 27 THEN mess 291 WAIT ENDIF Examine manhole/cover.
+43
+IF VERB 70 AND NOUN 135 OR NOUN 136 THEN mess 292 WAIT ENDIF Examine manhole/cover.
+43
+IF VERB 12 AND NOUN 135 OR NOUN 136 AND avai 137 AND RES? 27 THEN mess 114 drop 137 set 27 setconn 43 6 44 WAIT ENDIF Open manhole cover.
+43
+IF VERB 12 AND NOUN 135 OR NOUN 136 AND SET? 27 THEN MESS 290 WAIT ENDIF Try to open manhole a second time
+43
+IF VERB 12 AND NOUN 135 OR NOUN 136 THEN mess 113 WAIT ENDIF Open manhole cover, no shovel.
+43
+IF NOUN 85 and set? 27 THEN RESE 121 ENDIF Go in a dark area
+44
+IF NOUN 84 THEN SET 121 ENDIF Go in a bright area
+49
+IF VERB 12 AND NOUN 92 AND RES? 28 AND avai 11 THEN setconn 49 2 53 mess 116 set 28 WAIT ENDIF Open the door, own the small key
+49
+IF VERB 12 AND NOUN 92 AND SET? 28 THEN mess 290 WAIT ENDIF Open the door a second time.
+49
+IF VERB 12 AND NOUN 92 THEN mess 117 WAIT ENDIF Open the door, without the key
+55
+IF VERB 70 AND NOUN 133 or NOUN 139 OR NOUN 140 THEN MESS 144 WAIT ENDIF Examine glassware
+56
+IF VERB 70 AND NOUN 131 OR NOUN 20 THEN MESS 141 WAIT ENDIF Examine the glassware/bench
+56
+IF VERB 70 AND NOUN 139 THEN MESS 142 WAIT ENDIF Examine bottles
+56
+IF VERB 70 AND NOUN 132 THEN mess 143 WAIT ENDIF Examine the Bunsen burner, lit
+56
+IF NOUN 130 AND NO2EQ 132 THEN mess 109 WAIT ENDIF Matches and Bunsen in the same phrase...
+56
+IF NOUN 132 AND NO2EQ 130 THEN mess 109 WAIT ENDIF Matches and Bunsen in the same phrase...
+56
+IF VERB 214 AND NOUN 130 THEN mess 109 WAIT ENDIF Switch Bunsen burner.
+56
+IF NOUN 141 AND VERB 70 OR VERB 15 OR VERB 50 OR VERB 211 THEN mess 145 WAIT ENDIF Examine morphine/opium
+57
+IF VERB 70 THEN MESS 513 WAIT ENDIF Examine does not work in the wagon, it's too dark
+57
+IF VERB 406 AND NOUN 159 AND CONNEQ 57 6 58 THEN mess 298 WAIT ENDIF Touch floor after having lifted the board
+57
+IF VERB 406 AND NOUN 159 THEN mess 155 WAIT ENDIF Touch floor of the wagon
+57
+IF VERB 406 AND NOUN 92 THEN mess 514 WAIT ENDIF Touch doors
+57
+IF VERB 50 OR VERB 12 OR VERB 160 AND NOUN 161 AND CONNEQ 57 6 0 THEN mess 156 setconn 57 6 58 LOOK WAIT ENDIF Open/Take board
+57
+IF VERB 406 AND NOUN 145 THEN mess 157 WAIT ENDIF Touch walls
+58
+IF noun 81 and res? 57 and res? 58 THEN mess 153 set 58 WAIT ENDIF Can not get inside office, Riccobene and Belisario present. Overhear conversation.
+58
+IF noun 81 and res? 57 and set? 58 THEN mess 154 WAIT ENDIF Can not get inside office, Riccobene and Belisario present.
+58
+IF VERB 70 and noun 162 THEN mess 158 WAIT ENDIF Examine wagons
+58
+IF verb 70 and noun 132 THEN mess 159 WAIT ENDIF Examine gas burners
+59
+If verb 70 and noun 20 and res? 59 then mess 160 brin 157 set 59 WAIT ENDIF Examine bench
+59
+If verb 70 and noun 20 then mess 162 WAIT ENDIF Examine bench, already found objects
+59
+IF verb 70 and noun 163 then mess 161 WAIT ENDIF Examine pit
+61
+IF verb 50 and noun 9 and avai 159 then get 159 OKay ENDIF Take the large key
+61
+IF verb 70 and noun 20 and res? 99 then mess 168 brin 159 set 99 WAIT ENDIF Examine desk, find the key
+61
+IF verb 70 and noun 20 then mess 404 WAIT ENDIF Examine desk, key already found
+61
+IF verb 70 and noun 166 THEN mess 169 WAIT ENDIF Examine notepad
+61
+IF verb 50 and noun 166 THEN mess 508 WAIT ENDIF Take notepad-> No!
+62
+IF verb 70 and noun 162 then mess 164 wait endif Examine wagon
+62
+IF verb 12 and noun 162 or noun 92 or noun 96 and avai 159 then mess 166 setconn 62 3 63 look WAIT ENDIF Open the wagon, with key
+62
+IF verb 12 and noun 162 or noun 92 or noun 96 then mess 165 WAIT ENDIF Open the wagon, without key
+62
+IF verb 70 and noun 96 then mess 117 WAIT ENDIF Examine lock
+63
+IF VERB 160 AND NOUN 167 THEN mess 152  exit endif Lift tarpaulin End of the game!
+63
+IF verb 70 and noun 167 or noun 156 then mess 170 WAIT ENDIF Examine tarpaulin
+64
+IF verb 70 and noun 165 then mess 299 WAIT ENDIF Examine sawdust
+64
+IF avai 157 and VERB 213 AND NOUN 165 then mess 163 set 57 goto 60 WAIT ENDIF Put fire to the sawdust
+64
+IF avai 157 and VERB 66 AND NOUN 164 then mess 163 set 57 goto 60 WAIT ENDIF Put fire to the sawdust
+DIZIONARIO
+CHIAVE
+9
+NOME
+FINESTRA
+10
+NOME
+BAULE
+11
+NOME
+CASSETTO
+11
+NOME
+CASSETTI
+11
+NOME
+CASSETTIERA
+11
+NOME
+APRI
+12
+VERBO
+ARMADIO
+13
+NOME
+ARMADIETTO
+13
+NOME
+PORTRAIT
+14
+NOME
+RITRATTI
+14
+NOME
+USA
+15
+VERBO
+OMBRELLO
+16
+NOME
+OMBRELLI
+16
+NOME
+CORNICE
+17
+NOME
+LETTO
+18
+NOME
+PAESAGGIO
+19
+NOME
+DIPINTO
+19
+NOME
+DIPINTI
+19
+NOME
+QUADRO
+19
+NOME
+QUADRI
+19
+NOME
+SCRIVANIA
+20
+NOME
+BANCO
+20
+NOME
+BANCHI
+20
+NOME
+LEGGI
+21
+VERBO
+LETTERA
+22
+NOME
+TULLIO
+23
+NOME
+ZIO
+23
+NOME
+SCATOLA
+24
+NOME
+OCCHIALI
+25
+NOME
+SCODELLA
+26
+NOME
+SCODELLE
+26
+NOME
+ACCIUGA
+27
+NOME
+ACCIUGHE
+27
+NOME
+DISPENSA
+28
+NOME
+IMMAGINI
+29
+NOME
+FOTOGRAFIA
+29
+NOME
+IMMAGINE
+29
+NOME
+FOTO
+29
+NOME
+FOTOGRAFIE
+29
+NOME
+PROGETTO
+30
+NOME
+PROGETTI
+30
+NOME
+PAESAGGIO
+31
+NOME
+TRAMONTO
+31
+NOME
+LUCE
+31
+NOME
+CITTÀ
+31
+NOME
+P
+50
+VERBO
+PRENDI
+50
+VERBO
+RACCOGLI
+50
+VERBO
+AFFERRA
+50
+VERBO
+51
+51
+NOME
+TIRA
+55
+VERBO
+POSA
+55
+VERBO
+LANCIA
+55
+VERBO
+LASCIA
+55
+VERBO
+METTI
+55
+VERBO
+VERSA
+55
+VERBO
+GUIDA
+56
+VERBO
+LIBRO
+57
+NOME
+LIBRI
+57
+NOME
+LAMPADARIO
+58
+NOME
+LAMPADA
+58
+NOME
+LAMPADE
+58
+NOME
+LAMPADE
+58
+NOME
+GAS
+58
+NOME
+CATINO
+59
+NOME
+LAVABO
+59
+NOME
+GIARDINO
+60
+NOME
+CAPANNO
+61
+NOME
+GARAGE
+61
+NOME
+ROSA
+62
+NOME
+ROSE
+62
+NOME
+FIORE
+62
+NOME
+FIORI
+62
+NOME
+PADELLA
+63
+NOME
+PADELLE
+63
+NOME
+STUFA
+64
+NOME
+PUTAGE
+64
+NOME
+PUTAGE'
+64
+NOME
+LAVELLO
+65
+NOME
+DAI
+66
+VERBO
+APPICCA
+66
+VERBO
+NONNI
+67
+NOME
+NONNO
+67
+NOME
+NONNA
+67
+NOME
+NONNO
+67
+NOME
+PIANOFORTE
+68
+NOME
+PIANO
+68
+NOME
+ESAMINA
+70
+VERBO
+ES
+70
+VERBO
+X
+70
+VERBO
+INV
+72
+NOME
+INVE
+72
+NOME
+INVENTARIO
+72
+NOME
+BYE
+73
+VERBO
+ABBANDONA
+73
+VERBO
+BASTA
+73
+VERBO
+MOSTRA
+74
+VERBO
+PARLA
+75
+VERBO
+PARLA
+75
+VERBO
+CHIACCHERA
+75
+VERBO
+ESCI
+76
+VERBO
+SUONA
+77
+VERBO
+ROMPI
+78
+VERBO
+DISTRUGGI
+78
+VERBO
+N
+80
+NOME
+NORD
+80
+NOME
+S
+81
+NOME
+SUD
+81
+NOME
+E
+82
+NOME
+EST
+82
+NOME
+O
+83
+NOME
+OVEST
+83
+NOME
+SU
+84
+NOME
+SOPRA
+84
+NOME
+ALTO
+84
+NOME
+A
+84
+NOME
+BASSO
+85
+NOME
+B
+85
+NOME
+GIÙ
+85
+NOME
+SOTTO
+85
+NOME
+GIU
+85
+NOME
+CUSTODE
+87
+NOME
+COMPRA
+88
+VERBO
+GIORNALE
+89
+NOME
+QUOTIDIANO
+89
+NOME
+STAMPA
+89
+NOME
+PANNELLO
+90
+NOME
+TARGA
+90
+NOME
+CARTELLO
+90
+NOME
+GEROGLIFICI
+91
+NOME
+GEROGLIFICO
+91
+NOME
+GEROGLIFICI
+91
+NOME
+GEROGLIFICO
+91
+NOME
+PAPIRO
+91
+NOME
+PAPIRI
+91
+NOME
+PORTA
+92
+NOME
+PORTE
+92
+NOME
+PARETI
+92
+NOME
+PARETE
+92
+NOME
+EROTICO
+93
+AGGETTIVO
+RE
+94
+NOME
+LISTA
+94
+NOME
+FORZA
+95
+VERBO
+SERRATURA
+96
+NOME
+MECCANISMO
+96
+NOME
+TECA
+97
+NOME
+TECHE
+97
+NOME
+REPERTO
+97
+NOME
+REPERTI
+97
+NOME
+OGGETTI
+97
+NOME
+DISEGNO
+98
+NOME
+DISEGNI
+98
+NOME
+INCISIONE
+98
+NOME
+INCISIONI
+98
+NOME
+SFINGE
+99
+NOME
+CAMMINA
+100
+VERBO
+CORRI
+100
+VERBO
+VAI
+100
+VERBO
+101
+101
+NOME
+GATTO
+105
+NOME
+DEMOCRITO
+105
+NOME
+MICIO
+105
+NOME
+GATTINO
+105
+NOME
+MATITA
+106
+NOME
+FOGLIO
+107
+NOME
+CARTA
+107
+NOME
+SEDIA
+108
+NOME
+SEDIE
+108
+NOME
+TEATRO
+109
+NOME
+TEATRO
+109
+NOME
+G
+110
+VERBO
+GUARDA
+110
+VERBO
+INDOSSA
+120
+VERBO
+VESTI
+120
+VERBO
+RIMUOVI
+121
+VERBO
+TOGLI
+121
+VERBO
+PALAZZO
+122
+NOME
+PALAZZO
+122
+NOME
+CARIGNANO
+123
+NOME
+EDICOLA
+124
+NOME
+COLONNA
+125
+NOME
+COLONNE
+125
+NOME
+ENTRATA
+126
+NOME
+GIURIDICO
+127
+AGGETTIVO
+MUMMIA
+128
+NOME
+MUMMIE
+128
+NOME
+TUTHMOSIS
+129
+NOME
+FIAMMIFERO
+130
+NOME
+FIAMMIFERI
+130
+NOME
+SOXHLET
+131
+NOME
+ESTRATTORE
+131
+NOME
+BUNSEN
+132
+NOME
+BECCO
+132
+NOME
+PROVA
+133
+NOME
+VETRERIA
+133
+NOME
+PROVETTA
+133
+NOME
+PROVETTE
+133
+NOME
+CARBONE
+134
+NOME
+TOMBINO
+135
+NOME
+COPERTURA
+136
+NOME
+PALA
+137
+NOME
+CAMICE
+138
+NOME
+BOTTIGLIA
+139
+NOME
+BOTTIGLIE
+139
+NOME
+BOTTIGLIETTA
+139
+NOME
+BOTTIGLIETTE
+139
+NOME
+SCAFFALE
+140
+NOME
+MORFINA
+141
+NOME
+DROGA
+141
+NOME
+OPPIO
+141
+NOME
+SCAFFALI
+140
+NOME
+DISTILLAZIONE
+141
+NOME
+BUSTA
+142
+NOME
+ANNUSA
+143
+VERBO
+ARREDAMENTO
+144
+NOME
+MURO
+145
+NOME
+MURA
+145
+NOME
+DECORAZIONE
+145
+NOME
+RISTORANTE
+146
+NOME
+DIPARTIMENTO
+147
+NOME
+LAVAGNA
+148
+NOME
+LAVAGNE
+148
+NOME
+TO
+150
+AVVERBIO
+SCIOPERO
+151
+AGGETTIVO
+STATUA
+152
+NOME
+STATUE
+152
+NOME
+AMENHOTEP
+153
+NOME
+ARIETE
+154
+NOME
+COPIA
+155
+VERBO
+OGGETTO
+156
+NOME
+ACCENDINO
+157
+NOME
+PAVIMENTO
+159
+NOME
+SUOLO
+159
+NOME
+SOLLEVA
+160
+VERBO
+MUOVI
+160
+VERBO
+SPINGI
+160
+VERBO
+TAVOLA
+161
+NOME
+ASSE
+161
+NOME
+VAGONE
+162
+NOME
+VAGONI
+162
+NOME
+FOSSA
+163
+NOME
+FUOCO
+164
+NOME
+SEGATURA
+165
+NOME
+TACCUINO
+166
+NOME
+TELONE
+167
+NOME
+LIBRERIA
+200
+NOME
+DORMI
+201
+VERBO
+SIEDI
+201
+VERBO
+SIEDITI
+201
+VERBO
+VESTITI
+202
+NOME
+VESTI
+202
+NOME
+CHIUDI
+203
+VERBO
+AUTO
+204
+NOME
+AUTOMOBILI
+204
+NOME
+PORTAOMBRELLI
+205
+NOME
+ATTREZZO
+206
+NOME
+ATTREZZI
+206
+NOME
+PREGA
+210
+VERBO
+INGHIOTTI
+211
+VERBO
+MANGIA
+211
+VERBO
+BEVI
+211
+VERBO
+ACCENDI
+213
+VERBO
+INCENDIA
+213
+VERBO
+SPEGNI
+214
+VERBO
+MELOGRANO
+216
+NOME
+MELOGRANI
+216
+NOME
+TEMI
+216
+NOME
+DENARO
+217
+NOME
+SOLDI
+217
+NOME
+GESSO
+218
+NOME
+GESSETTI
+218
+NOME
+GOMMA
+218
+NOME
+SPECCHIO
+219
+NOME
+MUSEO
+220
+NOME
+EGIZIO
+220
+NOME
+MARMO
+221
+NOME
+PIEDISTALLO
+221
+NOME
+PIEDISTALLI
+221
+NOME
+UFFICIO
+222
+NOME
+CORTILE
+223
+NOME
+SARCOFAGO
+224
+NOME
+SARCOFAGI
+224
+NOME
+SPAGO
+226
+NOME
+SCALINO
+227
+NOME
+SCALINI
+227
+NOME
+SCALINATA
+227
+NOME
+TAPPETO
+228
+NOME
+CORRIMANO
+229
+NOME
+SHIBBOLETH
+230
+VERBO
+RAMASSIN
+231
+NOME
+BOGIANEN
+232
+NOME
+BOJAFAUS
+233
+NOME
+ACIDO
+234
+NOME
+SALE
+234
+NOME
+FERRICO
+234
+NOME
+CLORURO
+234
+NOME
+MALEDIZIONE
+400
+VERBO
+FOTTI
+400
+VERBO
+PISCIA
+400
+VERBO
+TOCCA
+406
+VERBO
+ACCAREZZA
+406
+VERBO
+CAREZZA
+406
+VERBO
+AIUTO
+407
+VERBO
+INFO
+407
+VERBO
+HELP
+407
+VERBO
+PICCOLO
+408
+AGGETTIVO
+ME
+409
+NOME
+MI
+409
+NOME
+EMILIA
+409
+NOME
+RESTART
+987
+VERBO
+XYZZY
+1000
+VERBO
+POI
+9999
+SEPARATORE
+LOCAZIONI
+1
+Ti trovi nel corridoio alle spalle del salone principale di Villa Vittorini. C'è una finestra ed il luogo è illuminato da due lampade a gas, appese al muro a sud. In mezzo alle lampade ci sono i ritratti dei tuoi nonni. Ci sono anche due piccole scodelle in un angolo.
+
+Corridoio
+0
+5
+3
+2
+8
+0
+0
+0
+0
+0
+2
+Qui, tuo padre e tuo zio conservano i progetti delle parti meccaniche sulle quali stanno lavorando, come pure altri documenti. Sul muro vi sono scaffali che contengono molti disegni, libri ed altro. C'è anche una finestra con tendine e, sul muro a sud, vicino alla porta, diverse fotografie sono appese al muro.
+
+Archivio
+0
+4
+1
+0
+0
+0
+0
+0
+0
+0
+3
+Questo luogo è illuminato da lampade a gas. È un posto molto pulito, con una serie di padelle di rame di varie dimensioni appese lungo la parete a nord, una grande stufa al centro della stanza ed un grande lavello sotto la finestra ad est. A tuo padre piace cucinare. Una piccola dispensa è proprio a fianco del lavello.
+
+Cucina
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+4
+Tuo padre è sempre stato un uomo estremamente metodico ed il suo studio contiene una grande scrivania, pulita ed in perfetto ordine.
+
+Studio di Augusto
+2
+0
+5
+0
+0
+0
+0
+0
+0
+0
+5
+Decorato con arredamento semplice ed di gusto, il salone principale di Villa Vittorini è molto elegante. C'è un tavolo illuminato da un grande lampadario decorato con temi floreali e con melograni. Un pianoforte verticale è poggiato alla parete a sud.
+
+Salone principale
+1
+7
+6
+4
+0
+0
+0
+0
+0
+0
+6
+Tuo zio non vive qui; è sposato ed ha due bambini. Possiede una villa un poco più piccola nei dintorni. Ciononostante, gli piace lavorare qui, sotto la luce che filtra dalla grande finestra a sud. Tullio disegna le carrozzerie delle auto come pure i relativi accessori: il suo talento è senza dubbio una delle ragioni del successo dell'ITA, assieme alle abilità meccaniche di tuo padre. C'è una scrivania vicino alla finestra.
+
+Studio di Tullio
+0
+0
+0
+5
+0
+0
+0
+0
+0
+0
+7
+Vedi il porta ombrelli dove gli stessi vengono lasciati ad asciugare durante le giornate piovose, vicino ad un armadietto in mogano.
+
+Atrio
+5
+14
+15
+13
+0
+0
+0
+0
+0
+0
+8
+C'è un paesaggio incorniciato accanto alla porta a sud, che conduce in terrazza.
+
+Disimpegno
+9
+12
+11
+10
+0
+1
+0
+0
+0
+0
+9
+È un luogo gradevole, illuminato da un grande lampadario a gas a cinque lampade. C'è una finestra a nord con la tua scrivania sotto di essa. Hai sempre amato leggere e la parete est è completamente coperta dalla tua libreria, piena di volumi. Il tuo letto si trova sul lato ovest e sembra molto confortevole. Accanto ad una cassettiera ci sono un catino con specchio ed un armadio. La decorazione dell'arredamento è floreale, molto raffinata. Adori questo posto.
+
+Camera da letto
+0
+8
+0
+0
+0
+0
+0
+0
+0
+0
+10
+Tuo padre dorme da solo fin da quando tua madre è morta, quattro anni fa. La stanza è semplice. Da un lato c'è il letto di tuo padre, dall'altro un grande armadio con i suoi abiti. A sud, c'è una piccola scrivania ed una libreria.
+
+Camera da letto di Augusto
+0
+0
+8
+0
+0
+0
+0
+0
+0
+0
+11
+Sei sulla balconata est. Da quassù vedi il giardino ed il capanno in cui si trova il garage della villa.
+
+Balconata
+0
+0
+0
+8
+0
+0
+0
+0
+0
+0
+12
+La terrazza della villa è molto grande. Di sotto riesci a vedere il giardino e puoi apprezzare le rose coltivate da tuo padre. Ogni cosa è illuminata dal tramonto e le sue delicate tinte dipingono di rosso e di rosa il muro alle tue spalle.
+
+Terrazza
+8
+0
+0
+0
+0
+0
+0
+0
+0
+0
+13
+Fa un po' fresco qua fuori. Tuo padre adora le rose, e stanno sbocciando meravigliosamente.
+
+Giardino
+0
+14
+7
+0
+0
+0
+0
+0
+0
+0
+14
+Sei nel giardino della villa.
+
+Giardino
+7
+0
+15
+13
+0
+0
+0
+0
+0
+0
+15
+Sei su un sentiero in mezzo al giardino, circondato da rose. Ad est noti un capanno.
+
+Sentiero nel giardino
+0
+14
+16
+7
+0
+0
+0
+0
+0
+0
+16
+Ti trovi nel grande capanno che ospita il garage della villa. È qui che la tua famiglia tiene le vostre due automobili. Ovviamente, sono entrambi modelli ITA. Il modello 101, una grande auto di lusso a tre cilindri ed il modello 51, un'auto sportiva bicilindrica. Nel capanno hai tutto ciò di cui hai bisogno per mantenere le auto in ordine di marcia; acqua per rifornire i serbatoi per il vapore, una serie completa di attrezzi e carbone a volontà.
+
+Capanno
+0
+0
+0
+15
+0
+0
+0
+0
+0
+0
+17
+Sei vicino alla tua automobile parcheggiata. Da qui puoi scorgere l'entrata di un teatro, palazzo Carignano, un'edicola ed un ristorante caratteristico.
+
+Piazza Carignano
+-1
+18
+-1
+-1
+0
+0
+0
+0
+0
+0
+18
+Ti trovi proprio di fronte al Museo Egizio. Il grande portone d'ingresso è circondato da decorazioni in marmo con quattro colonne poggiate su alti piedistalli.
+
+Via Accademia delle Scienze
+17
+-1
+0
+20
+0
+0
+0
+0
+0
+0
+19
+È molto grande, c'è un tappeto bordeaux poggiato sugli scalini ed il corrimano è fatto di ferro battuto ed ottone lucidato. Vi sono tre bracieri a gas appesi alle pareti ma sono spenti in questo momento, visto che il museo è chiuso.
+
+Scalinata del Museo
+0
+20
+0
+0
+28
+0
+0
+0
+0
+0
+20
+Noti che la biglietteria del museo ha appena chiuso e non potrai quindi comprare il tuo biglietto di ingresso. Sopra la biglietteria, noti un grande pannello. La luce del tramonto entra da una grande finestra ad ovest, da dove riesci a scorgere il cortile interno del museo.
+
+Entrata del Museo
+19
+21
+18
+0
+0
+0
+0
+0
+0
+0
+21
+Noti una targa di marmo sulla parete est. Dipinti che testimoniano storiche scoperte effettuate in Egitto sono appesi alle pareti.
+
+Sala Grande
+20
+22
+0
+24
+0
+0
+0
+0
+0
+0
+22
+Iunnuh era considerato uno dei faraoni più potenti dell'antico Egitto. Tuttavia, la sua piramide nascosta nel deserto non fu mai più ritrovata. Questa sala è dedicata ai molti papiri che narrano le gesta del faraone: di quanto fu vittorioso in guerra e saggio in tempo di pace, e di quanto ricco fosse il suo regno.
+
+Sala di Iunnuh
+21
+0
+0
+0
+0
+0
+0
+0
+0
+0
+23
+Questo è il luogo dove vengono effettuati la classificazione e lo studio dei reperti del museo. C'è un grande tavolo, pieno di oggetti.
+
+Ufficio Classificazione
+0
+0
+0
+25
+0
+0
+0
+0
+0
+0
+24
+Esposte in teche di vetro, vedi quattro mummie. La sala contiene anche vari sarcofagi.
+
+Sala delle Mummie
+0
+0
+21
+27
+0
+0
+0
+0
+0
+0
+25
+Questa è un'area di deposito, chiaramente non aperta al pubblico. Vedi alcuni scaffali, dove è conservato un gran numero di reperti, tutti avvolti in carta chiusa con spago. Noti anche una scrivania.
+
+Deposito
+0
+26
+23
+0
+0
+0
+0
+0
+0
+0
+26
+Qui, le Statue Colossali sembrano fissarti con uno sguardo di 3000 anni fa. Vedi una porta a nord con un cartello che dice "Solo addetti".
+
+Sala delle Statue Colossali
+25
+27
+0
+0
+0
+0
+0
+0
+0
+0
+27
+Vi sono molte statue in questa sala, ma la più affascinante è la Sfinge al centro.
+
+Sala della Sfinge
+26
+0
+24
+0
+0
+0
+0
+0
+0
+0
+28
+Ti trovi in una grande scalinata, illuminata da una finestra ad est. Sulla parete opposta, disposte opportunamente per seguire l'andamento della scala, sono appese diverse incisioni.
+
+Scalinata
+0
+29
+0
+0
+0
+19
+0
+0
+0
+0
+29
+In questa sala ci sono quattro teche con piccole statue e reperti. C'è una grande finestra.
+
+Piccole Statue
+28
+30
+0
+0
+0
+0
+0
+0
+0
+0
+30
+Qui sono esposti molti papiri, tanti da ricoprire quasi completamente ogni parete. C'è una porta con scritto "Solo addetti" sulla parete ovest.
+
+Sala dei papiri
+29
+0
+0
+0
+0
+0
+0
+0
+0
+0
+31
+Questa è la sala d'aspetto dell'ufficio del Direttore. Noti diverse sedie: Schiaparelli dedica tempo a ricevere visitatori durante il suo lungo orario lavorativo.
+
+Sala d'aspetto
+0
+0
+30
+32
+0
+0
+0
+0
+0
+0
+32
+Questa stanza è illuminata da un grande lampadario con sei bracieri a gas di ottone, fatti a forma di fiore di loto.
+
+Ufficio del Direttore
+0
+0
+31
+0
+0
+0
+0
+0
+0
+0
+33
+Ti trovi vicino al dipartimento di chimica dell'Università, ad est.
+
+Via Pietro Giuria
+-1
+-1
+34
+0
+0
+0
+0
+0
+0
+0
+34
+Ti trovi nell'atrio del Dipartimento di Chimica.
+
+Atrio
+35
+38
+41
+33
+0
+0
+0
+0
+0
+0
+35
+Non c'è nessuno in giro, ma si sente ancora puzza di fumo di sigaretta mescolata con il tipico odore dei dipartimenti di chimica: solventi organici ed elementi volatili.
+
+Corridoio
+0
+34
+36
+0
+0
+0
+0
+0
+0
+0
+36
+Sei in fondo al corridoio.
+
+Corridoio
+0
+41
+37
+35
+0
+0
+0
+0
+0
+0
+37
+È una normale aula, come quelle che si trovano in qualunque università. Ci sono banchi e sedie per gli studenti ed una grande lavagna con gessetti e cancellino. C'è un armadietto di metallo in un angolo della stanza.
+
+Classe
+0
+0
+0
+36
+0
+0
+0
+0
+0
+0
+38
+Una vecchia colonna di distillazione è stata appesa alla parte per decorare il luogo.
+
+Scala
+34
+0
+39
+0
+0
+42
+0
+0
+0
+0
+39
+Corridoio
+
+Corridoio
+41
+0
+40
+38
+0
+0
+0
+0
+0
+0
+40
+Sei nel laboratorio di chimica organica. Noti un grande tavolo, pieno di vetreria e provette. Sulla parete nord, un armadietto contiene diverse bottiglie di reagenti. Un leggero odore aromatico pervade l'ambiente, come a ricordare che in questo posto la chimica viene insegnata, discussa e provata.
+
+Laboratorio
+0
+0
+0
+39
+0
+0
+0
+0
+0
+0
+41
+Questa è l'Aula Magna del dipartimento. Ci saranno almeno duecento posti a sedere e ci sono tre grandi lavagne con un meccanismo che le fa scorrere l'una sulle altre.
+
+Aula Magna
+36
+39
+0
+34
+0
+0
+0
+0
+0
+0
+42
+Scale
+
+Scale
+0
+52
+43
+0
+38
+0
+0
+0
+0
+0
+43
+Ti trovi in una piccola stanza che contiene l'impianto di riscaldamento. Si tratta di una caldaia complessa che fornisce sia acqua calda per riscaldare gli ambienti durante l'inverno così come vapore per far funzionare i vari meccanismi del dipartimento. Noti il carbone che viene impiegato nella caldaia.
+
+Locale Caldaia
+0
+0
+0
+42
+0
+0
+0
+0
+0
+0
+44
+Sei in un locale che probabilmente veniva utilizzato come cantina per conservare il carbone.
+
+Cantina
+0
+47
+45
+0
+43
+0
+0
+0
+0
+0
+45
+Sei in un locale che probabilmente veniva utilizzato come cantina per conservare il carbone.
+
+Cantina
+0
+47
+46
+44
+0
+0
+0
+0
+0
+0
+46
+Torino è ben nota per le sue gallerie sotterranee, dette anche infernotti. Ti trovi in una di esse. È un luogo freddo ed umido e non particolarmente accogliente.
+
+Infernotto
+0
+48
+0
+45
+0
+0
+0
+0
+0
+0
+47
+Sei in un locale che probabilmente veniva utilizzato come cantina per conservare il carbone.
+
+Cantina
+45
+0
+0
+44
+0
+0
+0
+0
+0
+0
+48
+Ti trovi in una galleria.
+
+Infernotto
+46
+0
+0
+49
+0
+0
+0
+0
+0
+0
+49
+Ti trovi in una galleria.
+
+Infernotto
+0
+0
+48
+50
+0
+0
+0
+0
+0
+0
+50
+Ti trovi in una galleria.
+
+Infernotto
+0
+0
+49
+51
+0
+0
+0
+0
+0
+0
+51
+Ti trovi in una piccola camera sotterranea.
+
+Infernotto
+0
+0
+50
+0
+0
+0
+0
+0
+0
+0
+52
+Sei nel locale tecnico del dipartimento.
+
+Locale tecnico
+42
+0
+0
+0
+0
+0
+0
+0
+0
+0
+53
+Sei in una galleria.
+
+Infernotto
+49
+0
+0
+54
+0
+0
+0
+0
+0
+0
+54
+Sei in una galleria.
+
+Infernotto
+0
+0
+53
+55
+0
+0
+0
+0
+0
+0
+55
+Ti trovi in un posto pulito, preparato per conservare scaffali pieni di vetrerie, bottiglie e provette.
+
+Magazzino
+0
+0
+54
+56
+0
+0
+0
+0
+0
+0
+56
+Ti trovi in un piccolo laboratorio chimico, nascosto nel sottosuolo. Noti un estrattore Soxhlet che opera su di un becco Bunsen, acceso. Vi sono piccole bottigliette vuote, pulite e pronte ad essere riempite, accanto ad una centrifuga a vapore. Un piccolo armadietto di legno ha un'apertura in vetro dalla quale riesci a vedere centinaia di queste piccole bottigliette, piene di un liquido trasparente. Le etichette ed i piccoli blocchetti marroni non lasciano dubbi: in questo posto, qualcuno sta producendo segretamente morfina!
+
+Laboratorio
+0
+0
+55
+0
+0
+0
+0
+0
+0
+0
+57
+È molto buio qui dentro, non riesci a vedere praticamente nulla.
+
+Vagone
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+58
+Questo posto è molto ampio e ci sono binari con sopra qualche vagone. Un piccolo ufficio è stato ricavato in una sorta di cabina a sud del capannone. Il luogo è illuminato da grandi bracieri a gas.
+
+Capannone deposito
+0
+61
+59
+57
+0
+0
+0
+0
+0
+0
+59
+Ti trovi in un'officina di saldatura. Un binario la attraversa e c'è una fossa per riparare vagoni e locomotive. Un grande banco da lavoro contiene un po' di attrezzatura.
+
+Officina di saldatura
+0
+0
+60
+58
+0
+0
+0
+0
+0
+0
+60
+Sei all'esterno, in un posto pieno di fango ed erbacce. C'è un cancello ad est, dove la ferrovia entra nel deposito.
+
+Cortile
+64
+62
+0
+59
+0
+0
+0
+0
+0
+0
+61
+Sei in un piccolo ufficio, ci sono una scrivania e due sedie. Riccobene and Belisario stavano discutendo qui prima, ma ora stanno tentando di spegnere l'incendio che tu hai provocato bruciando la segatura.
+
+Ufficio
+58
+0
+0
+0
+0
+0
+0
+0
+0
+0
+62
+Sei in un'officina di riparazione. C'è un vagone merci sul lato est.
+
+Officina di riparazione
+60
+0
+0
+0
+0
+0
+0
+0
+0
+0
+63
+Sei in un vagone merci.
+
+Vagone
+0
+0
+0
+62
+0
+0
+0
+0
+0
+0
+64
+Ti trovi in una grande falegnameria. Ci sono macchine per carpenteria ovunque. In un angolo, protetti da un muro in cemento per evitare la diffusione di incendi, ci sono una serie di contenitori, pieni di segatura.
+
+Falegnameria
+0
+60
+0
+0
+0
+0
+0
+0
+0
+0
+100
+Ti chiami Emilia Vittorini, sei la figlia di Augusto Vittorini, che ha fondato l'Industria Torinese Automobili (ITA) insieme a suo fratello Tullio. Tuo padre si trova all'estero per una raccolta fondi, ma qualcosa è andato storto ed hai sentito tuo zio tornare a casa sbattendo la porta. La tua missione è cercare di capire cosa sia successo ed in che modo tu possa aiutare la tua famiglia. Io sarò i tuoi occhi e le tue orecchie. Buona fortuna.^M^MIn questo gioco, vengono fornite delle password nei momenti più importanti. Annotale.^M
+
+Introduzione
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+MESSAGGI
+1
+È la scrivania di tuo padre. È un grande tavolo in mogano con gambe decorate. Tuo padre incontra clienti ed altre persone in fabbrica, ma qui riesce a lavorare con molta più tranquillità.
+2
+La scrivania di tuo zio è semplice e contiene tutto ciò di cui ha bisogno per il suo lavoro.
+3
+Vedi parte del giardino, illuminato da un magnifico tramonto.
+4
+Riesci a vedere il cortile sul retro, dove si scorge il capanno.
+5
+Sono i ritratti di tuo nonno e di tua nonna, dal lato materno.
+6
+È un muro, illuminato da un meraviglioso tramonto.
+7
+Sii più specifica!
+8
+È una busta da lettere con su scritto il nome di tuo padre.
+9
+Tuo padre si occupa dei suoi affari personali su questa scrivania.
+10
+Dalla tua finestra, riesci a vedere la strada che costeggia il retro della villa. All'orizzonte, un paesaggio urbano si confonde con il tramonto. A sinistra, distante, riesci a scorgere la forma del gazometro locale.
+11
+È la tua cassettiera, piena della tua biancheria.
+12
+Sei già vestita, e con gusto. Non ne hai bisogno.
+13
+Non c'è niente di speciale da vedere.
+14
+Il tuo armadio è già aperto.
+15
+Nell'armadio, vedi i tuoi abiti ed una strana scatola in pelle.
+16
+È il tuo armadio. Dovresti sapere cosa contiene ma, in caso l'avessi dimenticato, prova ad aprirlo!
+17
+I ritratti rappresentano tuo nonno e tua nonna, dal lato paterno. Li ricordi bene. I tuoi nonni giocavano sempre con te ma purtroppo sono morti quando tu avevi cinque e sette anni, rispettivamente. Qui hanno un aspetto giovanile e felice.
+18
+Non sei stanca.
+19
+Non sta piovendo, non ci sono ombrelli qui.
+20
+È la città di Cherasco. Tuo nonno arrivò a Torino sessanta anni fa e conobbe tua nonna lì.
+21
+Non c'è nulla di speciale nella cornice.
+22
+Tuo padre si occupa di questioni personali su questa scrivania. Mentre cerchi nei cassetti, il gatto comincia a giocare con qualcosa sotto al letto di tuo padre.
+23
+Tuo padre si occupa di questioni personali su questa scrivania. C'è una busta da lettere aperta sopra di essa ma nient'altro. Mi domando dove sia la lettera.
+24
+Guardi sotto il letto di tuo padre e trovi Democrito che gioca con una lettera, tutta accartocciata.
+25
+Ci sono due scodelle, una piena d'acqua ed un'altra vuota.
+26
+Metti l'acciuga nella scodella vuota. Democrito spicca un salto e la divora velocemente e con soddisfazione. Gatto fortunato! Appena finito, comincia a fare le fusa e si struscia con delicatezza sulle tue gambe.
+27
+La dispensa è piena di vasetti e barattoli. In un angolo, su di un piattino, vedi una piccola acciuga, già dissalata.
+28
+Le immagini sul muro rappresentano momenti della storia della ITA. Una foto in particolare è stata scattata mentre il Presidente del Consiglio stringeva la mano a tuo padre e tuo zio. Fondata nel 1894, grazie a numerosi modelli di gran successo, in soli pochi anni la fabbrica è passata dall'essere una piccola azienda familiare a diventare la più grande fabbrica di automobili in Italia. ITA si è guadagnata una reputazione nella costruzione di automobili a vapore, affidabili e tecnologicamente avanzate.
+29
+Ci sono molti progetti qui. I più recenti sono per Autosigma, un prototipo a vapore che ITA ha preparato appositamente per la gara che si terrà tra due giorni. Tuo padre e tuo zio chiaramente hanno impiegato molte risorse e dedicato molto tempo a questo prototipo. Sei conscia del loro lavoro e sai che include numerose migliorie. Rubare il prototipo è chiaramente molto appetibile da un punto di vista di spionaggio industriale, ma almeno qui i progetti sono ben protetti.
+30
+Guardi il cielo, illuminato da un bellissimo tramonto. La tua villa è nella Crocetta, un elegante quartiere residenziale. Noti la strada che passa dinanzi la tua casa e gli alberi, colorati dal tramonto con tonalità che sfumano dall'arancio al rosa.
+31
+La dispensa è piena di vasetti e barattoli. Non c'è altro di particolarmente interessante.
+32
+Questo armadietto è dove vengono tenute le varie chiavi della villa. Ovviamente, la chiave per la ITA 51 è qui.
+33
+Ci sono molti oggetti interessanti sugli scaffali: se tu fossi un'egittologa, questo posto sarebbe un'isola del tesoro per te.
+51
+Si tratta di un'auto relativamente piccola, molto ben rifinita e leggera. È un'automobile a vapore, con un generatore a pressione ed un motore bicilindrico che agisce sulle ruote posteriori. È un modello recente ed è possibile portarla in esercizio in meno di un minuto. Riesce a raggiungere i 120 km/h nelle mani di un buon pilota. Per inciso, da buona figlia di tuo padre, tu sei un ottimo pilota e certamente sai come guidarla al meglio. Naturalmente, è verniciata di rosso ed ha una rosa dipinta sulla fiancata.
+52
+Hai bisogno della chiave per poter guidare l'auto.
+53
+Devi indossare i tuoi occhiali da pilota per poter guidare l'auto.
+54
+Versi un po' d'acqua nel serbatoio ed accendi il bruciatore a carbone. Democrito si spaventa per il rumore e scappa via. In meno di un minuto, avverti un leggero sobbalzo e l'ago del manometro del vapore entra nell'area verde. Regoli il generatore di vapore e premi l'acceleratore. L'auto inizia a muoversi, dolcemente all'inizio e poi sempre più rapidamente. Museo Egizio, sto arrivando!
+55
+Non sei una turista. Non c'è motivo per andare lì.
+56
+Il custode si presenta, sbraitando "il museo è chiuso, chiuso! Cosa stai facendo qui?! Vattene via!" e ti spinge di fuori.
+57
+Il custode dice: "Il museo è chiuso ora", con un tono estremamente annoiato. È chiaro che vorrebbe essere da qualsiasi altra parte ora come ora...
+58
+Prendi una copia de "La Stampa", il quotidiano locale e dai 5 centesimi al giornalaio dell'edicola.
+59
+Non sei qui per leggere giornali, tuttavia in prima pagina c'è un articolo sulle misure che il governo intende prendere contro la disoccupazione, qualche riga sul pensionamento del Generale Luigi Pelloux, gossip sulla Duchessa d'Orléans a Parigi e, un articolo più intrigante su la Madama Butterfly, la nuova opera di Puccini.
+60
+Il custode del museo afferra il giornale con una luce negli occhi: sembra molto interessato dalla nuova opera di Puccini. Ti ringrazia a mezza bocca e si ritira nel suo gabbiotto dietro la biglietteria. Questo lo terrà occupato per un po'.
+61
+Il cartello contiene una lista di tutti i direttori del museo. Schiaparelli è l'ultimo cronologicamente, ed è tutt'ora in servizio. È un amico di tuo padre e sa qualcosa a proposito dell'auto rubata. Se qui per incontrarlo!
+62
+Conosci bene la leggenda di Iunnuh. Schiaparelli stesso amava raccontartela quando eri ancora una bambina. Iunnuh fu il più grande faraone e le sue azioni furono tanto meravigliose quanto terribili. Molti pensano che si tratti solo di una leggenda, che la piramide di Iunnuh non verrà mai ritrovata e che i tesori contenuti in essa non vedranno mai più la luce del sole. Altri (tra i quali Schiaparelli) pensano invece che i segreti di Iunnuh saranno rivelati, un giorno.
+63
+La porta è bloccata. Dovresti esaminare lo strano meccanismo e trovare un modo di azionarlo in modo da aprire la porta.
+64
+Il meccanismo che chiude la porta è una delle invenzioni di tuo padre. Riconosci lo stile e ci sono anche le sue iniziali A.V. È una serratura a combinazione costruita appositamente per Schiaparelli. Vi sono sette dischi che devono essere allineati in modo corretto. Ovviamente, i simboli su di essi sono geroglifici! Non riuscirai ad attivare il meccanismo senza la giusta combinazione. A proposito, la stanza è piena di papiri: speri sinceramente che la combinazione non si trovi tra questi, impiegheresti almeno una settimana nel tentare tutte le possibili permutazioni.
+65
+La sala è piena di papiri. Noti i frammenti della Lista dei Re che descrive tutti i faraoni prima di Ramses II. Vedi anche il Papiro Giuridico. C'è il Papiro dello Sciopero sul lato nord e noti anche, nascosto in un angolo, il Papiro Erotico, con coppie grottesche che copulano nelle maniere più diverse.
+66
+Hai molte qualità, ma non sai decifrare geroglifici. Potresti chiedere a Schiaparelli, se riuscissi ad incontrarlo!
+67
+Il famoso Papiro Erotico è grottesco e piuttosto divertente, anche se ne permangono solo alcuni frammenti. È anche buffo il fatto che sia stato posto in un angolo, quasi nascosto.
+68
+È la "Lista dei Re" di Torino, composta di vari frammenti. È un'importante fonte per la cronologia degli antichi faraoni.
+69
+È una serratura costruita da tuo padre. Sai quanto sia ben fatta: avresti bisogno di troppo tempo e degli strumenti adeguati per poterla forzare. Inoltre, non credo che Schiaparelli ne sarebbe entusiasta...
+70
+Esamini gli oggetti esposti nelle teche. Noti un piccolo pezzo di pietra calcarea (un ostrakon) dove una danzatrice è adorabilmente disegnata, con il pallido tono della sua pelle gentilmente sfiorato dalla luce del tramonto. È quasi nuda mentre inarca la sua schiena acrobaticamente; la sua delicata silhouette è definita con grazia ed eleganza. I suoi capelli ricci sono lunghi e fluenti, e toccano il suolo. Indossa orecchini d'oro. Rimani quasi stordita per qualche secondo, assorta nell'ammirazione, quasi come se ti aspettassi che la piccola figura potesse tornare in vita, più di 3000 anni dopo la morte della donna che ispirò l'artista, e completare il suo salto acrobatico dinanzi ai tuoi occhi: è una piccola rappresentazione, ma non di meno un capolavoro strabiliante.
+71
+Leggi che queste sono riproduzioni delle incisioni dal libro "Description de l'Egypte, ou recueil des observations et des recherches qui ont été faites en Egypte pendant l'expédition de l'armée française, publié par les ordres de Sa Majesté l'Empereur Napoléon le Grand". Sono incorniciate con gusto e mostrano, tra le altre cose, scene della vita quotidiana durante l'epoca dei faraoni.
+72
+Si tratta della descrizione del primo sciopero di cui si abbia traccia, compiuto dai lavoratori di Deir el-Medina. Chiedevano di migliorare le loro condizioni durante i lavori di costruzione e decorazione delle tombe nella Valle dei Re.
+73
+La sala contiene numerose magnifiche e colossali statue. In questo momento ti trovi davanti ad una grande statua di Tuthmosis III. Noti anche l'impressionante statua di Amenhotep II ed un'ariete, dall'altro lato della sala.
+74
+È una statua del faraone Amenhotep II, inginocchiato, mentre tiene nelle mani due vasi globulari. Era considerato un grande guerriero ed atleta. I muscoli nelle braccia della statua sembrano vibranti e pronti alla battaglia.
+75
+È la raffigurazione di un'ariete, di stazza considerevole, che protegge una raffigurazione del faraone Amenhotep III.
+76
+È una statua colossale che rappresenta il faraone Tuthmosis III.
+77
+Vedi un pannello con su scritto "Benvenuti" e quindi alcuni geroglifici. È elegante!
+78
+Aspetta un momento... se dovessi scegliere, probabilmente useresti qualcosa di simile come combinazione per la serratura della porta!
+79
+Beh, vediamo: la targa contiene un giunco in fiore con gambe, poi gambe che camminano... no aspetta, era il giunco che camminava... No, non funziona! Il secondo simbolo era una testa, forse? Uh, non riesci a ricordare la combinazione! Dovresti copiarla da qualche parte...
+80
+Copi con cura il messaggio della targa: un giunco in fiore con gambe, un giunco, delle gambe che camminano, una civetta, un pane su una stuoia, un mezzo cerchio ed un piccolo quadrato. Si deve trattare di un messaggio di benvenuto scritto con geroglifici. Piuttosto plausibile come combinazione di una porta! Vale la pena di tentare.
+81
+Per copiare la targa, ho bisogno di qualcosa per scrivere e di un foglio di carta...
+82
+La scrivania è piuttosto in disordine. Ci sono molti libri, una serie di fotografie dei reperti esposti ed un foglio bianco di carta.
+83
+Giri le ruote fino a che la combinazione non corrisponde al saluto che hai visto sulla targa all'ingresso: i geroglifici che hai copiato sul foglio di carta. Funziona! La serratura emette una nota acuta ed ora la porta si è aperta, con un piccolo sbuffo di vapore che sfugge dalla serratura.
+84
+Hai già copiato il messaggio su carta!
+85
+^MQuando bussi ed apri la porta, vedi Schiaparelli alla sua scrivania. Ha un'aria perplessa, ma poi è felice di vederti: "Emilia? Come hai fatto a convincere Temistocle a farti entrare? ... Sei proprio come tuo padre! Non c'è niente che possa fermarvi quando avete in mente qualcosa... Ho provato a contattarlo: Il mio amico Giacomo Antonio Luzzi, il professore di chimica, ha visto un ex dipendente della ITA, Attilio Belisario all'università, mentre stava parlando con uno dei suoi assistenti, Riccobene. Gli è sembrato di sentir loro dire '... quel prototipo vale molto denaro, ed interessa a qualcuno che conosco...'  Sapeva che Belisario era stato licenziato quattro mesi fa per furti commessi in fabbrica. Luzzi sospetta anche che Riccobene stia facendo qualcosa di strano al dipartimento di chimica, ma non è riuscito a capire cosa. Questo è tutto ciò che so." ^MTu ringrazi educatamente. Ti piace quest'uomo: è come uno zio per te, una persona molto raffinata, di grandissima cultura. Andrai immediatamente al Dipartimento di Chimica dell'Università, sperando di trovare indizi sull'auto scomparsa. ^MMentre stai lasciando l'ufficio, Schiaparelli dice "Emilia... andrò in Egitto il prossimo anno: ho idea che alcuni siti nascondano ancora veri tesori archeologici. Abbiamo bisogno di persone come te: ti andrebbe di unirti alla mia spedizione?" Lo ringrazi nuovamente promettendo che ci penserai.
+86
+Ci sono alcune sedie per le persone che devono incontrare il direttore. Tu vai un po' di fretta e comunque non c'è nessuno qui, non ti va di sederti ed aspettare in questo momento...
+87
+Ti piace quel teatro: hai assistito a spettacoli memorabili in quel posto.. La gente sta entrando, visto che stasera è aperto. Che peccato che tu non possa unirti a loro in questo momento!
+88
+Il palazzo ha una bella facciata di mattoni rossi.
+89
+È un'edicola che vende La Stampa, il quotidiano locale. È ancora aperta.
+90
+È un ingresso impressionante, piuttosto adatto ad un museo.
+91
+Non c'è nulla di interessante lì.
+92
+È un uomo di mezz'età con occhi arrossati e denti gialli. Non sembra avere un'attitudine particolarmente amichevole, ma se non altro sta fischiettando un'aria lirica.
+93
+Descrive il processo contro i cospiratori che assassinarono Ramses III nella cosiddetta cospirazione dell'Harem.
+94
+Le quattro mummie sono ben conservate ed una di esse ha i bendaggi parzialmente rimossi. Riesci a scorgere l'espressione del viso essiccato del corpo, in qualche modo ti appare in pace, dopo un sonno di più di tremila anni. Dev'essere una vista impressionante per i giovani ragazzini che visitano il museo!
+95
+Una sfinge Egizia è un leone con testa umana. Si pensava possedesse una forza leggendaria e veniva posta di guardia di fronte a templi e tombe.
+96
+Sono a conoscenza del fatto che in altre avventure testuali sia cosa comune rompere le teche, ma fidati: non hai bisogno di una mummia che ti tenga compagnia mentre cerchi di capire cosa sia successo ad un prototipo di automobile.
+97
+Apri la piccola valvola che permette all'acqua di gocciolare sul piccolo blocco di carburo. L'acetilene che viene generato si sprigiona dal fornello con un odore acre. Lo accendi con un fiammifero e la lampada genera una fiamma bianca e luminosa.
+98
+Chiudi la piccola valvola e l'acqua smette di gocciolare. Dopo qualche secondo, l'acetilene cessa di fluire e bruciare. La lampada è ora spenta.
+99
+È una bella lampada ad acetilene. L'acqua, entrando in contatto con un piccolo blocco di carburo, genera il gas. Brucia emettendo una bella fiamma bianca e luminosa.
+100
+Non puoi accendere la lampada senza qualcosa che avvii la combustione e generi la fiamma.
+101
+La modello 101 è una grande automobile, una torpedo nera con il sedile del guidatore separato dal compartimento passeggeri. È molto confortevole e rivestita di velluto rosso. La tua famiglia non ha un autista, però, dato che tanto a te quando a tuo padre ed a tuo zio piace guidare personalmente. Il generatore di vapore alimenta un motore a tre cilindri che sviluppa più di 60 CV, in un silenzio praticamente totale ma con una coppia generosa e un'accelerazione adeguata.
+102
+No, la 101 non è l'auto adatta a brevi tragitti.
+105
+"Ciao piccolo micetto dolce! Democrito sembra felice quando sente la tua voce e comincia a fare le fusa.
+106
+È un classico banco da laboratorio come se ne trovano in qualunque laboratorio di chimica. Sopra di esso vedi un estrattore Soxhlet ed un becco Bunsen, spenti. Il suo utilizzo è probabilmente di dimostrazione per gli studenti. Ci sono anche dei fiammiferi, per accendere il becco Bunsen.
+107
+È un estrattore Soxhlet. C'è un recipiente di vetro pieno di etere, da usare come solvente per l'estrazione. In cima all'estrattore due tubi in gomma forniscono l'acqua fredda necessaria all'estrazione. L'estrattore non è in funzione, al momento.
+108
+È un becco Bunsen, sistemato sotto l'estrattore. Al momento è spento.
+109
+Non sei qui per giocare al piccolo chimico! Lascialo stare.
+110
+Contengono numerosi reagenti. Mi domando come io li possa utilizzare...
+111
+Sono dei normalissimi fiammiferi. Prendono fuoco se sfregati contro una superficie ruvida...
+112
+C'è un bel po' di carbone, vicino alla caldaia. È normale. Sembra che sia sistemato sopra un tombino di metallo. Questo è un po' meno normale.
+113
+Ti servirà qualcosa per spostare tutto quel carbone.
+114
+Rimuovi velocemente tutti il carbone dal coperchio del tombino, con la pala. C'è un foro che permette di rimuovere il coperchio con una maniglia. Lasci la pala a terra, non è molto comodo portarla in giro. Guardando dentro al tombino, noti una scala che scende, ma è molto buio laggiù.
+115
+Sulla parete sud c'è una porta, chiusa.
+116
+Inserisci la chiave nella serratura: è vecchia e non si apre immediatamente, ma dopo qualche tentativo riesci ad aprire la porta.
+117
+C'è una vecchia ma robusta serratura. Non riuscirai ad aprirla senza la chiave corretta.
+118
+È un camice da laboratorio, usato dal professore che per ultimo ha tenuto lezione qui, probabilmente per evitare di coprirsi gli abiti di polvere di gesso. C'è un'etichetta con un nome: "L. Riccobene" ed ha una tasca che contiene una chiave.
+119
+È un camice da laboratorio, usato dal professore che per ultimo ha tenuto lezione qui, probabilmente per evitare di coprirsi gli abiti di polvere di gesso. C'è un'etichetta con un nome: "L. Riccobene".
+138
+Non puoi camminare al buio!
+139
+Mentre stai camminando, senti qualcuno che ti afferra alle spalle. Ti vengono coperti bocca e naso con uno straccio umido: provi a gridare ma non ci riesci, ed avverti il caratteristico odore dell'etere. Dopo pochi istanti ti si annebbia la vista e sprofondi nell'oscurità. Perdi conoscenza.
+140
+Ti risvegli in una piccola stanza, con il pavimento in legno e le pareti in metallo, è l'interno di un vagone merci. Hai un senso di nausea, ma non sei ferita.^M
+141
+È molto simile all'equipaggiamento che hai visto nel laboratorio al piano di sopra. La differenza è che questo è in funzione e sta estraendo morfina!
+142
+Alcune bottiglie sono vuote ed altre sono piene di un liquido trasparente e viscoso. L'etichetta lo identifica come morfina.
+143
+È un becco Bunsen, posizionato sotto all'estrattore. È acceso.
+144
+C'è una serie di contenitori da laboratorio, un paio di condensatori, tubi di gomma ed argilla, materiali utili per assemblare e sigillare attrezzature in vetro.
+145
+Una volta conoscevi una persona che aveva sviluppato dipendenza da droghe. Non è stata una bella storia. Non toccarla e lascia che la morfina venga gestita e somministrata da medici.
+146
+È una vecchia colonna di distillazione, un pezzo di vetreria di dimensioni impressionanti. Probabilmente non era molto efficiente ed è stata messa qui, per stupire gli studenti.
+147
+Sei troppo lontana, ma sai che hanno un profumo meraviglioso.
+148
+È un piacevolissimo profumo. Ti ricorda di tua madre, anni fa giocavate insieme in giardino in questa stagione dell'anno.
+149
+Non sei qui per visitare da turista il Museo Egizio o cenare in un bel ristorantino italiano. Il tuo fritto misto alla piemontese dovrà attendere.
+150
+Questo palazzo ospita il dipartimento di chimica dell'università di Torino. È stato inaugurato due anni fa.
+151
+Ci sono scritte sopra alcune formule chimiche. A quanto pare, descrivono le reazioni del cloruro di ferro quando corrode il rame od altri metalli.
+152
+C'è un grande oggetto sotto al telone: è un'automobile. Guardandola meglio il tuo cuore ha un sussulto: hai trovato il prototipo Autosigma! Non hai molto tempo e non ne sprechi affatto: corri attraverso il cortile ed esci da un varco nel cancello. Riconosci lo stadio di fronte a te, non è molto lontano dalla Crocetta, dove vivi. Corri alla villa della tua famiglia, dove trovi tuo zio Tullio, molto preoccupato perché non eri ancora tornata a casa, nel cuore della notte.^M Chiamate la polizia e Riccobene e Belisario vengono arrestati mentre stanno ancora tentando di domare le fiamme che tu hai appiccato. Il prototipo viene trasferito alla fabbrica ITA ed è tenuto lì al sicuro.^M^MOra, ti puoi godere un po' di meritato riposo. Ma non troppo, perché dopodomani sarai ai comandi dell'Autosigma alla gara ed avrai bisogno di una buona notte di sonno. Questo è l'ultimo pensiero che hai nel tuo letto, mentre ti addormenti. ^MParola in codice finale: COUNTACH! ^M^MGrazie per aver giocato questa avventura.
+153
+Non puoi entrare: senti due persone che stanno discutendo. Deve trattarsi di Riccobene, l'assistente del professor Luzzi e di Belisario, l'ex dipendente ITA licenziato per aver rubato attrezzatura in fabbrica.^M^M"-Sei pazzo, pazzo! Spero che ci pagheranno bene per l'auto, la ragazza ha scoperto il nostro laboratorio e dobbiamo lasciare immediatamente Torino! ^M-Fai silenzio! Cosa vorresti fare, ucciderla e metterci in guai ancora più seri? Ti ho già detto che verremo pagati profumatamente e tra due giorni saremo a Ginevra a sorseggiare champagne. E poi il tuo capo, Luzzi, sospettava già del laboratorio, è il momento giusto per andarcene! La ragazza si sveglierà con un brutto mal di testa e verrà trovata domani quando noi ce ne saremo già andati. Odio questa città e non vedo l'ora di partire." ^MI due continuano a parlare dei vini pregiati che compreranno a Ginevra.
+154
+Non puoi entrare: Riccobene e Belisario sono lì, non vuoi che ti scoprano. Dovrai attirarli fuori con un pretesto.
+155
+Esplori accuratamente il pavimento in legno con le mani. Noti che una delle tavole si muove se vi applichi del peso.
+156
+Con una certa difficoltà riesci a sollevare la tavola. È pesante, ma sei fortunata! Ora puoi uscire dal vagone.
+157
+Guardi attentamente le pareti, costituite da pannelli in legno avvitati ad un telaio metallico. Non c'è maniera di uscire in questo modo.
+158
+Sono dei vagoni merci piuttosto ordinari. Servono a trasportare materiale lungo le strade ferrate. Si trovano in questo luogo perché devono essere riparati e tu sei appena fuggita da uno di essi.
+159
+Sono i bruciatori a gas che illuminano questo luogo. Si tratta di modelli semplici, pratici e non decorati, adatti ad un ambiente industriale.
+160
+Ci sono molti oggetti su questo banco, un grande set di attrezzi per saldature. Noti in particolare un accendino.
+161
+Che puzza!
+162
+Ci sono molti oggetti su questo banco, un grande set di attrezzi per saldature.
+163
+Dai fuoco alla segatura con l'accendino trovato nell'officina di saldatura. Forse non è la migliore cosa che potresti fare, ma il posto sembra ben protetto contro un incendio di segatura e non dovrebbe creare molti danni. Dopo qualche minuto, l'incendio divampa, diventa rumoroso e piuttosto spaventoso. Ti nascondi in un angolo. Belisario e Riccobene accorrono. Belisario grida "-Ma che diamine? Lo sapevo che era un'idea stupida tenere tutta quella segatura in un solo posto!" Entrambi provano a tenere sotto controllo il fuoco e saranno occupati con secchi pieni d'acqua per un po'. Mentre sono intenti in questa attività, tu sgattaioli fuori senza esser vista.
+164
+È un vagone merci. Sembra pronto alla partenza ed ha una grossa serratura sulla porta.
+165
+Provi ad aprire la porta del vagone, ma è chiusa a chiave. E sfortunatamente non ci sono tavole di legno sul pavimento che puoi spostare, quesa volta!
+166
+Provi ad aprire la serratura con la chiave trovata nell'ufficio, e funziona! La porta è aperta.
+167
+Riccobene e Belisario sono ancora nell'officina di falegnameria, tentando di domare le fiamme. Meglio evitarli!
+168
+C'è molta confusione sulla scrivania. Tra le varie cose, ci sono bottigliette di morfina e due siringhe. Non hai intenzione di toccare queste cose. Vedi una grande chiave, quasi nascosta sotto un blocco note.
+169
+Prendi il blocco note dal tavolo. È pieno di ricette, formule chimiche e descrizioni degli effetti della morfina. Probabilmente Riccobene ha provato diverse ricette, testando i risultati su se stesso. Meglio lasciarlo qui!
+170
+Generalmente un telone serve a coprire qualcosa. Potresti provare a sollevarlo per vedere cosa c'è sotto...
+210
+Ancora non sai cosa sia successo di preciso. Farai meglio a trovare tuo zio e chiedere a lui.
+220
+È il tuo letto. È confortevole.
+221
+È il tuo catino. Lo usi ogni giorno per la tua toletta mattutina.
+222
+È un foglio di carta, preso da un blocco note. Vi hai copiato sopra i geroglifici.
+223
+È un foglio di carta, preso da un blocco note. È bianco.
+224
+È una matita dermografica. È stata usata molto ed è corta, ma appuntita.
+225
+È una piccola chiave, sembra piuttosto vecchia.
+226
+È una chiave piuttosto grande ed arrugginita. Probabilmente aprirà una vecchia serratura.
+227
+Non potrai comprare molte cose con questi soldi.
+228
+È una chiave piuttosto ordinaria. Il logo ITA è composto da tre lettere semi-sovrapposte, con una rosa ed una corona di alloro sopra di esse. Lo disegnò tua madre.
+229
+Dovresti prendere qualche spicciolo prima di andare.
+230
+È la tua scrivania. Ami scrivere, ma ora è pulita ed in ordine.
+231
+Non è il modo migliore per risolvere i tuoi problemi.
+232
+Accarezzi Democrito, il tuo gatto. Sembra essere felice di vederti!
+233
+È il tuo gatto, un Siamese striato e molto dolce. È un gatto relativamente piccolo, ma con un pelo soffice e lungo.
+234
+Viene da Ernesto Schiaparelli, un vecchio amico di famiglia: ^M^M"Caro Attilio,^M   tuo fratello mi ha informato della gara e del prototipo che avete sviluppato. So che si tratta di una grande opportunità per voi e per la vostra fabbrica. Tuttavia, so che avete avuto problemi in passato e credo che dovreste fare tutto il possibile affinchè il prototipo sia conservato in un luogo sicuro fino al giorno della gara. Il mio amico Luzzi, il professore di chimica che una volta ha collaborato con te, ha sentito delle strane cose all'università e vorrei discuterne, urgentemente. Per il momento, so solo che è meglio tenere il prototipo segreto ed al sicuro. Vienimi a trovare tra due o tre giorni, se riesci.^M^MIl tuo amico Ernesto."^M^MLa data è 23 Luglio, 1902, due giorni fa. Sembra che tuo padre non abbia prestato molta attenzione a questa lettera, ma ora tu devi assolutamente andare a trovarlo!^MSchiaparelli è il direttore del Museo Egizio, è lì che dovrai andare.^M
+235
+È una lettera, manoscritta, su carta intestata del Museo Egizio.
+236
+Tuo zio sembra molto agitato: "Sapevo che qualcuno stava tentando di incastrarci! Emilia: il prototipo Autosigma è stato rubato. Non potremo partecipare alla gara tra due giorni. Sarà una catastrofe, alla fabbrica serve moltissimo la pubblicità che potremmo ottenere con la corsa. Sto andando in fabbrica ora."^MDetto questo, tuo zio letteralmente corre via.
+237
+Tullio è tuo zio, ha circa 40 anni ed è il fratello minore di tuo padre. Porta una barba castana ed è sempre vestito in modo molto formale, ma senza ostentazione. È un grande artista nel suo campo.
+238
+Tullio non è qui.
+239
+Vedi i tuoi occhiali da pilota nella scatola.
+251
+Prendi Democrito in braccio e lui comincia a fare le fusa mentre tu lo accarezzi. Dopo un po', lascia intendere che vuole scendere. Lo rimetti a terra delicatamente.
+252
+Non è davvero il momento di preparare una bagna caoda con tutti i crismi! E poi, non la mangeresti da sola senza aver invitato prima i tuoi amici!
+253
+Non questo è il momento di leggere libri.
+254
+È un lampadario a gas, decorato finemente con motivi floreali e paralumi in vetro.
+255
+Ti sei già lavata.
+256
+È veramente un bel giardino, pieno di rose in fiore.
+257
+È il capanno dove tuo padre e tuo zio hanno assemblato le loro prime auto, otto anni fa. Ora la fabbrica è molto più grande e non si trova più qui. La tua famiglia continua comunque ad usare il capanno come garage personale.
+258
+Dai un'occhiata agli abiti di tuo padre ma non noti nulla di strano.
+259
+Il gas per l'illuminazione brucia lietamente nel braciere ed una reticella di torio irradia una luce calda, gialla e molto piacevole.
+260
+La tua famiglia adora le rose. Sono meravigliose.
+261
+È una serie di padelle in rame, stagnate all'interno, di dimensioni differenti.
+262
+È una grande stufa, utile per cucinare e per riscaldare l'ambiente. Nella tua famiglia, la chiamate un putagé.
+263
+È un lavello piuttosto ordinario.
+264
+Di fuori vedi il giardino ed il muro posteriore di un capanno.
+265
+Democrito da l'impressione che l'apprezzerebbe volentieri, ma prima devi trovare un posto in cui metterla.
+266
+È il pianoforte di tua madre. Anche tuo zio era un bravo pianista da giovane. Ama ancora suonare il piano, di tanto in tanto.
+267
+Suoni qualche nota del Preludio in Do maggiore di J.S. Bach, dal primo libro del Clavicembalo Ben Temperato. Hai sempre adorato questo pezzo, così come la molto più complessa Fuga a 4 voci che lo segue.
+268
+Sono occhiali da pilota e, tecnicamente parlando, tu sei un pilota.
+269
+Perché dovresti fare qualcosa di così sciocco?
+270
+Su di un banco, c'è scritto qualcosa: "RICCOBENE TESTA DI C** MOSCIO". Su un altro banco, "RICCOBENE CREPA MALE"... Non credo che Riccobene sia molto amato dai suoi studenti.
+271
+Come in ogni luogo dove si dovrebbe usare una lavagna come tale, ad esempio per scrivervi sopra, c'è tutto il necessario per scrivere: (gessetti, ad esempio) e per cancellare (cancellino). Cosa ti aspettavi? Un professore arrabbiato può lanciare un gessetto ad uno studente ed uno veramente infuriato può magari tirare il cancellino, ma non è di certo questo l'utilizzo principale di questi oggetti...
+272
+La lavagna è stata cancellata, ma è stata usata per una lezione oggi. È piena di polvere di gesso ed alcune formule chimiche sono ancora visibili.
+273
+È il Museo Egizio, diretto dal tuo amico Schiaparelli. Sei qui per vederlo, in quanto sembra che sappia qualcosa a proposito dell'auto da corsa rubata.
+274
+Generalmente la gente acquista qui i propri biglietti.
+275
+Vedi un grande spazio circondato da colonne. Vedi il cielo sopra di te ed una nuvola che assume sfumature arancio e porpora nella luce del tramonto.
+276
+Questi sono dipinti incorniciati che mostrano scavi e scoperte archeologiche. Sono molto belli, ma le persone ritratte sembrano fin troppo entusiaste, a volte.
+277
+Anche se hai notato immediatamente la sfinge, le altre statue sono molto notevoli anch'esse.
+278
+Allineati lungo le pareti, osservi numerosi sarcofagi in legno (detti nebankh) risalenti al periodo del Nuovo Regno, laminati d'oro e decorati con immagini dal Libro dei Morti ed effigi del dio Osiride.
+279
+Tiene unite le cose.
+280
+Ci sono diverse piccole statue, che vengono studiate al momento.
+281
+È una scala decorata con molto stile.
+282
+È quasi notte, di fuori.
+283
+^MUsa 'SHIBBOLETH RAMASSIN' per saltare direttamente a questo punto dell'avventura.^M
+284
+^MUsa 'SHIBBOLETH BOGIANEN' per saltare direttamente a questo punto dell'avventura.^M
+285
+^MUsa 'SHIBBOLETH BOJAFAUS' per saltare direttamente a questo punto dell'avventura.^M
+286
+Dovresti capire dove devi andare, prima di prendere la tua automobile.
+287
+È una scrivania piuttosto disordinata.
+288
+La porta è già aperta.
+289
+È una bella lampada ad acetilene. L'acqua reagisce con un piccolo blocco di carburo di calcio generando il gas. È spenta.
+290
+È già aperto.
+291
+È il coperchio in metallo di un tombino, a malapena visibile sotto uno spesso mucchio di carbone.
+292
+È un tombino, aperto.
+293
+È un armadietto di metallo, con una robusta serratura di ottone.
+294
+Versi la soluzione salina nel buco della serratura. Dopo qualche istante, avverti un suono e sei in grado di aprire l'armadietto. All'interno c'è solo un camice da laboratorio.
+295
+Contengono reagenti. Interessante: uno è etichettato come cloruro di ferro.
+296
+È un armadietto metallico, aperto.
+297
+È una soluzione di cloruro di ferro. È marrone e densa.
+298
+C'è un'apertura nel pavimento.
+299
+È un mucchio di segatura, separata da tutto il resto per evitare danni nel caso prenda fuoco.
+300
+È un classico banco da laboratorio come se ne trovano in qualunque laboratorio di chimica. Sopra di esso vedi un estrattore Soxhlet ed un becco Bunsen, spenti. Il suo utilizzo è probabilmente di dimostrazione per gli studenti.
+400
+Le decorazioni sul lampadario rappresentano melograni lussureggianti. È un gran bel pezzo di artigianato.
+401
+Sono tutti gli attrezzi necessari per manutenere un'automobile a vapore.
+402
+È normalissimo carbone. Tua madre minacciava di dartelo al posto dei dolcetti, all'epifania, se ti fossi comportata male durante l'anno. Ce n'è a sufficienza per diversi lunghi viaggi in auto.
+403
+Nello specchio vedi una giovane donna, alta circa un metro e settanta, con capelli castano/rossicci, occhi blu e sopracciglia sottili ed eleganti, che indossa un vestito semplice e di buona fattura. Sei tu.
+404
+C'è molta confusione sulla scrivania. Tra le varie cose, ci sono bottigliette di morfina e due siringhe. Non hai intenzione di toccare queste cose. C'è un blocco note.
+405
+Questo armadietto è dove vengono tenute le varie chiavi della villa.
+406
+Non fa troppo caldo qui.
+502
+No.
+503
+Il gatto miagola soffusamente...
+504
+Questo non ti aiuterà. Prova a calmarti un attimo e poi potremo continuare a giocare insieme.
+505
+Quale gatto?
+506
+Il gatto ti segue.
+507
+No. È meglio vedere cosa ci sia all'interno.
+508
+No. Non lo voglio con me.
+509
+Prova a capire cosa sia successo. Esamina ogni oggetto attorno a te. Disegna una mappa. Usa il cervello.
+510
+Dovresti provare a trovare Schiaparelli, il direttore del Museo Egizio. È probabilmente nel suo ufficio.
+511
+Esplora.
+512
+Ascolta, ho provato ad aiutarti il più possibile per farti arrivare fin qui. Ora tocca a te!
+513
+È troppo buio per vedere bene le cose.
+514
+Le porte sono chiuse dall'esterno.
+515
+Chiudi gli occhi e ti senti volare in alto sopra la città. Vedi nuvole di vapore. Poi li riapri: nulla è cambiato.
+516
+È un'acciuga. Puzza.
+517
+Puzza di pesce.
+518
+Riusciresti ad esaminarti molto meglio di fronte ad uno specchio.
+1000
+OK.
+1001
+fatto.
+1002
+fatto.
+1003
+
+1004
+
+1005
+Non posso prenderlo!
+1006
+Non posso farlo!
+1007
+Non l'ho con me!
+1008
+Non posso andare da quella parte!
+1009
+Scusa?
+1010
+Non posso.
+1011
+Ce l'ho già!
+1012
+Cosa dovrei fare? 
+1013
+È buio, non riesci a vedere nulla.
+1018
+indossati 
+1019
+L'indosso già.
+1020
+Posso andare verso: 
+1021
+nord
+1022
+sud
+1023
+est
+1024
+ovest
+1025
+sopra
+1026
+sotto
+1027
+
+1028
+
+1029
+
+1030
+
+1031
+Noto: 
+1032
+Ho con me: 
+1033
+Non ho nulla con me.
+OGGETTI
+6
+
+Una piccola acciuga dissalata
+0
+0
+0
+FALSE
+FALSE
+9
+
+Una chiave quadrata con su il simbolo ITA
+0
+0
+0
+FALSE
+FALSE
+10
+
+Occhiali da pilota
+0
+0
+0
+FALSE
+TRUE
+11
+
+Una piccola chiave
+0
+0
+0
+FALSE
+FALSE
+22
+
+Una lettera per tuo padre
+0
+0
+0
+FALSE
+FALSE
+23
+
+Tuo zio Tullio
+0
+0
+6
+TRUE
+FALSE
+24
+
+Il custode del museo
+0
+0
+20
+TRUE
+FALSE
+57
+
+Molti libri
+0
+0
+0
+FALSE
+FALSE
+29
+
+Una serie di fotografie
+0
+0
+0
+FALSE
+FALSE
+89
+
+Il quotidiano "La Stampa"
+0
+0
+0
+FALSE
+FALSE
+58
+
+Una lampada ad acetilene
+0
+0
+52
+FALSE
+FALSE
+105
+
+Democrito, un gatto siamese
+0
+0
+1
+FALSE
+FALSE
+106
+
+Una piccola matita
+0
+0
+23
+FALSE
+FALSE
+107
+
+Un foglio di carta
+0
+0
+0
+FALSE
+FALSE
+108
+
+Un foglio di carta con su scritti geroglifici
+0
+0
+0
+FALSE
+FALSE
+130
+
+Fiammiferi
+0
+0
+0
+FALSE
+FALSE
+137
+pala
+Pala
+0
+0
+52
+FALSE
+FALSE
+138
+
+Un camice da laboratorio
+0
+0
+0
+FALSE
+FALSE
+142
+
+Una busta da lettere, aperta
+0
+0
+0
+FALSE
+FALSE
+156
+
+Un grande oggetto, coperto da un telone
+0
+0
+63
+TRUE
+FALSE
+157
+
+Un accendino
+0
+0
+0
+FALSE
+FALSE
+159
+
+Una grossa chiave
+0
+0
+0
+FALSE
+FALSE
+217
+
+Una piccola somma di denaro
+0
+0
+9
+FALSE
+FALSE
+234
+
+Cloruro di Ferro
+0
+0
+0
+FALSE
+FALSE
+FINEDATI

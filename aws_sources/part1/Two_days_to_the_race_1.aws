@@ -1,0 +1,1857 @@
+AWS
+VERSIONE
+3.0
+0
+7
+7
+0
+Two days to the race, part 1
+Davide Bucci
+2018-2020
+A story of high (steam) pressure, v 2.0
+1
+Bookman Old Style
+14
+0
+100
+FALSE
+100
+100
+CONDIZIONIHI
+IF at 100 THEN PRESSKEY GOTO 9 ENDIF Print the introduction and wait a key.
+IF HERE 105 AND prob 35 THEN mess 503 ENDIF  CAT
+IF set? 25 THEN brin 105 mess 506 ENDIF Bring here the cat as he's following.
+IF SET? 15 AND SET? 14 THEN brin 22 RESE 14 ENDIF Bring the letter
+CONDIZIONILOW
+if verb 70 and noun 409 then mess 518 wait endif
+if verb 73 then quit endif
+if verb 74 or verb 0 and noun 72 then inve wait endif
+if verb 987 then restart endif
+if verb 110 then look wait endif
+IF verb 100 OR vbnoeq 0 AND noun 80 THEN nord WAIT ENDIF  VAI  NORD
+IF verb 100 OR vbnoeq 0 AND noun 81 THEN sud WAIT ENDIF  VAI  SUD
+IF verb 100 OR vbnoeq 0 AND noun 82 THEN est WAIT ENDIF  VAI  EST
+IF verb 100 OR vbnoeq 0 AND noun 83 THEN ovest WAIT ENDIF  VAI OVEST
+IF verb 100 OR vbnoeq 0 AND noun 84 THEN alto WAIT ENDIF  VAI ALTO
+IF verb 100 OR vbnoeq 0 AND noun 85 THEN basso WAIT ENDIF  VAI BASSO
+IF verb 406 OR verb 77 AND noun 105 AND avai 105 THEN mess 232 WAIT ENDIF  Caress the cat and he is here
+IF verb 406 AND noun 105 THEN mess 505 WAIT ENDIF Caress the cat, but he's not here
+IF verb 70 and noun 105 AND here 105 THEN mess 233 WAIT ENDIF Examine the cat
+IF verb 21 and noun 22 AND avai 22 then mess 234 SET 16 WAIT ENDIF Read the letter
+IF verb 70 and noun 22 AND avai 22 then mess 235 WAIT ENDIF Examine the letter
+IF verb 75 and noun 23 AND avai 23 then mess 236 TO 23 0 set 2 WAIT ENDIF Talk with Tullio. Tullio goes away.
+IF verb 70 and noun 23 and avai 23 then mess 237 WAIT ENDIF Examine Tullio and Tullio is here.
+IF verb 70 and noun 23 and nothere 23 then mess 238 WAIT ENDIF Examine Tullio and Tullio is not here.
+IF verb 75 and noun 105 and avai 105 THEN mess 105 WAIT ENDIF Talk with the cat
+IF verb 50 AND noun 105 AND avai 105 THEN mess 251 WAIT ENDIF Take the cat and he's here
+IF verb 95 and noun 84 and NO2EQ 105 AND avai 105 THEN mess 251 WAIT ENDIF Pick up the cat and he's here
+IF verb 50 and noun 106 and here 106 THEN get 106 OKAY ENDIF Take the pen
+IF verb 50 and noun 107 and here 107 THEN get 107 OKAY ENDIF Take the paper
+IF verb 50 AND noun 105 THEN mess 505 WAIT ENDIF Take the cat, but there's no cat
+IF verb 50 and noun 9 and avai 11 then get 11 OKAY ENDIF Take the small key
+IF verb 50 and noun 27 and avai 6 then get 6 OKAY ENDIF Take the anchovy
+IF verb 70 and noun 27 and avai 6 then mess 516 WAIT ENDIF Examine anchovy
+IF verb 143 and noun 27 and avai 6 then mess 517 WAIT ENDIF Smell anchovy
+IF verb 50 THEN get no1 OKAY ENDIF  Take an object
+IF verb 211 AND noun 27 AND AVAI 6 THEN mess 252 WAIT ENDIF Eat anchovy.
+IF verb 66 and noun 27 and avai 6 and here 105 THEN mess 265 WAIT ENDIF Give the anchovy to the cat.
+IF verb 211 THEN mess 502 WAIT ENDIF Eat/Drink -> No!
+IF verb 400 THEN mess 504 WAIT ENDIF Curse
+IF verb 407 THEN mess 509 WAIT ENDIF Help/hint 0
+IF verb 70 and noun 25 and avai 10 THEN mess 268 WAIT ENDIF Examine goggles
+IF verb 70 and noun 25 and notavai 10 THEN mess 523 WAIT ENDIF Examine goggles, they're not available
+IF verb 70 and noun 9 and avai 9 THEN mess 228 WAIT ENDIF Examine ITA key
+IF verb 70 and noun 217 and avai 217 THEN mess 227 WAIT ENDIF Examine money
+IF verb 120 and noun 25 THEN wear 10 OKAY ENDIF Wear goggles
+IF verb 121 and noun 25 THEN unwear 10 OKAY ENDIF Unwear goggles
+IF verb 78 THEN mess 269 WAIT ENDIF Break, destroy...
+IF verb 70 and noun 142 and avai 142 THEN mess 8 WAIT ENDIF Examine envelope
+IF verb 70 THEN mess 91 WAIT ENDIF Examine with unknown object ****
+IF verb 210 THEN mess 231 WAIT ENDIF Pray
+IF verb 55 and noun 26 then drop 6 WAIT endif Drop anchovy
+IF verb 55 and noun 9 then drop 9 WAIT endif Drop key
+IF verb 55 and noun 25 then drop 10 WAIT endif Drop goggles
+IF verb 55 and noun 9 and carr 11 then drop 11 WAIT endif Drop small key
+IF verb 55 then drop no1 mess 520 WAIT endif Drop an object
+IF verb 1000 then mess 515 WAIT Endif XYZZY
+IF verb 66 THEN mess 502 WAIT ENDIF Give -> No!
+IF VERB 988 THEN LOAD WAIT ENDIF Load
+IF VERB 989 THEN SAVE WAIT ENDIF Save
+IF VERB 76 THEN MESS 524 WAIT ENDIF Exit/Quit -> use "bye"
+CONDIZIONILOCALI
+1
+IF VERB 70 AND NOUN 10 THEN MESS 4 WAIT ENDIF Examine window
+1
+IF VERB 70 AND NOUN 14 OR NOUN 67 THEN MESS 5 WAIT ENDIF Examine portrait
+1
+IF VERB 70 AND NOUN 26 THEN MESS 25 WAIT ENDIF Examine bowls
+1
+IF VERB 55 AND NO1EQ 27 AND NO2EQ 26 and RES? 25 THEN MESS 26 TO 6 0 SET 25 WAIT ENDIF Feed the cat
+1
+IF VERB 55 AND NOUN 27 and RES? 25 THEN MESS 26 TO 6 0 SET 25 WAIT ENDIF Feed the cat
+1
+if verb 70 and noun 58 then mess 259 wait endif Examine lamps
+2
+IF VERB 70 AND NOUN 29 THEN MESS 28 WAIT ENDIF Look at the pictures
+2
+IF VERB 70 AND NOUN 30 THEN MESS 29 WAIT ENDIF Look at the blueprints
+3
+IF VERB 70 OR VERB 12 AND NOUN 28 AND RES? 26 THEN MESS 27 BRIN 6 SET 26 WAIT ENDIF Examine pantry, find anchovy
+3
+IF VERB 70 AND NOUN 28 AND SET? 26 THEN MESS 31 WAIT ENDIF Examine pantry
+3
+if verb 70 and noun 58 then mess 259 wait endif Examine lamps
+3
+if verb 70 and noun 63 then mess 261 wait endif Examine pans
+3
+IF verb 50 and noun 63 THEN mess 508 WAIT ENDIF Take pans
+3
+if verb 70 and noun 64 then mess 262 wait endif Examine stove
+3
+if verb 70 and noun 65 then mess 263 wait endif Examine sink
+3
+if verb 70 and noun 10 then mess 264 wait endif Examine window
+4
+IF VERB 70 AND NOUN 20 THEN MESS 1 WAIT ENDIF Examine desk
+5
+if verb 70 and noun 58 then mess 259 wait endif Examine lamps
+5
+if verb 70 and noun 216 then mess 400 wait endif Examine pomegranates
+5
+If verb 70 and noun 68 then mess 266 wait endif Examine piano
+5
+If verb 70 and noun 144 then mess 7 wait endif Examine furniture
+5
+If verb 77 or vbnoeq 406 and noun 68 then mess 267 wait endif Play piano
+6
+IF VERB 70 AND NOUN 10 THEN MESS 3 WAIT ENDIF Examine window
+6
+IF VERB 70 AND NOUN 20 THEN MESS 2 WAIT ENDIF Examine desk
+7
+IF VERB 70 OR VERB 12 AND NOUN 13 and res? 9 THEN MESS 32 BRIN 9 set 9 WAIT ENDIF Examine/open cabinet. Find the key
+7
+IF VERB 70 OR VERB 12 AND NOUN 13 THEN MESS 405 WAIT ENDIF Examine/open cabinet. Key already found
+7
+IF VERB 70 AND NOUN 16 THEN MESS 19 WAIT ENDIF Examine umbrella
+7
+IF VERB 70 AND NOUN 205 THEN MESS 19 WAIT ENDIF Examine rack
+8
+IF VERB 70 AND NOUN 19 THEN MESS 20 WAIT ENDIF Examine landscape
+8
+IF VERB 70 AND NOUN 17 THEN MESS 21 WAIT ENDIF Examine frame
+9
+IF VERB 21 OR VERB 70 AND NOUN 57 OR NOUN 200 THEN mess 253 WAIT ENDIF Read books
+9
+IF VERB 70 AND NOUN 20 THEN MESS 230 WAIT ENDIF Examine desk
+9
+IF VERB 70 AND NOUN 10 THEN MESS 10 WAIT ENDIF Examine window
+9
+IF VERB 70 AND NOUN 11 THEN MESS 11 WAIT ENDIF Examine drawers
+9
+IF VERB 12 AND NOUN 11 THEN MESS 12 WAIT ENDIF Open drawers
+9
+IF VERB 12 AND NOUN 13 AND RES? 13 THEN MESS 1000 SET 13 WAIT ENDIF Open the closet
+9
+IF VERB 12 AND NOUN 13 AND SET? 13 THEN MESS 14 WAIT ENDIF Open the closet
+9
+IF VERB 70 AND NOUN 13 AND SET? 13 THEN MESS 15 WAIT ENDIF Examine the closet, open
+9
+IF VERB 70 AND NOUN 13 AND RES? 13 THEN MESS 16 WAIT ENDIF Examine the closet, closed
+9
+If verb 70 and noun 144 or noun 145 then mess 7 wait endif Examine furniture/decoration
+9
+IF VERB 70 AND NOUN 58 THEN MESS 254 WAIT ENDIF Examine the chandelier/lamps
+9
+IF VERB 15 AND NOUN 18 THEN MESS 18 WAIT ENDIF Use the bed
+9
+IF VERB 201 THEN MESS 18 WAIT ENDIF Sleep
+9
+IF VERB 70 AND NOUN 59 THEN MESS 221 WAIT ENDIF Examine washbowl
+9
+IF VERB 50 AND NOUN 57 THEN MESS 508 WAIT ENDIF Take books
+9
+IF VERB 70 AND NOUN 18 THEN MESS 220 WAIT ENDIF Examine the bed
+9
+IF VERB 12 OR VERB 70 AND NOUN 24 AND SET? 13 and RES? 12 THEN MESS 239 BRIN 10 SET 12 WAIT ENDIF Open/examine box, find goggles in the box
+9
+IF VERB 15 AND NOUN 59 THEN MESS 255 WAIT ENDIF Use washbowl
+9
+IF VERB 50 AND NOUN 25 AND SET? 12 THEN GET 10 OKAY ENDIF Take the goggles if they have been found.
+9
+IF VERB 50 AND NOUN 24 AND SET? 13 THEN MESS 507 WAIT ENDIF Take the box
+9
+IF VERB 70 AND NOUN 219 THEN MESS 403 WAIT ENDIF Examine mirror
+9
+IF VERB 50 OR VERB 70 AND NOUN 202 AND SET? 13 THEN MESS 12 WAIT ENDIF Take/examine clothes
+9
+IF VERB 203 AND NOUN 13 AND SET? 13 THEN RESE 13 OKAY ENDIF Close closet
+10
+IF VERB 70 OR VERB 12 AND NOUN 13 THEN MESS 258 WAIT ENDIF Examine closet
+10
+IF VERB 70 AND NOUN 20 AND HERE 105 AND RES? 14 AND RES? 15 THEN MESS 22 SET 14 WAIT ENDIF Examine the desk, with the cat
+10
+IF VERB 70 AND NOUN 20 AND RES? 110 THEN MESS 23 BRIN 142 SET 110 WAIT ENDIF Examine the desk, without the cat
+10
+IF VERB 70 AND NOUN 20 AND SET? 110 THEN MESS 9 WAIT ENDIF Examine the desk, without the cat, letter already found
+10
+IF VERB 70 AND NOUN 18 AND SET? 14 THEN MESS 24 SET 15 BRIN 22 WAIT ENDIF Examine the bed after the cat found the letter
+10
+IF VERB 70 AND NOUN 18 THEN MESS 13 WAIT ENDIF Examine the bed before the cat found the letter
+10
+IF VERB 50 AND NOUN 57 THEN MESS 508 WAIT ENDIF Take books
+11
+IF VERB 70 AND NOUN 60 THEN MESS 256 WAIT ENDIF Examine garden
+11
+IF VERB 70 AND NOUN 61 THEN MESS 257 WAIT ENDIF Examine barn
+11
+IF VERB 70 AND NOUN 62 THEN MESS 260 WAIT ENDIF Examine roses
+11
+IF VERB 143 AND NOUN 62 THEN MESS 147 WAIT ENDIF Smell roses
+12
+IF VERB 143 AND NOUN 62 THEN MESS 147 WAIT ENDIF Smell roses
+12
+IF VERB 70 AND NOUN 62 THEN MESS 260 WAIT ENDIF Examine roses
+12
+IF VERB 70 AND NOUN 60 THEN MESS 256 WAIT ENDIF Examine garden
+12
+IF VERB 70 AND NOUN 31 THEN MESS 30 WAIT ENDIF Examine the city
+12
+IF VERB 70 AND NOUN 145 THEN MESS 6 WAIT ENDIF Examine wall
+13
+IF VERB 143 AND NOUN 62 THEN MESS 148 WAIT ENDIF Smell roses
+13
+IF VERB 70 AND NOUN 62 THEN MESS 260 WAIT ENDIF Examine roses
+13
+IF VERB 70 AND NOUN 60 THEN MESS 256 WAIT ENDIF Examine garden
+15
+IF VERB 143 AND NOUN 62 THEN MESS 148 WAIT ENDIF Smell roses
+15
+IF VERB 70 AND NOUN 62 THEN MESS 260 WAIT ENDIF Examine roses
+15
+IF VERB 70 AND NOUN 61 THEN MESS 257 WAIT ENDIF Examine barn
+16
+IF VERB 70 AND NOUN 51 THEN MESS 51 WAIT ENDIF Examine the model 51
+16
+IF VERB 70 AND NOUN 101 THEN MESS 101 WAIT ENDIF Examine the model 101
+16
+IF VERB 56 or VERB 15 AND NOUN 101 THEN MESS 102 WAIT ENDIF Drive the 101, bad idea
+16
+IF VERB 56 or VERB 15 AND NOUN 51 AND NOTAVAI 9 THEN MESS 52 WAIT ENDIF Drive the 51, no key
+16
+IF VERB 56 or VERB 15 AND NOUN 51 AND NOTAVAI 217 THEN MESS 229 WAIT ENDIF Drive the 51, no money
+16
+IF VERB 56 or VERB 15 AND NOUN 51 AND ISNOTWEARING 10 THEN MESS 53 WAIT ENDIF Drive the 51, no goggles
+16
+IF VERB 56 OR VERB 15 AND NOUN 204 THEN MESS 7 WAIT ENDIF Drive a car, without specifying which one
+16
+IF VERB 70 AND NOUN 204 THEN MESS 7 WAIT ENDIF Examine a car, without specifying which one
+16
+IF NOUN 51 AND AVAI 9 AND ISWEARING 10 AND SET? 2 AND SET? 16 and VERB 56 or VERB 15 THEN MESS 54 RESE 25 UNWEAR 10 PRESSKEY MESS 283 EXIT WAIT ENDIF Drive the 51
+16
+IF VERB 56 or VERB 15 AND NOUN 51 AND AVAI 9 AND ISWEARING 10 AND RES? 2 THEN MESS 210 WAIT ENDIF Drive the 51, without having spoken with Tullio
+16
+IF VERB 56 or VERB 15 or VERB 213 and NOUN 51 AND AVAI 9 AND ISWEARING 10 AND SET? 2 AND RES? 16 THEN MESS 286 ENDIF Drive the 51, without having read the letter
+16
+IF VERB 70 AND NOUN 206 THEN MESS 401 WAIT ENDIF Examine tools
+16
+IF VERB 50 AND NOUN 206 OR NOUN 134 THEN MESS 508 WAIT ENDIF Take tools/coal
+16
+IF VERB 70 AND NOUN 134 THEN MESS 402 WAIT ENDIF Examine coal
+DIZIONARIO
+KEY
+9
+NOME
+WINDOW
+10
+NOME
+CHEST
+11
+NOME
+DRAWER
+11
+NOME
+DRAWERS
+11
+NOME
+OPEN
+12
+VERBO
+CLOSET
+13
+NOME
+CABINET
+13
+NOME
+PORTRAIT
+14
+NOME
+PORTRAITS
+14
+NOME
+USE
+15
+VERBO
+UMBRELLA
+16
+NOME
+UMBRELLAS
+16
+NOME
+FRAME
+17
+NOME
+BED
+18
+NOME
+LANDSCAPE
+19
+NOME
+PAINTING
+19
+NOME
+PAINTINGS
+19
+NOME
+DESK
+20
+NOME
+BENCH
+20
+NOME
+BENCHES
+20
+NOME
+READ
+21
+VERBO
+LETTER
+22
+NOME
+TULLIO
+23
+NOME
+UNCLE
+23
+NOME
+BOX
+24
+NOME
+GOGGLES
+25
+NOME
+BOWL
+26
+NOME
+BOWLS
+26
+NOME
+ANCHOVY
+27
+NOME
+ANCHOVIES
+27
+NOME
+PANTRY
+28
+NOME
+PICTURES
+29
+NOME
+PHOTO
+29
+NOME
+PICTURE
+29
+NOME
+PHOTOS
+29
+NOME
+PHOTOGRAPHS
+29
+NOME
+BLUEPRINT
+30
+NOME
+BLUEPRINTS
+30
+NOME
+LANDSCAPE
+31
+NOME
+SUNSET
+31
+NOME
+LIGHT
+31
+NOME
+CITY
+31
+NOME
+TAKE
+50
+VERBO
+GET
+50
+VERBO
+GRAB
+50
+VERBO
+51
+51
+NOME
+THROW
+55
+VERBO
+DROP
+55
+VERBO
+TOSS
+55
+VERBO
+LEAVE
+55
+VERBO
+PUT
+55
+VERBO
+POUR
+55
+VERBO
+DRIVE
+56
+VERBO
+ENTER
+56
+VERBO
+BOOK
+57
+NOME
+BOOKS
+57
+NOME
+CHANDELIER
+58
+NOME
+LAMP
+58
+NOME
+LAMPS
+58
+NOME
+LAMPS
+58
+NOME
+GAS
+58
+NOME
+WASHBOWL
+59
+NOME
+GARDEN
+60
+NOME
+BARN
+61
+NOME
+GARAGE
+61
+NOME
+ROSE
+62
+NOME
+ROSES
+62
+NOME
+FLOWER
+62
+NOME
+FLOWERS
+62
+NOME
+PAN
+63
+NOME
+PANS
+63
+NOME
+STOVE
+64
+NOME
+PUTAGE
+64
+NOME
+PUTAGE'
+64
+NOME
+SINK
+65
+NOME
+GIVE
+66
+VERBO
+GRANDPARENTS
+67
+NOME
+GRANDPARENT
+67
+NOME
+GRANDMOTHER
+67
+NOME
+GRANDFATHER
+67
+NOME
+PIANO
+68
+NOME
+EXAMINE
+70
+VERBO
+EX
+70
+VERBO
+X
+70
+VERBO
+INV
+72
+NOME
+INVE
+72
+NOME
+INVENTORY
+72
+NOME
+I
+72
+NOME
+BYE
+73
+VERBO
+SHOW
+74
+VERBO
+TALK
+75
+VERBO
+SPEAK
+75
+VERBO
+CHAT
+75
+VERBO
+EXIT
+76
+VERBO
+PLAY
+77
+VERBO
+BREAK
+78
+VERBO
+DESTROY
+78
+VERBO
+N
+80
+NOME
+NORTH
+80
+NOME
+S
+81
+NOME
+SOUTH
+81
+NOME
+E
+82
+NOME
+EAST
+82
+NOME
+W
+83
+NOME
+WEST
+83
+NOME
+UP
+84
+NOME
+ABOVE
+84
+NOME
+UPSTAIRS
+84
+NOME
+U
+84
+NOME
+DOWN
+85
+NOME
+D
+85
+NOME
+BELOW
+85
+NOME
+DOWNSTAIRS
+85
+VERBO
+UNDER
+85
+NOME
+KEEPER
+87
+NOME
+BUY
+88
+VERBO
+NEWSPAPER
+89
+NOME
+JOURNAL
+89
+NOME
+STAMPA
+89
+NOME
+PANEL
+90
+NOME
+PLAQUE
+90
+NOME
+HIEROGLYPHICS
+91
+NOME
+HIEROGLYPH
+91
+NOME
+HIEROGLYPHS
+91
+NOME
+HIEROGLYPHIC
+91
+NOME
+PAPYRUS
+91
+NOME
+PAPYRI
+91
+NOME
+DOOR
+92
+NOME
+EROTIC
+93
+AGGETTIVO
+KING
+94
+NOME
+LIST
+94
+NOME
+PICK
+95
+VERBO
+LOCK
+96
+NOME
+MECHANISM
+96
+NOME
+SHRINE
+97
+NOME
+SHRINES
+97
+NOME
+ARTEFACT
+97
+NOME
+ARTEFACTS
+97
+NOME
+OBJECTS
+97
+NOME
+DRAWING
+98
+NOME
+DRAWINGS
+98
+NOME
+ENGRAVING
+98
+NOME
+ENGRAVINGS
+98
+NOME
+SPHINX
+99
+NOME
+WALK
+100
+VERBO
+RUN
+100
+VERBO
+GO
+100
+VERBO
+101
+101
+NOME
+CAT
+105
+NOME
+DEMOCRITO
+105
+NOME
+PUSS
+105
+NOME
+KITTY
+105
+NOME
+PENCIL
+106
+NOME
+SHEET
+107
+NOME
+PAPER
+107
+NOME
+CHAIR
+108
+NOME
+CHAIRS
+108
+NOME
+THEATER
+109
+NOME
+THEATRE
+109
+NOME
+L
+110
+VERBO
+LOOK
+110
+VERBO
+WEAR
+120
+VERBO
+DRESS
+120
+VERBO
+UNDRESS
+121
+VERBO
+UNWEAR
+121
+VERBO
+PALACE
+122
+NOME
+PALAZZO
+122
+NOME
+CARIGNANO
+123
+NOME
+KIOSK
+124
+NOME
+COLUMN
+125
+NOME
+COLUMNS
+125
+NOME
+ENTRANCE
+126
+NOME
+JUDICIAL
+127
+AGGETTIVO
+MUMMY
+128
+NOME
+MUMMIES
+128
+NOME
+TUTHMOSIS
+129
+NOME
+MATCH
+130
+NOME
+MATCHES
+130
+NOME
+SOXHLET
+131
+NOME
+EXTRACTOR
+131
+NOME
+BUNSEN
+132
+NOME
+BURNER
+132
+NOME
+TEST
+133
+NOME
+GLASSWARE
+133
+NOME
+TUBE
+133
+NOME
+TUBES
+133
+NOME
+COAL
+134
+NOME
+MANHOLE
+135
+NOME
+COVER
+136
+NOME
+SHOVEL
+137
+NOME
+COAT
+138
+NOME
+BOTTLE
+139
+NOME
+BOTTLES
+139
+NOME
+SHELF
+140
+NOME
+MORPHINE
+141
+NOME
+DRUG
+141
+NOME
+OPIUM
+141
+NOME
+SHELVES
+140
+NOME
+DISTILLATION
+141
+NOME
+ENVELOPE
+142
+NOME
+SMELL
+143
+VERBO
+FURNITURE
+144
+NOME
+WALL
+145
+NOME
+WALLS
+145
+NOME
+DECORATION
+145
+NOME
+RESTAURANT
+146
+NOME
+DEPARTMENT
+147
+NOME
+BLACKBOARD
+148
+NOME
+BLACKBOARDS
+148
+NOME
+TO
+150
+AVVERBIO
+STRIKE
+151
+AGGETTIVO
+STATUE
+152
+NOME
+STATUES
+152
+NOME
+AMENHOTEP
+153
+NOME
+RAM
+154
+NOME
+COPY
+155
+VERBO
+OBJECT
+156
+NOME
+LIGHTER
+157
+NOME
+FLOOR
+159
+NOME
+GROUND
+159
+NOME
+LIFT
+160
+VERBO
+MOVE
+160
+VERBO
+PUSH
+160
+VERBO
+BOARD
+161
+NOME
+PLANK
+161
+NOME
+WAGON
+162
+NOME
+WAGONS
+162
+NOME
+PIT
+163
+NOME
+FIRE
+164
+NOME
+SAWDUST
+165
+NOME
+NOTEPAD
+166
+NOME
+TARPAULIN
+167
+NOME
+LIBRARY
+200
+NOME
+SLEEP
+201
+VERBO
+SIT
+201
+VERBO
+CLOTHES
+202
+NOME
+CLOSE
+203
+VERBO
+CAR
+204
+NOME
+CARS
+204
+NOME
+RACK
+205
+NOME
+TOOL
+206
+NOME
+TOOLS
+206
+NOME
+PRAY
+210
+VERBO
+SWALLOW
+211
+VERBO
+EAT
+211
+VERBO
+DRINK
+211
+VERBO
+SWITCH
+213
+VERBO
+TURN
+213
+VERBO
+ON
+214
+AVVERBIO
+OFF
+215
+AVVERBIO
+POMEGRANATE
+216
+NOME
+POMEGRANATES
+216
+NOME
+THEMES
+216
+NOME
+MONEY
+217
+NOME
+CHALK
+218
+NOME
+CHALKS
+218
+NOME
+ERASER
+218
+NOME
+MIRROR
+219
+NOME
+MUSEUM
+220
+NOME
+EGYPTIAN
+220
+NOME
+MARBLE
+221
+NOME
+PEDESTAL
+221
+NOME
+PEDESTALS
+221
+NOME
+OFFICE
+222
+NOME
+COURT
+223
+NOME
+SARCOPHAGUS
+224
+NOME
+SARCOPHAGI
+224
+NOME
+TWINE
+226
+NOME
+STEP
+227
+NOME
+STEPS
+227
+NOME
+STAIRCASE
+227
+NOME
+CARPET
+228
+NOME
+HANDRAIL
+229
+NOME
+SHIBBOLETH
+230
+VERBO
+RAMASSIN
+231
+NOME
+BOGIANEN
+232
+NOME
+BOJAFAUS
+233
+NOME
+ACID
+234
+NOME
+SALT
+234
+NOME
+FERRIC
+234
+NOME
+CHLORIDE
+234
+NOME
+CURSE
+400
+VERBO
+FUCK
+400
+VERBO
+PISS
+400
+VERBO
+TOUCH
+406
+VERBO
+CARESS
+406
+VERBO
+STROKE
+406
+VERBO
+PET
+406
+VERBO
+ABOUT
+407
+VERBO
+INFO
+407
+VERBO
+HELP
+407
+VERBO
+SMALL
+408
+AGGETTIVO
+ME
+409
+NOME
+MYSELF
+409
+NOME
+EMILIA
+409
+NOME
+RESTART
+987
+VERBO
+LOAD
+988
+VERBO
+SAVE
+989
+VERBO
+XYZZY
+1000
+VERBO
+THEN
+9999
+SEPARATORE
+LOCAZIONI
+1
+You're in the hallway behind the main salon of Villa Vittorini. There's a window and the place is lit by two gas lamps hung on the south wall. Between the lamps, there are two portraits of your grandparents. There are also two small bowls in a corner.
+
+Hallway
+0
+5
+3
+2
+8
+0
+0
+0
+0
+0
+2
+Here, your father and your uncle store the blueprints of the mechanical pieces on which they are working, as well as other documents. The wall is shelved and contains many drawings, books and other stuff. There's a window with curtains and, on the south wall near the door, many pictures are hung on the wall.
+
+Archive room
+0
+4
+1
+0
+0
+0
+0
+0
+0
+0
+3
+This place is lit by gas lamps. It's very clean, with a set of copper pans of different sizes hung on the north wall, a stove in the centre of the room and a large kitchen sink under the window at east. Your father likes cooking. A small pantry is next to the sink.
+
+Kitchen
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+4
+Your father has always been a very methodical man and his studio contains a large desk that is clean and tidy.
+
+Augusto's studio
+2
+0
+5
+0
+0
+0
+0
+0
+0
+0
+5
+Decorated with simple and effective furniture, the main salon of Villa Vittorini is very elegant. There's a table illuminated by a large chandelier with pomegranates and floral themes. An upright piano is placed against the south wall.
+
+Main salon
+1
+7
+6
+4
+0
+0
+0
+0
+0
+0
+6
+Your uncle doesn't live here; he's married and has two children and he owns a smaller villa, nearby. However, he still likes to work here, at the light coming from the large window on the south wall. He draws the bodies of cars as well as their accessories: his talent is one of the undoubted reasons of the success of ITA, along with your father's mechanical prowess. There's a desk close to the window.
+
+Tullio's studio
+0
+0
+0
+5
+0
+0
+0
+0
+0
+0
+7
+You see the rack where umbrellas can be placed to dry on rainy days, close to a mahogany cabinet.
+
+Lobby
+5
+14
+15
+13
+0
+0
+0
+0
+0
+0
+8
+There's a framed landscape close to the south door, leading to the terrace.
+
+Vestibule
+9
+12
+11
+10
+0
+1
+0
+0
+0
+0
+9
+It's a comfortable place, lit by a large gas chandelier carrying five lamps. There's a window on the north wall, with your desk under it. You always loved reading and east wall is completely covered by your library, full of books. Your bed is on the west side and seems to be very comfortable, close to a chest of drawers, a washbowl with a mirror and a closet. The decoration of the furniture is floral, very refined. You like this place.
+
+Bedroom
+0
+8
+0
+0
+0
+0
+0
+0
+0
+0
+10
+Your father sleeps alone since your mother died four years ago. The room is simple. On one side is placed your father's bed. On the other side, there's a large closet containing his clothes. To the south, there's a small desk and a library.
+
+Augusto's bedroom
+0
+0
+8
+0
+0
+0
+0
+0
+0
+0
+11
+You're on the east balcony. You see the garden and the barn where the villa's garage is located.
+
+Balcony
+0
+0
+0
+8
+0
+0
+0
+0
+0
+0
+12
+The terrace of the villa is large. You see the garden below and you can appreciate the roses kept by your father. Everything is lit by the sunset and its delicate shades of pink and red paint the wall behind you.
+
+Terrace
+8
+0
+0
+0
+0
+0
+0
+0
+0
+0
+13
+It's a little chilly outside. Your father loves roses and they are flourishing.
+
+Garden
+0
+14
+7
+0
+0
+0
+0
+0
+0
+0
+14
+You're in the villa's garden.
+
+Garden
+7
+0
+15
+13
+0
+0
+0
+0
+0
+0
+15
+You're in the middle of a garden path, with roses at its border. You see a barn to the east.
+
+Garden path
+0
+14
+16
+7
+0
+0
+0
+0
+0
+0
+16
+You're in the vast barn hosting the garage of the villa. It's here your family keeps your two cars. Of course, they're two models by ITA. The model 101, a large luxury three cylinder car and the model 51, a two cylinder sports car. In the barn you've everything you need to keep the cars running: water to fill up the water reservoirs for the steam, a set of tools and plenty of coal.
+
+Barn
+0
+0
+0
+15
+0
+0
+0
+0
+0
+0
+100
+Your name is Emilia Vittorini. You're the daughter of Augusto Vittorini, who founded the Industria Torinese Automobili (ITA) with his brother Tullio. Your father is abroad trying to raise funds, but something went wrong and you heard your uncle coming back slamming the door. Your mission is to find out what happened and how you can help your family. I will be your eyes and ears. Good luck.^M^MIn this game, passwords are given at the most important moments. Write them down.^M
+
+Introduction
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+MESSAGGI
+1
+It's your father's desk. It's a large mahogany desk with decorated legs. Your father meets clients and other people at the factory, but here he can work much more quietly.
+2
+Your uncle's desk is simple and contains everything he needs for his work.
+3
+You see part of the garden, lit by a magnificent sunset.
+4
+You have a look of the backyard, where the barn opens.
+5
+These are portraits of your grandfather and your grandmother, from your mother's side.
+6
+It's a wall, lit by a wonderful sunset.
+7
+Be more specific!
+8
+It's an envelope with the name of your father on it.
+9
+Your father deals with personal matters on this desk.
+10
+From your window, you can see the street that passes alongside the back of the villa. The horizon is an urban landscape at the sunset. Far on the left side, you can see the shape of the local gasometer.
+11
+It's your chest of drawers, full of your underwear.
+12
+You're already dressed, and with taste. You don't need that.
+13
+There's nothing special to see.
+14
+Your closet's already open.
+15
+In the closet, you find your clothes and a strange leather box.
+16
+It's your closet. You should know what is inside, but in case you forgot, try to open it!
+17
+The portraits represent your grandfather and your grandmother, from your father side. You remember them well. Your grandparents used to play with you but they died when you were five and seven years old. Here, they seem young and happy.
+18
+You aren't tired.
+19
+It's not raining. There are no umbrellas there.
+20
+It's the town of Cherasco. Your grandfather came to Turin sixty years ago and met your grandmother there.
+21
+There's nothing special about the frame.
+22
+Your father uses to deal with personal matters on this desk. While you're looking in the drawers, the cat begins to play with something under your father's bed.
+23
+Your father uses to deal with personal matters on this desk. There's an open envelope on it but nothing else. You wonder where the letter is.
+24
+You look under your father's bed and you find Democrito playing with a letter, crumpled up.
+25
+There are two bowls: one is filled with water and one is empty.
+26
+You put the anchovy in the empty bowl. Democrito pounces and eats it quickly and happily. Lucky cat! When he finishes, he purrs and gently rubs himself against your legs.
+27
+The pantry is full of jars and cans. In a corner, on a little plate, you notice a small anchovy, already desalted.
+28
+The pictures on the wall represent moments of the history of ITA. One picture in particular was taken as the Prime Minister was shaking hands with your father and your uncle. Founded in 1894, thanks to several very successful models, in just a few years the factory went from a small family business to the biggest car company in Italy. ITA gained a reputation for technologically advanced and reliable steam cars.
+29
+There are many blueprints here. The most recent ones are those for the Autosigma, a steam prototype that ITA prepared for the race in two days. Your father and your uncle clearly spent a lot of time and money on this. You are aware of their work and you know it contains many improvements. Stealing the prototype would be very appealing for industrial espionage, but here the blueprints are well protected.
+30
+You see the sky, lit by a beautiful sunset. Your villa is in the Crocetta, an elegant residential neighbourhood. You see the avenue passing in front of your house and the trees, coloured with shades turning from orange to pink.
+31
+The pantry is full of jars and cans. There's nothing very interesting.
+32
+The cabinet is where the various keys of the villa are kept. Obviously enough, the key of the ITA 51's there.
+33
+There are plenty of interesting objects on the shelves: if you're an Egyptologist, this place's heaven.
+51
+It's a relatively small car, beautifully crafted and very light. It's a steam car, of course, with a steam generator and a two cylinder engine driving the back wheels. It's a recent model and can be turned on in less than one minute. It can reach 120 km/h in the hands of a good pilot. By the way, as a daughter worthy of your father's name, you're a good pilot and, of course, you know how to drive it. Naturally, it's red and has a rose painted on it.
+52
+You need the key to drive the car.
+53
+You need to wear your goggles to drive the car.
+54
+You put some water in the reservoir and ignite the coal burner. Democrito's scared by the noise of the burner and runs away. After less than a minute, you hear a soft thump and the needle of the steam manometer enters a green sector. You adjust the steam generator and press the throttle pedal. The car begins to move, gently at first and then faster. Egyptian Museum, here you come!
+91
+It would not be very interesting.
+101
+The model 101 is a large car: a black torpedo with the driver's seat separated from the passengers' compartment, very comfortable and lined with red velvet. Your family does not have a chauffeur, though, as you, your father and your uncle like to drive personally. The steam generator feeds a three cylinder engine that develops more than 60 HP, almost in complete silence and with a generous torque and adequate accelerations.
+102
+No, the 101 is not the right car for small trips.
+105
+"Hello sweet little kitty!" Democrito seems happy when he hears your voice and begins to purr.
+147
+You're too far, but you know they have a wonderful smell.
+148
+It's a wonderful smell. It reminds you your mother: many years ago you used to play together in this garden in this season.
+161
+It stinks!
+210
+You still don't know what happened exactly. Try to find your uncle and ask him.
+220
+It's your bed. It's comfortable.
+221
+It's your washbowl. You use it every day for your morning toilette.
+227
+You can not buy much with that.
+228
+It's a pretty ordinary key. The ITA symbol is composed of the three letters, with a rose and a laurel wreath on top. Your mother drew it.
+229
+You should take some change with you before leaving.
+230
+It's your desk. You like to write, but now it's tidy and clean.
+231
+It's not the best way to solve your problems.
+232
+You caress Democrito, your cat. He seems very happy to see you!
+233
+He's your pet, a Siamese Tabby mix, and is very gentle. He is a relatively small cat, but with soft long hair.
+234
+It's from Ernesto Schiaparelli, a longtime family friend: ^M^M"Dear Attilio,^M   your brother informed me about the race and the prototype you developed. I think it's a great opportunity for you and your factory. However, I know that you had troubles in the past and I think you should do whatever possible to put the prototype in a safe place until the race. My friend Luzzi, the chemistry professor that worked with you once, heard some strange things at the university and I would like very much to discuss that with you, urgently. For the moment, I only know it's better to keep the prototype secret and safe. Come to meet me in two or three days, if you can.^M^MYour friend Ernesto."^M^MIt's dated July 23, 1902, two days ago. It looks like your father didn't pay a lot of attention to that letter, but now you must definitely go to see him!^MSchiaparelli's the director of the Egyptian Museum: you must go there.^M
+235
+It's a letter, handwritten on Egyptian Museum's letterhead.
+236
+Your uncle seems very excited: "I knew someone was trying to frame us! Emilia: the Autosigma prototype has been stolen. We will not be able to participate in the race in two days' time. It will be a catastrophe, as the company needs advertisement from the race. I'm going to the factory right now."^MThen, your uncle dashes out of the room.
+237
+Tullio is your uncle. He is about 40 years old and he is the younger brother of your father. He sports a brown beard and is always dressed in a very formal way, but without ostentation. He is a great artist in his field.
+238
+Tullio is not here.
+239
+You see your pilot goggles in the box.
+251
+You take Democrito in your arms and he begins to purr while you caress him. After a while, he clearly lets you understand he wants to be put down and you do that.
+252
+It's really not the right time to prepare a full-fledged bagna caoda! And, by the way, you wouldn't eat it without at least inviting your friends.
+253
+It's not the right time to read books.
+254
+It's a gas chandelier, finely decorated with floral castings on the arms and etched glass shades.
+255
+You already washed yourself.
+256
+It's a very nice garden, full of flourishing roses.
+257
+It's the barn where your father and your uncle assembled their first cars, eight years ago. Now the factory is much bigger and is not located here anymore. Your family still uses the barn as a personal garage.
+258
+You have a look at your father's clothes, but there's nothing unusual.
+259
+Lighting gas is happily burning there and a thorium mantle radiates a very pleasing and warm yellow light.
+260
+Your family loves roses. They're wonderful.
+261
+It's a collection of copper pans, tinned on the inside, of different sizes.
+262
+It's a large stove, useful for cooking and heating the place. In your family, you call that a putagé.
+263
+It's a pretty ordinary sink.
+264
+You see the garden outside and the back wall of a barn.
+265
+Democrito acts like he would greatly appreciate it, but first you should find a place to put it.
+266
+It's your mother's piano. Your uncle too was a very good pianist when he was younger. He still likes to play the piano, sometimes.
+267
+You play a few notes of J.S. Bach's prelude in C, from the first Well Tempered Clavier book. You always liked this piece, and the much harder 4-part fugue that follows it.
+268
+These are pilot goggles. And, technically speaking, you're a pilot.
+269
+Why would you do something so silly?
+283
+^MYou can load the second part of the game. Use 'SHIBBOLETH RAMASSIN' to access it.^M
+286
+You should discover where to go, before rushing to drive your car.
+287
+It's a messy desk.
+288
+The door is already open.
+400
+Decorations on the chandelier represent flourishing pomegranates. It's a very nice handmade artwork.
+401
+These are all the tools needed to maintain a steam car.
+402
+It's ordinary coal. Your mother threatened to give that to you instead of treats, on the 6th of January, when you were a naughty kid. The amount of it's enough for several long car trips.
+403
+In the mirror you see a young woman, about 5 ft 6 in tall, with brown-red hair, blue eyes and elegantly arched eyebrows, clad in a simple and elegant dress. That's you.
+405
+The cabinet is where the various keys of the villa are kept.
+406
+It's not too hot, here.
+502
+No.
+503
+The cat softly meows...
+504
+That will not help you. Try to calm down and we can continue playing together.
+505
+What cat?
+506
+The cat follows you.
+507
+No. It's better to see what is inside.
+508
+No. You don't want that with that.
+509
+Try to find what happened. Examine every object around you. Trace a map. Use your brain.
+515
+You close your eyes and you feel flying high over the city. You see clouds of steam. Then you open again your eyes: nothing changed.
+516
+It's an anchovy. Smelly.
+517
+It smells fishy.
+518
+You'll examine yourself much better with a mirror.
+520
+I dropped it.
+523
+I don't have that with me.
+524
+Use 'bye' if you want to stop playing.
+1000
+Okay.
+1001
+Done.
+1002
+Done.
+1003
+x
+1004
+y
+1005
+You can't take that!
+1006
+You can't do that!
+1007
+You don't have that with you!
+1008
+You can't go that way!
+1009
+I beg your pardon?
+1010
+You can't.
+1011
+You already have that with you!
+1012
+What do you want to do? 
+1013
+It's dark, you can't see anything.
+1018
+You wear 
+1019
+You already worn it.
+1020
+You can go: 
+1021
+north
+1022
+south
+1023
+east
+1024
+west
+1025
+up
+1026
+down
+1027
+
+1028
+
+1029
+
+1030
+
+1031
+You notice: 
+1032
+You have with you: 
+1033
+You don't have anything with you.
+OGGETTI
+6
+
+A little desalted anchovy
+0
+0
+0
+FALSE
+FALSE
+9
+
+A square key with the ITA symbol on it
+0
+0
+0
+FALSE
+FALSE
+10
+
+Pilot goggles
+0
+0
+0
+FALSE
+TRUE
+11
+
+A small key
+0
+0
+0
+FALSE
+FALSE
+22
+
+A letter for your father
+0
+0
+0
+FALSE
+FALSE
+23
+
+Your uncle Tullio
+0
+0
+6
+TRUE
+FALSE
+24
+
+The museum keeper
+0
+0
+20
+TRUE
+FALSE
+57
+
+Many books
+0
+0
+0
+FALSE
+FALSE
+29
+
+A set of photographs
+0
+0
+0
+FALSE
+FALSE
+58
+
+An acetylene lamp
+0
+0
+52
+FALSE
+FALSE
+89
+
+The La Stampa newspaper
+0
+0
+0
+FALSE
+FALSE
+105
+
+Democrito, a siamese cat
+0
+0
+1
+FALSE
+FALSE
+106
+
+A small pencil
+0
+0
+23
+FALSE
+FALSE
+107
+
+A sheet of paper
+0
+0
+0
+FALSE
+FALSE
+108
+
+A sheet of paper with hieroglyphs written on it
+0
+0
+0
+FALSE
+FALSE
+130
+
+Matches
+0
+0
+0
+FALSE
+FALSE
+137
+
+Shovel
+0
+0
+52
+FALSE
+FALSE
+138
+
+A lab coat
+0
+0
+0
+FALSE
+FALSE
+142
+
+An envelope, open
+0
+0
+0
+FALSE
+FALSE
+156
+
+A large object, covered by a tarpaulin
+0
+0
+63
+TRUE
+FALSE
+157
+
+A lighter
+0
+0
+0
+FALSE
+FALSE
+159
+
+A large key
+0
+0
+0
+FALSE
+FALSE
+217
+
+A small amount of money
+0
+0
+9
+FALSE
+FALSE
+FINEDATI

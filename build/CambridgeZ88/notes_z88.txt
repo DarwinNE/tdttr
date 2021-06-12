@@ -1,0 +1,19 @@
+                  NOTES FOR THE CAMBRIDGE Z88 VERSION OF
+
+                           TWO DAYS TO THE RACE
+
+                                Davide Bucci
+
+
+This version of the game is supposed to run on the Cambridge Z88.
+I ran a test or two in an emulator and it seems to work. Load the basic
+files and run them with the BBC Basic. The game should start.
+
+This port has been made possible by Dom and the awesome z88dk compiler.
+Many thanks to Jamie, too!
+
+If you have comments or remarks, feel free to write me at:
+
+davbucciNOSPAM@tiscali.it
+
+(email containing attachments will be automatically removed by my provider)
