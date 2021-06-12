@@ -1,6 +1,8 @@
 aws_options  = -m -c -s -d -n -w -l -3
 zcc_options = +z88 -DZ88 -create-app
 
+.PHONY: part1 part2 part34 all z88
+
 all: z88
 
 two_days_no_UTF8_1.c: ../../aws_sources/part1/Two_days_to_the_race_1.aws
