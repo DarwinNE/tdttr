@@ -5,12 +5,11 @@
                                 Davide Bucci
 
 
-This version of the game is supposed to run on the Cambridge Z88.
-I ran a test or two in an emulator and it seems to work. Load the basic
-files and run them with the BBC Basic. The game should start.
+This version of the game runs on the Cambridge Z88. Import the .epr game in
+an EPROM and use them as applications.
 
 This port has been made possible by Dom and the awesome z88dk compiler.
-Many thanks to Jamie, too!
+Many thanks to Jamie, for the useful feedback, too!
 
 If you have comments or remarks, feel free to write me at:
 
