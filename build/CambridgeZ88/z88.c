@@ -14,13 +14,13 @@ void adv_handlecmds(int cmd)
 #include <arch/z88/dor.h>
 
 #define HELP1 "A text adventure, by Davide Bucci"
-#define HELP2 "Your name is Emilia Vittorini, You're the daughter"
-#define HELP3 "of Augusto Vittorini, who founded the Industria"
-#define HELP4 "Torinese Automobili (ITA) with his brother Tullio."
-#define HELP5 ""
-#define HELP6 "..."
+#define HELP2 "Use 'n', 's', 'w', 'e', 'u', 'd' to move around"
+#define HELP3 "'look' or 'x' to examine an object"
+#define HELP4 "'take' to put an object in your 'inventory'"
+#define HELP5 "'bye' to exit game" 
+#define HELP6 "'load' and 'save' to resume or save the game"
 
-#define APP_INFO "Made by z88dk"
+#define APP_INFO "Made by z88dk/db"
 #ifndef APP_NAME
     #define APP_NAME "Two Days"
 #endif
