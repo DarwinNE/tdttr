@@ -1,7 +1,7 @@
 aws_options  = -m -c -s -d -n -w -l -3
-zcc_options_epr = +z88 -DZ88 -create-app -pragma-define:ansicolumns=80  z88.c -pragma-define:CRT_ORG_CODE=32768 -clib=ansi -m -subtype=app 
-zcc_options_ins = +z88 -DZ88 -create-app -pragma-define:ansicolumns=80  z88.c -pragma-define:CRT_ORG_CODE=32768 -clib=ansi -m -subtype=installer 
-zcc_options_bas = +z88 -DZ88 -clib=ansi -m 
+zcc_options_epr = +z88 -DZ88 -create-app -pragma-define:ansicolumns=80  z88.c -DALTSPLASH  Z88SP.c screen.asm z88gfx.asm  -pragma-define:CRT_ORG_CODE=32768 -clib=ansi -m -subtype=app 
+zcc_options_ins = +z88 -DZ88 -create-app -pragma-define:ansicolumns=80  z88.c -DALTSPLASH  Z88SP.c screen.asm z88gfx.asm -pragma-define:CRT_ORG_CODE=32768 -clib=ansi -m -subtype=installer 
+zcc_options_bas = +z88 -DZ88 -DALTSPLASH  Z88SP.c screen.asm z88gfx.asm -clib=ansi -m 
 
 .PHONY: part1 part2 part34 all z88
 
@@ -19,8 +19,8 @@ two_days_no_UTF8_34.c: ../../aws_sources/part34/Two_days_to_the_race_3_4.aws
 z88: part1 part2 part34
 
 part1: two_days_no_UTF8_1.c inout.c loadsave.c
-	zcc $(zcc_options_epr) -DAPP_NAME="\"\\\"TwoDays 1"\"\\\" -DCONFIG_FILENAME="\"\\\"config1.h"\"\\\" two_days_no_UTF8_1.c inout.c loadsave.c  -o tdttr1.bin
-	zcc $(zcc_options_ins) -DAPP_NAME="\"\\\"TwoDays 1"\"\\\" -DCONFIG_FILENAME="\"\\\"config1.h"\"\\\" two_days_no_UTF8_1.c inout.c loadsave.c  -o tdttr1.bin
+	zcc $(zcc_options_epr) -DAPP_NAME="\"\\\"TwoDays 1"\"\\\" -DCONFIG_FILENAME="\"\\\"config1.h"\"\\\" two_days_no_UTF8_1.c inout.c loadsave.c -o tdttr1.bin
+	zcc $(zcc_options_ins) -DAPP_NAME="\"\\\"TwoDays 1"\"\\\" -DCONFIG_FILENAME="\"\\\"config1.h"\"\\\" two_days_no_UTF8_1.c inout.c loadsave.c -o tdttr1.bin
 	zcc $(zcc_options_bas) -DCONFIG_FILENAME="\"\\\"config1.h"\"\\\" two_days_no_UTF8_1.c inout.c loadsave.c  -o TDTTR1.BAS
 
 

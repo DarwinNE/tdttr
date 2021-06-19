@@ -14,8 +14,9 @@ provided:
 
 Use the format that is most convenient for you!
 
-This port has been made possible by Dom and the awesome z88dk compiler.
-Many thanks to Jamie, for the useful feedback, too!
+This port has been made possible by Dom and the awesome z88dk compiler. He also
+provided the code for the splash screen. Many thanks to Jamie, for the useful 
+feedback and for the nice drawing of the splash screen.
 
 If you have comments or remarks, feel free to write me at:
 

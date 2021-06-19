@@ -2,35 +2,20 @@
 
 . ../config.sh
 
-rm  Z88_TDTTR.zip
+rm  Next_TDTTR.zip
+rm  -r Next_TDTTR
 
+mkdir Next_TDTTR
 cp ../readme.txt .
 
-rm -r Z88_TDTTR
-mkdir Z88_TDTTR
-mkdir Z88_TDTTR/epr
-mkdir Z88_TDTTR/app
-mkdir Z88_TDTTR/bas
-
-cp readme.txt Z88_TDTTR
-cp notes_z88.txt Z88_TDTTR
+cp readme.txt Next_TDTTR
+cp notes_Next.txt Next_TDTTR
 
 # .epr files are for emulators
-cp tdttr1.epr Z88_TDTTR/epr
-cp tdttr2.epr Z88_TDTTR/epr
-cp tdttr34.epr Z88_TDTTR/epr
+cp tdttr1.nex Next_TDTTR
+cp tdttr2.nex Next_TDTTR
+cp tdttr34.nex Next_TDTTR
 
-# .app files for installing application in RAM
-cp tdttr1.ap* Z88_TDTTR/app
-cp tdttr2.ap* Z88_TDTTR/app
-cp tdttr34.ap* Z88_TDTTR/app
+zip -r Next_TDTTR.zip Next_TDTTR
 
-# .BAS files for the BBC basic
-cp TDTTR1.BAS Z88_TDTTR/bas
-cp TDTTR2.BAS Z88_TDTTR/bas
-cp TDTTR34.BAS Z88_TDTTR/bas
-
-
-zip -r Z88_TDTTR.zip Z88_TDTTR
-
-cp Z88_TDTTR.zip $ditdir
+cp Next_TDTTR.zip $ditdir
