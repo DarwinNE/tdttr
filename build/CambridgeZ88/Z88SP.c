@@ -25,7 +25,9 @@ void showsplash(void)
     z88_copy_zx0_char_screen_to_map(&char_screen);
     //z88_clear_map();
     //fgetc_cons();
-    z88_close_map();
+
+    // It does not work on OZ5, the image is removed.
+    //z88_close_map();
 }
 
 

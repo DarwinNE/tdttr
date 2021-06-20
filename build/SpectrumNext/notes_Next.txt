@@ -5,6 +5,7 @@
                                 Davide Bucci
 
 
+This version has been made possible thanks to the help of Dom Morris.
 
 If you have comments or remarks, feel free to write me at:
 
