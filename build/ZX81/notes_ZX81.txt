@@ -1,0 +1,17 @@
+ADDITIONAL NOTES FOR THE ZX81 VERSION OF TWO DAYS TO THE RACE
+
+    Davide Bucci
+
+This is a HIGHLY EXPERIMENTAL version for the Sinclair ZX81 computer, equipped
+with a 32kb memory expansion. UNTESTED!
+If I have understood well the documentation here:
+
+https://github.com/z88dk/z88dk/wiki/Platform---Sinclair-ZX81
+
+the output files are those with the .P version.
+
+If you have comments or remarks, feel free to write me at:
+
+davbucciNOSPAM@tiscali.it
+
+(email containing attachments will be automatically removed by my provider)
