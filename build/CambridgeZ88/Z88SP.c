@@ -15,6 +15,8 @@ extern void z88_copy_zx0_char_screen_to_map(void *data) __z88dk_fastcall;
 
 extern void *char_screen;
 
+extern void demo_play(void);
+
 
 void showsplash(void)
 {
@@ -23,6 +25,8 @@ void showsplash(void)
     writeln("");
     
     z88_copy_zx0_char_screen_to_map(&char_screen);
+    demo_play();
+
     //z88_clear_map();
     //fgetc_cons();
 

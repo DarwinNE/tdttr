@@ -16,7 +16,8 @@ Use the format that is most convenient for you!
 
 This port has been made possible by Dom and the awesome z88dk compiler. He also
 provided the code for the splash screen. Many thanks to Jamie, for the useful 
-feedback and for the nice drawing of the splash screen.
+feedback, the nice drawing of the splash screen and the the title music (S.
+Rachmaninov "Étude-tableau Op. 39 No. 9")
 
 If you have comments or remarks, feel free to write me at:
 
