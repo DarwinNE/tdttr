@@ -2,9 +2,9 @@ aws_options = -m -c -s -d -n -w -l -3
 zcc_options = +zxn -lesxdos -DSPECTRUMNEXT -lm -clib=classic -create-app -subtype=nex
 
 
-.PHONY: part1 part2 part34 all z88
+.PHONY: part1 part2 part34 all next
 
-all: z88
+all: next
 
 two_days_no_UTF8_1.c: ../../aws_sources/part1/Two_days_to_the_race_1.aws
 	../../../aws2c $(aws_options) -f config1.h ../../aws_sources/part1/Two_days_to_the_race_1.aws two_days_no_UTF8_1.c
@@ -15,7 +15,7 @@ two_days_no_UTF8_2.c: ../../aws_sources/part2/Two_days_to_the_race_2.aws
 two_days_no_UTF8_34.c: ../../aws_sources/part34/Two_days_to_the_race_3_4.aws
 	../../../aws2c $(aws_options) -f config34.h  ../../aws_sources/part34/Two_days_to_the_race_3_4.aws two_days_no_UTF8_34.c
 
-z88: part1 part2 part34
+next: part1 part2 part34
 
 part1: two_days_no_UTF8_1.c inout.c loadsave.c
 	zcc $(zcc_options) -DCONFIG_FILENAME="\"\\\"config1.h"\"\\\" two_days_no_UTF8_1.c inout.c loadsave.c -o tdttr1.bin
