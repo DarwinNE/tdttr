@@ -25,4 +25,4 @@ tdttr_en.bin: inout.c tdttr_no_utf8_en.c resource.c text_en.dat
 Apple2e: tdttr_it.bin tdttr_en.bin
 
 clean:
-	rm tdttr_no_utf8*.c config_it_nu.h config_en_nu.h iunnuh2e iunnuh2i *.o *.dat *.po *.map *.bin mapfile_*.h *.lst
+	rm tdttr_no_utf8*.c config_*_nu.h *.o *.dat *.po *.map *.bin mapfile_*.h *.lst
