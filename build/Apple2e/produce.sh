@@ -20,5 +20,5 @@ java -jar $acjarfile -p ./tdttr_en.po TEXT.DAT 0 < text_en.dat
 cp ../readme.txt .
 
 rm  AppleIIe_TDTTR.zip
-zip -r *.zip *.po readme.txt 
+zip -r *.po readme.txt 
 cp AppleIIe_TDTTR.zip $ditdir
